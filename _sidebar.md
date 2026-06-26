@@ -67,6 +67,7 @@
   - [S-59 · Instruction Density](stacks/s59-instruction-density.md)
   - [S-60 · Prompt Cache Invalidation](stacks/s60-prompt-cache-invalidation.md)
   - [S-61 · Streaming Structured Output](stacks/s61-streaming-structured-output.md)
+  - [S-62 · Tool Error Messages](stacks/s62-tool-error-messages.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -113,6 +114,7 @@
   - [F-30 · Runtime Output Validation](forward-deployed/f30-runtime-output-validation.md)
   - [F-31 · Structured Call Logging](forward-deployed/f31-structured-call-logging.md)
   - [F-32 · Context Overflow Recovery](forward-deployed/f32-context-overflow-recovery.md)
+  - [F-33 · Prompt A/B Testing](forward-deployed/f33-prompt-ab-testing.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
