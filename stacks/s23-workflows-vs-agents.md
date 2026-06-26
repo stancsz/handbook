@@ -35,7 +35,7 @@ AGENT step (open: "do whatever you think is most useful, respond however you see
 Same model, same input — the *only* variable is freedom. Constrain it and you get a repeatable workflow you can parse and audit; open it up and you get adaptability you can't predict. That tradeoff **is** the decision: pick the constraint level the task actually needs, not the most autonomous thing you can build.
 
 ## See also
-[S-26](s26-planning.md) · [S-19](s19-agent-loop.md) · [S-05](s05-multi-agent-patterns.md) · [F-11](../forward-deployed/f11-agent-reliability.md) · [F-09](../forward-deployed/f09-human-in-the-loop.md)
+[S-26](s26-planning.md) · [S-19](s19-agent-loop.md) · [S-05](s05-multi-agent-patterns.md) · [F-11](../forward-deployed/f11-agent-reliability.md) · [F-09](../forward-deployed/f09-human-in-the-loop.md) · [S-34](s34-narrow-scope-agent-design.md)
 
 ## Go deeper
 Keywords: `workflow vs agent` · `agentic workflow` · `LangGraph` · `orchestration` · `human-in-the-loop` · `hybrid architecture` · `state machine` · `deterministic pipeline`
