@@ -106,7 +106,7 @@ The token overhead from structure is +5% for XML tags. The compliance gain is no
 
 ## See also
 
-[S-36](s36-system-prompt-architecture.md) · [S-16](s16-prompting.md) · [S-04](s04-structured-output.md) · [S-08](s08-prompt-caching.md) · [F-13](../forward-deployed/f13-prompt-injection.md)
+[S-36](s36-system-prompt-architecture.md) · [S-16](s16-prompting.md) · [S-04](s04-structured-output.md) · [S-08](s08-prompt-caching.md) · [F-13](../forward-deployed/f13-prompt-injection.md) · [S-59](s59-instruction-density.md)
 
 ## Go deeper
 

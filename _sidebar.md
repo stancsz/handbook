@@ -64,6 +64,7 @@
   - [S-56 · Pre-Flight Token Check](stacks/s56-preflight-token-check.md)
   - [S-57 · Negative Prompting](stacks/s57-negative-prompting.md)
   - [S-58 · Prompt Layering](stacks/s58-prompt-layering.md)
+  - [S-59 · Instruction Density](stacks/s59-instruction-density.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -107,6 +108,7 @@
   - [F-27 · Data Flywheel](forward-deployed/f27-data-flywheel.md)
   - [F-28 · Prompt Debugging](forward-deployed/f28-prompt-debugging.md)
   - [F-29 · Cost Attribution](forward-deployed/f29-cost-attribution.md)
+  - [F-30 · Runtime Output Validation](forward-deployed/f30-runtime-output-validation.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
