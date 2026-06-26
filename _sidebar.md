@@ -124,6 +124,7 @@
   - [S-116 · Output Determinism Testing](stacks/s116-output-determinism-testing.md)
   - [S-117 · Webhook Event Deduplication](stacks/s117-webhook-event-deduplication.md)
   - [S-118 · Adaptive Polling Interval](stacks/s118-adaptive-polling-interval.md)
+  - [S-119 · Agent-to-Frontend Event Protocol](stacks/s119-agent-to-frontend-event-protocol.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -227,6 +228,7 @@
   - [F-87 · Tool Call Argument Audit Log](forward-deployed/f87-tool-call-argument-audit-log.md)
   - [F-88 · Session Cost Ceiling](forward-deployed/f88-session-cost-ceiling.md)
   - [F-89 · Verbatim Citation Verification](forward-deployed/f89-verbatim-citation-verification.md)
+  - [F-90 · Pre-Session Tool Health Gate](forward-deployed/f90-pre-session-tool-health-gate.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
