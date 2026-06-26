@@ -37,6 +37,7 @@
   - [S-29 · False Consensus](stacks/s29-false-consensus.md)
   - [S-30 · Code-Test-Fix Loop](stacks/s30-code-test-fix-loop.md)
   - [S-31 · Prompt Compression](stacks/s31-prompt-compression.md)
+  - [S-32 · The Verifiability Divider](stacks/s32-verifiability-divider.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)

@@ -52,7 +52,7 @@ Test run on fixed code: 5/5 pass
 
 ## See also
 
-[S-25](s25-reflection.md) · [F-07](../forward-deployed/f07-evaluation-driven-development.md) · [F-11](../forward-deployed/f11-agent-reliability.md) · [S-19](s19-agent-loop.md)
+[S-25](s25-reflection.md) · [F-07](../forward-deployed/f07-evaluation-driven-development.md) · [F-11](../forward-deployed/f11-agent-reliability.md) · [S-19](s19-agent-loop.md) · [S-32](s32-verifiability-divider.md)
 
 ## Go deeper
 
