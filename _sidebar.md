@@ -110,6 +110,7 @@
   - [S-102 · Composable Agent Data Layers](stacks/s102-composable-agent-data-layers.md)
   - [S-103 · Cost-Aware Context Management](stacks/s103-cost-aware-context-management.md)
   - [S-104 · Event-Stream Agent Integration](stacks/s104-event-stream-agent-integration.md)
+  - [S-105 · Data Call Cost Threshold](stacks/s105-data-call-cost-threshold.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -199,6 +200,7 @@
   - [F-73 · Agent Output Lineage](forward-deployed/f73-agent-output-lineage.md)
   - [F-74 · Agent Decision Tracing](forward-deployed/f74-agent-decision-tracing.md)
   - [F-75 · Tool Output Schema Contracts](forward-deployed/f75-tool-output-schema-contracts.md)
+  - [F-76 · Instruction Hierarchy Testing](forward-deployed/f76-instruction-hierarchy-testing.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
