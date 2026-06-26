@@ -71,6 +71,7 @@
   - [S-63 · Output Text Cleaning](stacks/s63-output-text-cleaning.md)
   - [S-64 · Agent Output Schema Versioning](stacks/s64-agent-output-schema-versioning.md)
   - [S-65 · Multi-Model Pipelines](stacks/s65-multi-model-pipelines.md)
+  - [S-66 · Retrieval Score Thresholds](stacks/s66-retrieval-score-thresholds.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -121,6 +122,7 @@
   - [F-34 · Async Agent Requests](forward-deployed/f34-async-agent-requests.md)
   - [F-35 · Workflow Token Budget](forward-deployed/f35-workflow-token-budget.md)
   - [F-36 · Agent Persona and Character](forward-deployed/f36-agent-persona-and-character.md)
+  - [F-37 · Knowledge Cutoff Handling](forward-deployed/f37-knowledge-cutoff-handling.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
