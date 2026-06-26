@@ -47,7 +47,7 @@ What models exist, what they cost, and what they're actually good for. **Last ve
 > Sourced from public documentation, Anthropic/OpenAI/Google release notes, and the web research performed 2026-06-25. Model names and capabilities are accurate as of that date. Pricing: check anthropic.com/pricing, openai.com/pricing, cloud.google.com/vertex-ai/pricing directly — do not use numbers from this entry for budgeting.
 
 ## See also
-[S-06](../stacks/s06-model-routing.md) · [R-02](r02-reasoning-models.md) · [R-03](r03-fine-tuning-vs-prompting.md)
+[S-06](../stacks/s06-model-routing.md) · [R-02](r02-reasoning-models.md) · [R-03](r03-fine-tuning-vs-prompting.md) · [F-14](../forward-deployed/f14-reading-agent-benchmarks.md)
 
 ## Go deeper
 Keywords: `LLM leaderboard` · `LMSYS Chatbot Arena` · `Hugging Face Open LLM Leaderboard` · `model benchmarks` · `MMLU` · `HumanEval`

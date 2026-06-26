@@ -17,3 +17,4 @@ Shipping AI to real users — the field methods, the failure modes, what product
 | [F-11](f11-agent-reliability.md) | Agent Reliability | Capability is "can it?"; reliability is "every time?" |
 | [F-12](f12-llm-as-a-judge.md) | LLM-as-a-Judge | Score outputs with a model; validate the judge first |
 | [F-13](f13-prompt-injection.md) | Prompt Injection | The Lethal Trifecta and why there's no clean fix |
+| [F-14](f14-reading-agent-benchmarks.md) | Reading Agent Benchmarks | What leaderboards measure — and hide |
