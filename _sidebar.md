@@ -89,6 +89,7 @@
   - [S-81 · Retrieval Metadata Filtering](stacks/s81-retrieval-metadata-filtering.md)
   - [S-82 · Semantic Query Routing](stacks/s82-semantic-query-routing.md)
   - [S-83 · Cross-Encoder Reranking](stacks/s83-cross-encoder-reranking.md)
+  - [S-84 · Tool Return Value Design](stacks/s84-tool-return-value-design.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -157,6 +158,7 @@
   - [F-52 · Conversation Branching](forward-deployed/f52-conversation-branching.md)
   - [F-53 · Token Budget Renegotiation](forward-deployed/f53-token-budget-renegotiation.md)
   - [F-54 · Privacy-Safe Request Logging](forward-deployed/f54-privacy-safe-logging.md)
+  - [F-55 · Agent Task Replanning](forward-deployed/f55-agent-task-replanning.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
