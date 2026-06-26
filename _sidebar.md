@@ -114,6 +114,7 @@
   - [S-106 · Event Log Replay](stacks/s106-event-log-replay.md)
   - [S-107 · Pipeline Stage Output Budget](stacks/s107-pipeline-stage-output-budget.md)
   - [S-108 · Progressive Tool Results](stacks/s108-progressive-tool-results.md)
+  - [S-109 · Agent Idle Cost](stacks/s109-agent-idle-cost.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -207,6 +208,7 @@
   - [F-77 · Cross-Model Divergence Detection](forward-deployed/f77-cross-model-divergence.md)
   - [F-78 · Confidence-Gated Delivery](forward-deployed/f78-confidence-gated-delivery.md)
   - [F-79 · Semantic Regression Detection](forward-deployed/f79-semantic-regression-detection.md)
+  - [F-80 · Agent-to-Agent Authentication](forward-deployed/f80-agent-to-agent-authentication.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
