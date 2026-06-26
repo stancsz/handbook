@@ -19,3 +19,4 @@ Shipping AI to real users — the field methods, the failure modes, what product
 | [F-13](f13-prompt-injection.md) | Prompt Injection | The Lethal Trifecta and why there's no clean fix |
 | [F-14](f14-reading-agent-benchmarks.md) | Reading Agent Benchmarks | What leaderboards measure — and hide |
 | [F-15](f15-durable-execution.md) | Durable Execution | Checkpoint, resume, and don't double-charge |
+| [F-16](f16-tool-call-validation.md) | Tool Call Validation | The model proposes; your code decides whether to execute |

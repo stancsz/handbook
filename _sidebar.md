@@ -63,6 +63,7 @@
   - [F-13 · Prompt Injection](forward-deployed/f13-prompt-injection.md)
   - [F-14 · Reading Agent Benchmarks](forward-deployed/f14-reading-agent-benchmarks.md)
   - [F-15 · Durable Execution](forward-deployed/f15-durable-execution.md)
+  - [F-16 · Tool Call Validation](forward-deployed/f16-tool-call-validation.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)

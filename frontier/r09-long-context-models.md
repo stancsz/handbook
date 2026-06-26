@@ -4,7 +4,7 @@ As of mid-2026, thirteen frontier models ship 1M+ token context windows. Llama 4
 
 ## Forces
 
-- A 1M-token window holds roughly 40,000 lines of code or 750 pages of text — entire codebases and case files now fit in a single prompt, collapsing whole retrieval architectures
+- A 1M-token window holds roughly 40,000 lines of code or 1,500 pages of text — entire codebases and case files now fit in a single prompt, collapsing whole retrieval architectures
 - Bigger windows didn't fix "lost in the middle" — they gave models more middle to lose things in; recall degrades as input length grows, and multi-needle retrieval degrades faster than single-needle
 - Advertised window size ≠ effective context: models score near-perfect on single-needle tests at 1M tokens but drop significantly on multi-fact tasks at the same length (the gap is the real number to test)
 - The output cap now binds before the input cap for large generative tasks: a model reading 1M tokens and writing 64K per turn needs multiple round trips for large refactors, re-paying input cost each time
