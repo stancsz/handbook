@@ -35,6 +35,7 @@
   - [F-04 · Agentic Safety and Guardrails](forward-deployed/f04-guardrails.md)
   - [F-05 · Agent Failure Taxonomy](forward-deployed/f05-agent-failure-taxonomy.md)
   - [F-06 · Agent Sandboxing](forward-deployed/f06-agent-sandboxing.md)
+  - [F-07 · Evaluation-Driven Development](forward-deployed/f07-evaluation-driven-development.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
