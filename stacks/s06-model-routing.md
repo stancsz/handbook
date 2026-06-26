@@ -43,7 +43,7 @@ def route(task_type: str, token_count: int) -> str:
 > Receipt pending — 2026-06-25. Model names verified against Anthropic docs as of this date. Cost ratios approximate; check current pricing at anthropic.com/pricing.
 
 ## See also
-[S-01](s01-local-model-dispatch.md) · [S-05](s05-multi-agent-patterns.md) · [R-01](../frontier/r01-model-landscape.md)
+[S-01](s01-local-model-dispatch.md) · [S-05](s05-multi-agent-patterns.md) · [R-01](../frontier/r01-model-landscape.md) · [F-08](../forward-deployed/f08-agent-cost-control.md)
 
 ## Go deeper
 Keywords: `model routing` · `LLM cascade` · `RouteLLM` · `FrugalGPT` · `cost optimization` · `model selection`

@@ -41,6 +41,7 @@
   - [F-05 · Agent Failure Taxonomy](forward-deployed/f05-agent-failure-taxonomy.md)
   - [F-06 · Agent Sandboxing](forward-deployed/f06-agent-sandboxing.md)
   - [F-07 · Evaluation-Driven Development](forward-deployed/f07-evaluation-driven-development.md)
+  - [F-08 · Agent Cost Control](forward-deployed/f08-agent-cost-control.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)

@@ -52,7 +52,7 @@ print(response.usage)
 > Receipt pending — 2026-06-25. API syntax above follows Anthropic's prompt caching documentation. Exact cost ratios and TTL: verify at docs.anthropic.com/prompt-caching before relying on them for budget calculations.
 
 ## See also
-[S-02](s02-context-budget.md) · [S-06](s06-model-routing.md) · [S-07](s07-rag.md)
+[S-02](s02-context-budget.md) · [S-06](s06-model-routing.md) · [S-07](s07-rag.md) · [F-08](../forward-deployed/f08-agent-cost-control.md)
 
 ## Go deeper
 Keywords: `prompt caching` · `KV cache` · `Anthropic cache_control` · `OpenAI prompt caching` · `prefix caching`
