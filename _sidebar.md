@@ -118,6 +118,7 @@
   - [S-110 · Incremental Vector Index Updates](stacks/s110-incremental-vector-index-updates.md)
   - [S-111 · Partial Context Refresh](stacks/s111-partial-context-refresh.md)
   - [S-112 · Speculative Pre-Generation](stacks/s112-speculative-pre-generation.md)
+  - [S-113 · Reactive Schema Evolution](stacks/s113-reactive-schema-evolution.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -215,6 +216,7 @@
   - [F-81 · Cost Attribution by User Action](forward-deployed/f81-cost-attribution-by-user-action.md)
   - [F-82 · Agent Output Provenance Trail](forward-deployed/f82-agent-output-provenance-trail.md)
   - [F-83 · Agent Capability Testing](forward-deployed/f83-agent-capability-testing.md)
+  - [F-84 · Output Consistency Under Paraphrase](forward-deployed/f84-output-consistency-under-paraphrase.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
