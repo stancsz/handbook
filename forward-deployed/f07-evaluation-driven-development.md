@@ -20,7 +20,7 @@ Wire evals into your dev loop so quality is a gate, not a guess. Where [F-02](f0
 > Tooling behavior (`deepeval` pytest integration, Braintrust `eval-action` PR comments, git-linked experiments) sourced from each project's documentation. The "eval cost can be ~10× the agent workload" figure is a reported practitioner account, not a measured constant — budget and measure your own. Agent-as-a-Judge (judging the full trajectory, not just the output) was introduced in ["Agent-as-a-Judge: Evaluate Agents with Agents"](https://arxiv.org/abs/2410.10934) (Zhuge et al., arXiv 2410.10934, Oct 2024), which released the DevAI benchmark (55 dev tasks) and reports the agent judge performing comparably to an ensemble of human evaluators. The specific ~90% vs 60–70% alignment split is as framed in the 2025 survey ["When AIs Judge AIs"](https://arxiv.org/abs/2508.02994) (arXiv 2508.02994), not the primary paper. Sources verified 2026-06-25; not independently reproduced here.
 
 ## See also
-[F-02](f02-evaluation-at-scale.md) · [F-12](f12-llm-as-a-judge.md) · [F-03](f03-failure-modes.md) · [F-05](f05-agent-failure-taxonomy.md) · [W-05](../workspace/w05-llmops-observability.md)
+[F-02](f02-evaluation-at-scale.md) · [F-12](f12-llm-as-a-judge.md) · [F-17](f17-synthetic-eval-generation.md) · [F-03](f03-failure-modes.md) · [W-05](../workspace/w05-llmops-observability.md)
 
 ## Go deeper
 Keywords: `evaluation-driven development` · `LLM-as-judge` · `Agent-as-a-Judge` · `deepeval` · `Braintrust` · `eval in CI` · `regression gating` · `GEval` · `trajectory evaluation`

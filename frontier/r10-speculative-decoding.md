@@ -23,7 +23,7 @@ This rejection-sampling scheme is the mathematical guarantee: accepted tokens ar
 **Speedup math:** when acceptance rate R > 0.8 and the draft model is cheap (say 10× smaller), you get approximately K × R accepted tokens per verifier call instead of 1. Real speedups: 2–3× latency at zero quality loss.
 
 **Variants:**
-- **Medusa** — adds parallel prediction heads directly onto the LLM; no separate draft model; achieves up to 3.6× with a tree-based verification pass
+- **Medusa** — adds parallel prediction heads directly onto the LLM; no separate draft model; tree-based verification pass; comparable or higher speedup than the two-model variant
 - **Self-speculative** — the large model itself skips intermediate transformer layers during drafting, then runs the full model for verification
 - **EAGLE** — trains a lightweight auxiliary model on the target model's intermediate representations; high acceptance rates because the drafter has access to target-model internals
 

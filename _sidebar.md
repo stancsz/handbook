@@ -65,6 +65,7 @@
   - [F-14 · Reading Agent Benchmarks](forward-deployed/f14-reading-agent-benchmarks.md)
   - [F-15 · Durable Execution](forward-deployed/f15-durable-execution.md)
   - [F-16 · Tool Call Validation](forward-deployed/f16-tool-call-validation.md)
+  - [F-17 · Synthetic Eval Generation](forward-deployed/f17-synthetic-eval-generation.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
