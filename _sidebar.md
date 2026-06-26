@@ -101,6 +101,7 @@
   - [S-93 · Tool Side-Effect Idempotency](stacks/s93-tool-side-effect-idempotency.md)
   - [S-94 · Agent Output Diffing](stacks/s94-agent-output-diffing.md)
   - [S-95 · Retry Cost Attribution](stacks/s95-retry-cost-attribution.md)
+  - [S-96 · Tool Fallback Chains](stacks/s96-tool-fallback-chains.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -181,6 +182,7 @@
   - [F-64 · Prompt Template Testing](forward-deployed/f64-prompt-template-testing.md)
   - [F-65 · Prompt Regression Testing](forward-deployed/f65-prompt-regression-testing.md)
   - [F-66 · Agent Personalization](forward-deployed/f66-agent-personalization.md)
+  - [F-67 · Dynamic Tool Registration](forward-deployed/f67-dynamic-tool-registration.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
