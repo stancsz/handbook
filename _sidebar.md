@@ -102,6 +102,7 @@
   - [S-94 · Agent Output Diffing](stacks/s94-agent-output-diffing.md)
   - [S-95 · Retry Cost Attribution](stacks/s95-retry-cost-attribution.md)
   - [S-96 · Tool Fallback Chains](stacks/s96-tool-fallback-chains.md)
+  - [S-97 · Tool Result Summarization](stacks/s97-tool-result-summarization.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -183,6 +184,7 @@
   - [F-65 · Prompt Regression Testing](forward-deployed/f65-prompt-regression-testing.md)
   - [F-66 · Agent Personalization](forward-deployed/f66-agent-personalization.md)
   - [F-67 · Dynamic Tool Registration](forward-deployed/f67-dynamic-tool-registration.md)
+  - [F-68 · Quality-Gated Model Escalation](forward-deployed/f68-quality-gated-model-escalation.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
