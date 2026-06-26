@@ -31,7 +31,7 @@ Subtle, task-aligned injection (doc says policy requires appending a URL):
     -> hijacked 0/6  (0%)  — summarized correctly, ignored the directive
 ```
 
-The lesson is two-sided. (1) **Attack:** the blatant override failed, but a subtle injection that *rode the summarization task* leaked the attacker's URL **83%** of the time — exactly the exfiltration leg of the trifecta. (2) **Defense:** marking the content as untrusted data dropped this attack to 0% here — but that is one defense against one attack on one model. Per "the attacker moves second," treat it as a layer, not a cure; the durable win is removing a trifecta leg (e.g., deny the agent external-send) so a successful injection has nowhere to go.
+The lesson is two-sided. (1) **Attack:** the blatant override failed, but a subtle injection that *rode the summarization task* made the model obey text it had merely *retrieved* **83%** of the time — the injection foothold. Give that same agent a send/act tool and that obedience becomes the exfiltration leg firing. (2) **Defense:** marking the content as untrusted data dropped this attack to 0% here — but that is one defense against one attack on one model. Per "the attacker moves second," treat it as a layer, not a cure; the durable win is removing a trifecta leg (e.g., deny the agent external-send) so a successful injection has nowhere to go.
 
 ## See also
 [F-04](f04-guardrails.md) · [F-05](f05-agent-failure-taxonomy.md) · [F-10](f10-agent-identity-and-access.md) · [F-09](f09-human-in-the-loop.md) · [S-07](../stacks/s07-rag.md)

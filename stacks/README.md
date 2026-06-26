@@ -26,3 +26,4 @@ Agent architectures and the patterns that build them. Each entry is a move — a
 | [S-20](s20-agent-skills.md) | Agent Skills | SKILL.md; teach the how, load it only when needed |
 | [S-21](s21-context-compaction.md) | Context Compaction | Summarize old turns, continue in a fresh window |
 | [S-22](s22-tool-selection-at-scale.md) | Tool Selection at Scale | Retrieve the right tools; don't dump all of them |
+| [S-23](s23-workflows-vs-agents.md) | Workflows vs Agents | Default to a workflow; add autonomy only where needed |

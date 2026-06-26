@@ -20,7 +20,7 @@ The reason–act–observe cycle that turns a model into an agent. Tools ([S-03]
 > ReAct (interleave reasoning and acting) is from ["ReAct: Synergizing Reasoning and Acting in Language Models"](https://arxiv.org/abs/2210.03629) (Yao et al., arXiv 2210.03629, 2022), which reported gains over action-only baselines (e.g. +34% on ALFWorld, +10% on WebShop). Reflexion (Actor + Evaluator + self-reflection into episodic memory) is from ["Reflexion: Language Agents with Verbal Reinforcement Learning"](https://arxiv.org/abs/2303.11366) (Shinn et al., arXiv 2303.11366, 2023). The layered design-pattern framing and loop-safety guidance are the 2026 consensus across agent-engineering writeups — directional. Verified 2026-06-25; not independently reproduced here.
 
 ## See also
-[S-03](s03-tool-use.md) · [S-05](s05-multi-agent-patterns.md) · [S-09](s09-memory-systems.md) · [F-05](../forward-deployed/f05-agent-failure-taxonomy.md) · [F-07](../forward-deployed/f07-evaluation-driven-development.md) · [F-09](../forward-deployed/f09-human-in-the-loop.md)
+[S-23](s23-workflows-vs-agents.md) · [S-03](s03-tool-use.md) · [S-05](s05-multi-agent-patterns.md) · [S-09](s09-memory-systems.md) · [F-05](../forward-deployed/f05-agent-failure-taxonomy.md) · [F-09](../forward-deployed/f09-human-in-the-loop.md)
 
 ## Go deeper
 Keywords: `ReAct` · `Reflexion` · `Plan-and-Execute` · `agent loop` · `OODA loop` · `reason-act-observe` · `loop engineering` · `max iterations` · `workflow vs agent`

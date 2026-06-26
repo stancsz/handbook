@@ -81,7 +81,7 @@ PIPELINE RESULT: {"person":"Marie Curie","field":"Chemistry"}
 Two real lessons from the run: (1) **cost compounds** — a trivial 2-step pipeline still paid full input cost *twice* (~5,057 input tokens), which is why "anything past a pipeline costs ≥2×" bites. (2) **error compounds silently** — the source sentence said *Physics* (her 1903 prize), but stage 2 only received the name, not the context, and answered "Chemistry" from its own knowledge. Each handoff that drops context is a place the pipeline can drift. The failure-rate math above is arithmetic; the single-vs-multi cost figures are from 2026 orchestration studies (directional).
 
 ## See also
-[S-19](s19-agent-loop.md) · [S-06](s06-model-routing.md) · [S-03](s03-tool-use.md) · [F-02](../forward-deployed/f02-evaluation-at-scale.md) · [F-11](../forward-deployed/f11-agent-reliability.md)
+[S-23](s23-workflows-vs-agents.md) · [S-19](s19-agent-loop.md) · [S-06](s06-model-routing.md) · [S-03](s03-tool-use.md) · [F-02](../forward-deployed/f02-evaluation-at-scale.md) · [F-11](../forward-deployed/f11-agent-reliability.md)
 
 ## Go deeper
 Keywords: `LangGraph` · `Claude Agent SDK` · `CrewAI` · `AutoGen` · `supervisor pattern` · `fan-out` · `orchestration`
