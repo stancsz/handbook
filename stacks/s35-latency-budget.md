@@ -69,7 +69,7 @@ Total (external tools): 6,635 ms    generation fraction: 80%
 
 ## See also
 
-[S-12](s12-streaming.md) · [S-06](s06-model-routing.md) · [S-08](s08-prompt-caching.md) · [S-05](s05-multi-agent-patterns.md) · [F-18](../forward-deployed/f18-architecture-sets-the-cost-floor.md)
+[S-12](s12-streaming.md) · [S-06](s06-model-routing.md) · [S-08](s08-prompt-caching.md) · [S-05](s05-multi-agent-patterns.md) · [F-18](../forward-deployed/f18-architecture-sets-the-cost-floor.md) · [S-55](s55-parallel-tool-calls.md)
 
 ## Go deeper
 

@@ -38,7 +38,7 @@ print(response.input_tokens)
 > Receipt pending — 2026-06-25. Token count API call above is from Anthropic documentation; run it against your prompt to get actual numbers.
 
 ## See also
-[S-18](s18-tokenization.md) · [S-08](s08-prompt-caching.md) · [S-07](s07-rag.md) · [S-01](s01-local-model-dispatch.md)
+[S-18](s18-tokenization.md) · [S-08](s08-prompt-caching.md) · [S-07](s07-rag.md) · [S-01](s01-local-model-dispatch.md) · [S-56](s56-preflight-token-check.md)
 
 ## Go deeper
 Keywords: `token counting` · `context window` · `prompt compression` · `LLMLingua` · `sliding window attention`

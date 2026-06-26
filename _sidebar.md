@@ -60,6 +60,8 @@
   - [S-52 · Chunking Strategy](stacks/s52-chunking-strategy.md)
   - [S-53 · Confidence Calibration](stacks/s53-confidence-calibration.md)
   - [S-54 · Multi-Turn Conversation Design](stacks/s54-multi-turn-conversation-design.md)
+  - [S-55 · Parallel Tool Calls](stacks/s55-parallel-tool-calls.md)
+  - [S-56 · Pre-Flight Token Check](stacks/s56-preflight-token-check.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
