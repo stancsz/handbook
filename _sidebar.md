@@ -76,6 +76,7 @@
   - [S-68 · Input Pre-Screening](stacks/s68-input-pre-screening.md)
   - [S-69 · Streaming Cancellation](stacks/s69-streaming-cancellation.md)
   - [S-70 · Agent Loop Termination](stacks/s70-agent-loop-termination.md)
+  - [S-71 · Long Document Processing](stacks/s71-long-document-processing.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -131,6 +132,7 @@
   - [F-39 · Session State Persistence](forward-deployed/f39-session-state-persistence.md)
   - [F-40 · User Feedback Collection](forward-deployed/f40-user-feedback-collection.md)
   - [F-41 · Feature Flags for AI Rollout](forward-deployed/f41-feature-flags-for-ai.md)
+  - [F-42 · AI Incident Response](forward-deployed/f42-ai-incident-response.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
