@@ -1,6 +1,14 @@
-# Book of Stacks
+# Book of Patterns
 
-Agent architectures and the patterns that build them. Each entry is a move — a technique with a situation, the forces in tension, and a receipt from reality.
+The moves, techniques, and architectures agents are built from. Each entry is a named pattern — a situation, the forces in tension, the actual technique, and a receipt from reality.
+
+Three tiers, ten entries each:
+
+---
+
+### Foundations
+
+The primitives. What every agent needs before it needs anything else.
 
 | Code | Name | One-liner |
 |---|---|---|
@@ -14,7 +22,16 @@ Agent architectures and the patterns that build them. Each entry is a move — a
 | [S-08](s08-prompt-caching.md) | Prompt Caching | Cut repeated-context costs by 90% |
 | [S-09](s09-memory-systems.md) | Memory Systems | What persists between calls |
 | [S-10](s10-mcp.md) | MCP | Extend any model with tools |
-| [S-11](s11-llm-gateway-fallback.md) | LLM Gateway and Fallback Architecture | Survive the outage your provider will have |
+
+---
+
+### Architecture
+
+The components. How agents are wired together, deployed, and exposed.
+
+| Code | Name | One-liner |
+|---|---|---|
+| [S-11](s11-llm-gateway-fallback.md) | LLM Gateway and Fallback | Survive the outage your provider will have |
 | [S-12](s12-streaming.md) | Streaming Response Delivery | Stream to humans, not to code |
 | [S-13](s13-context-engineering.md) | Context Engineering | The smallest high-signal token set that works |
 | [S-14](s14-a2a-protocol.md) | A2A Protocol | The agent-to-agent layer beside MCP |
@@ -24,6 +41,15 @@ Agent architectures and the patterns that build them. Each entry is a move — a
 | [S-18](s18-tokenization.md) | Tokenization | What a token is, and why it's the bill |
 | [S-19](s19-agent-loop.md) | The Agent Loop | Reason-act-observe; what makes it an agent |
 | [S-20](s20-agent-skills.md) | Agent Skills | SKILL.md; teach the how, load it only when needed |
+
+---
+
+### Reasoning & Quality
+
+The moves that improve accuracy, reduce hallucination, and manage uncertainty at inference time.
+
+| Code | Name | One-liner |
+|---|---|---|
 | [S-21](s21-context-compaction.md) | Context Compaction | Summarize old turns, continue in a fresh window |
 | [S-22](s22-tool-selection-at-scale.md) | Tool Selection at Scale | Retrieve the right tools; don't dump all of them |
 | [S-23](s23-workflows-vs-agents.md) | Workflows vs Agents | Default to a workflow; add autonomy only where needed |

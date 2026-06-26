@@ -1,8 +1,9 @@
 - [Home](/)
 - [The Laws](laws.md)
 
-- **Book of Stacks**
+- **Book of Patterns**
   - [Overview](stacks/)
+  - *— Foundations —*
   - [S-01 · Local Model Dispatch](stacks/s01-local-model-dispatch.md)
   - [S-02 · Context Budget](stacks/s02-context-budget.md)
   - [S-03 · Tool Use](stacks/s03-tool-use.md)
@@ -13,6 +14,7 @@
   - [S-08 · Prompt Caching](stacks/s08-prompt-caching.md)
   - [S-09 · Memory Systems](stacks/s09-memory-systems.md)
   - [S-10 · MCP](stacks/s10-mcp.md)
+  - *— Architecture —*
   - [S-11 · LLM Gateway and Fallback Architecture](stacks/s11-llm-gateway-fallback.md)
   - [S-12 · Streaming Response Delivery](stacks/s12-streaming.md)
   - [S-13 · Context Engineering](stacks/s13-context-engineering.md)
@@ -23,6 +25,7 @@
   - [S-18 · Tokenization](stacks/s18-tokenization.md)
   - [S-19 · The Agent Loop](stacks/s19-agent-loop.md)
   - [S-20 · Agent Skills](stacks/s20-agent-skills.md)
+  - *— Reasoning & Quality —*
   - [S-21 · Context Compaction](stacks/s21-context-compaction.md)
   - [S-22 · Tool Selection at Scale](stacks/s22-tool-selection-at-scale.md)
   - [S-23 · Workflows vs Agents](stacks/s23-workflows-vs-agents.md)
@@ -42,7 +45,7 @@
   - [W-05 · LLMOps and Agent Observability](workspace/w05-llmops-observability.md)
   - [W-06 · AGENTS.md](workspace/w06-agents-md.md)
 
-- **Book of the Forward-Deployed Engineer**
+- **Book of Production**
   - [Overview](forward-deployed/)
   - [F-01 · Shipping AI](forward-deployed/f01-shipping-ai.md)
   - [F-02 · Evaluation at Scale](forward-deployed/f02-evaluation-at-scale.md)

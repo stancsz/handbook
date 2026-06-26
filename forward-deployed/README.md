@@ -1,4 +1,4 @@
-# Book of the Forward-Deployed Engineer
+# Book of Production
 
 Shipping AI to real users — the field methods, the failure modes, what production actually demands. This book is for anyone who has to put an AI system in front of a customer and keep it there.
 
