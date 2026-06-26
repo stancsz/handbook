@@ -108,6 +108,7 @@
   - [S-100 · Live Data Freshness Contracts](stacks/s100-live-data-freshness-contracts.md)
   - [S-101 · Deterministic Agent Sessions](stacks/s101-deterministic-agent-sessions.md)
   - [S-102 · Composable Agent Data Layers](stacks/s102-composable-agent-data-layers.md)
+  - [S-103 · Cost-Aware Context Management](stacks/s103-cost-aware-context-management.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -195,6 +196,7 @@
   - [F-71 · Cost-Driven Prompt Design](forward-deployed/f71-cost-driven-prompt-design.md)
   - [F-72 · Per-Feature Cost Analysis](forward-deployed/f72-per-feature-cost-analysis.md)
   - [F-73 · Agent Output Lineage](forward-deployed/f73-agent-output-lineage.md)
+  - [F-74 · Agent Decision Tracing](forward-deployed/f74-agent-decision-tracing.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
