@@ -53,7 +53,7 @@ Thumbs up/down, correction rate, re-prompt rate, task completion rate. This is t
 > Receipt pending — 2026-06-25. Eval patterns are well-established in the field. LLM-as-judge calibration guidance sourced from RAGAS documentation and public ML papers.
 
 ## See also
-[F-01](f01-shipping-ai.md) · [F-03](f03-failure-modes.md) · [W-04](../workspace/w04-observability.md)
+[F-01](f01-shipping-ai.md) · [F-03](f03-failure-modes.md) · [F-12](f12-llm-as-a-judge.md) · [W-04](../workspace/w04-observability.md)
 
 ## Go deeper
 Keywords: `LLM eval` · `RAGAS` · `PromptFoo` · `DeepEval` · `Evals` · `LLM-as-judge` · `Braintrust` · `eval regression`
