@@ -17,6 +17,7 @@
   - [S-12 · Streaming Response Delivery](stacks/s12-streaming.md)
   - [S-13 · Context Engineering](stacks/s13-context-engineering.md)
   - [S-14 · A2A Protocol](stacks/s14-a2a-protocol.md)
+  - [S-15 · Browser and Computer-Use Agents](stacks/s15-browser-computer-use-agents.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)

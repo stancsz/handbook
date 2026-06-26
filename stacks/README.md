@@ -18,3 +18,4 @@ Agent architectures and the patterns that build them. Each entry is a move — a
 | [S-12](s12-streaming.md) | Streaming Response Delivery | Stream to humans, not to code |
 | [S-13](s13-context-engineering.md) | Context Engineering | The smallest high-signal token set that works |
 | [S-14](s14-a2a-protocol.md) | A2A Protocol | The agent-to-agent layer beside MCP |
+| [S-15](s15-browser-computer-use-agents.md) | Browser and Computer-Use Agents | Drive real UIs; the least reliable layer |
