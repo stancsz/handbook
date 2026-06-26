@@ -15,6 +15,7 @@
   - [S-10 · MCP](stacks/s10-mcp.md)
   - [S-11 · LLM Gateway and Fallback Architecture](stacks/s11-llm-gateway-fallback.md)
   - [S-12 · Streaming Response Delivery](stacks/s12-streaming.md)
+  - [S-13 · Context Engineering](stacks/s13-context-engineering.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)

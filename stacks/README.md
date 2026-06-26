@@ -14,3 +14,6 @@ Agent architectures and the patterns that build them. Each entry is a move — a
 | [S-08](s08-prompt-caching.md) | Prompt Caching | Cut repeated-context costs by 90% |
 | [S-09](s09-memory-systems.md) | Memory Systems | What persists between calls |
 | [S-10](s10-mcp.md) | MCP | Extend any model with tools |
+| [S-11](s11-llm-gateway-fallback.md) | LLM Gateway and Fallback Architecture | Survive the outage your provider will have |
+| [S-12](s12-streaming.md) | Streaming Response Delivery | Stream to humans, not to code |
+| [S-13](s13-context-engineering.md) | Context Engineering | The smallest high-signal token set that works |
