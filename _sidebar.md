@@ -70,6 +70,7 @@
   - [S-62 · Tool Error Messages](stacks/s62-tool-error-messages.md)
   - [S-63 · Output Text Cleaning](stacks/s63-output-text-cleaning.md)
   - [S-64 · Agent Output Schema Versioning](stacks/s64-agent-output-schema-versioning.md)
+  - [S-65 · Multi-Model Pipelines](stacks/s65-multi-model-pipelines.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -119,6 +120,7 @@
   - [F-33 · Prompt A/B Testing](forward-deployed/f33-prompt-ab-testing.md)
   - [F-34 · Async Agent Requests](forward-deployed/f34-async-agent-requests.md)
   - [F-35 · Workflow Token Budget](forward-deployed/f35-workflow-token-budget.md)
+  - [F-36 · Agent Persona and Character](forward-deployed/f36-agent-persona-and-character.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
