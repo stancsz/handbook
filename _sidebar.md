@@ -123,6 +123,7 @@
   - [S-115 · Agent HTTP Connection Reuse](stacks/s115-agent-http-connection-reuse.md)
   - [S-116 · Output Determinism Testing](stacks/s116-output-determinism-testing.md)
   - [S-117 · Webhook Event Deduplication](stacks/s117-webhook-event-deduplication.md)
+  - [S-118 · Adaptive Polling Interval](stacks/s118-adaptive-polling-interval.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -225,6 +226,7 @@
   - [F-86 · Prompt Token Budget CI](forward-deployed/f86-prompt-token-budget-ci.md)
   - [F-87 · Tool Call Argument Audit Log](forward-deployed/f87-tool-call-argument-audit-log.md)
   - [F-88 · Session Cost Ceiling](forward-deployed/f88-session-cost-ceiling.md)
+  - [F-89 · Verbatim Citation Verification](forward-deployed/f89-verbatim-citation-verification.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
