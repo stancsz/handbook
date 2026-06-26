@@ -109,6 +109,7 @@
   - [S-101 · Deterministic Agent Sessions](stacks/s101-deterministic-agent-sessions.md)
   - [S-102 · Composable Agent Data Layers](stacks/s102-composable-agent-data-layers.md)
   - [S-103 · Cost-Aware Context Management](stacks/s103-cost-aware-context-management.md)
+  - [S-104 · Event-Stream Agent Integration](stacks/s104-event-stream-agent-integration.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -197,6 +198,7 @@
   - [F-72 · Per-Feature Cost Analysis](forward-deployed/f72-per-feature-cost-analysis.md)
   - [F-73 · Agent Output Lineage](forward-deployed/f73-agent-output-lineage.md)
   - [F-74 · Agent Decision Tracing](forward-deployed/f74-agent-decision-tracing.md)
+  - [F-75 · Tool Output Schema Contracts](forward-deployed/f75-tool-output-schema-contracts.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
