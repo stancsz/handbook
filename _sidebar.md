@@ -93,6 +93,7 @@
   - [S-85 · Batch Tool Design](stacks/s85-batch-tool-design.md)
   - [S-86 · Knowledge Base Document Updates](stacks/s86-knowledge-base-document-updates.md)
   - [S-87 · External API Response Validation](stacks/s87-external-api-response-validation.md)
+  - [S-88 · Tool Argument Coercion](stacks/s88-tool-argument-coercion.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -165,6 +166,7 @@
   - [F-56 · Prompt Composition Guards](forward-deployed/f56-prompt-composition-guards.md)
   - [F-57 · RAG Answer Citations](forward-deployed/f57-rag-answer-citations.md)
   - [F-58 · Structured Document Field Extraction](forward-deployed/f58-structured-document-extraction.md)
+  - [F-59 · Agent Memory Compression](forward-deployed/f59-agent-memory-compression.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
