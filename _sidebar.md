@@ -88,6 +88,7 @@
   - [S-80 · Prompt Cache Warming](stacks/s80-prompt-cache-warming.md)
   - [S-81 · Retrieval Metadata Filtering](stacks/s81-retrieval-metadata-filtering.md)
   - [S-82 · Semantic Query Routing](stacks/s82-semantic-query-routing.md)
+  - [S-83 · Cross-Encoder Reranking](stacks/s83-cross-encoder-reranking.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -155,6 +156,7 @@
   - [F-51 · Agent Action Rollback](forward-deployed/f51-agent-action-rollback.md)
   - [F-52 · Conversation Branching](forward-deployed/f52-conversation-branching.md)
   - [F-53 · Token Budget Renegotiation](forward-deployed/f53-token-budget-renegotiation.md)
+  - [F-54 · Privacy-Safe Request Logging](forward-deployed/f54-privacy-safe-logging.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
