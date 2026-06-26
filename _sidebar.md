@@ -55,6 +55,7 @@
   - [S-47 · Output Length Control](stacks/s47-output-length-control.md)
   - [S-48 · Memory Write Routing](stacks/s48-memory-write-routing.md)
   - [S-49 · Retrieval Evaluation](stacks/s49-retrieval-evaluation.md)
+  - [S-50 · Prompt Format and Structure](stacks/s50-prompt-format.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
