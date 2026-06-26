@@ -25,3 +25,4 @@ Agent architectures and the patterns that build them. Each entry is a move — a
 | [S-19](s19-agent-loop.md) | The Agent Loop | Reason-act-observe; what makes it an agent |
 | [S-20](s20-agent-skills.md) | Agent Skills | SKILL.md; teach the how, load it only when needed |
 | [S-21](s21-context-compaction.md) | Context Compaction | Summarize old turns, continue in a fresh window |
+| [S-22](s22-tool-selection-at-scale.md) | Tool Selection at Scale | Retrieve the right tools; don't dump all of them |
