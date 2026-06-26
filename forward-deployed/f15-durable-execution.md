@@ -10,7 +10,7 @@ A long-running agent that restarts from scratch on every crash is a fragile scri
 
 ## The move
 - **Four pillars:**
-  1. **Checkpoint** the execution state (which steps are done + their results) to durable storage after each meaningful step.
+  1. **Checkpoint** the execution state (which steps are done + their results) to durable storage after each meaningful step — write *atomically* (temp file + rename) so a crash mid-write can't leave a corrupt checkpoint.
   2. **Resume** from the latest checkpoint on restart — skip completed steps.
   3. **Retry** transient step failures with backoff.
   4. **Idempotency** — a retried step must not duplicate side effects. Give writes an idempotency key; read-only calls (search, lookup) are safe to replay freely.
