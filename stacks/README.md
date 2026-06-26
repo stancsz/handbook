@@ -22,3 +22,4 @@ Agent architectures and the patterns that build them. Each entry is a move — a
 | [S-16](s16-prompting.md) | Prompting | How to phrase the ask, by model family |
 | [S-17](s17-embeddings.md) | Embeddings | Text as vectors; the basis of RAG and memory |
 | [S-18](s18-tokenization.md) | Tokenization | What a token is, and why it's the bill |
+| [S-19](s19-agent-loop.md) | The Agent Loop | Reason-act-observe; what makes it an agent |

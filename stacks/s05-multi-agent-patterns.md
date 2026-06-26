@@ -69,7 +69,7 @@ At a 5% per-step failure rate:
 > Receipt pending — 2026-06-25. Failure rate math is arithmetic. Pattern descriptions sourced from public agent framework documentation and the research literature (AAAI 2026 S-DAG paper).
 
 ## See also
-[S-06](s06-model-routing.md) · [S-03](s03-tool-use.md) · [F-02](../forward-deployed/f02-evaluation-at-scale.md)
+[S-19](s19-agent-loop.md) · [S-06](s06-model-routing.md) · [S-03](s03-tool-use.md) · [F-02](../forward-deployed/f02-evaluation-at-scale.md)
 
 ## Go deeper
 Keywords: `LangGraph` · `Claude Agent SDK` · `CrewAI` · `AutoGen` · `supervisor pattern` · `fan-out` · `orchestration`

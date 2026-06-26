@@ -70,7 +70,7 @@ Tokens: in=2778 out=34
 - 2778 input tokens for a single tool definition. Ollama serializes tool schemas verbosely; hosted APIs are more efficient. Count your tool tokens before adding many tools to a tight context budget.
 
 ## See also
-[S-04](s04-structured-output.md) · [S-10](s10-mcp.md) · [S-05](s05-multi-agent-patterns.md)
+[S-19](s19-agent-loop.md) · [S-04](s04-structured-output.md) · [S-10](s10-mcp.md) · [S-05](s05-multi-agent-patterns.md)
 
 ## Go deeper
 Keywords: `function calling` · `tool use` · `Anthropic tool_use` · `OpenAI function calling` · `agentic loop` · `ReAct pattern`
