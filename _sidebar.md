@@ -122,6 +122,7 @@
   - [S-114 · Reasoning Scratchpad Budget](stacks/s114-reasoning-scratchpad-budget.md)
   - [S-115 · Agent HTTP Connection Reuse](stacks/s115-agent-http-connection-reuse.md)
   - [S-116 · Output Determinism Testing](stacks/s116-output-determinism-testing.md)
+  - [S-117 · Webhook Event Deduplication](stacks/s117-webhook-event-deduplication.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -223,6 +224,7 @@
   - [F-85 · Tool Call Latency Profiling](forward-deployed/f85-tool-call-latency-profiling.md)
   - [F-86 · Prompt Token Budget CI](forward-deployed/f86-prompt-token-budget-ci.md)
   - [F-87 · Tool Call Argument Audit Log](forward-deployed/f87-tool-call-argument-audit-log.md)
+  - [F-88 · Session Cost Ceiling](forward-deployed/f88-session-cost-ceiling.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
