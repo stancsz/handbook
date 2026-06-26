@@ -42,7 +42,7 @@ The minimum bar for production is the three-layer model above. The [OWASP AI Sec
 > Sourced from NeMo Guardrails GitHub repo, Llama Guard 3 and ShieldGemma HuggingFace model cards, and the OWASP AI Security and Privacy Guide. Tool availability and latency figures confirmed via public documentation, verified 2026-06-25. Colang snippet is illustrative — run against a real Guardrails installation to validate syntax.
 
 ## See also
-[F-13](f13-prompt-injection.md) · [F-03](f03-failure-modes.md) · [S-03](../stacks/s03-tool-use.md) · [F-01](f01-shipping-ai.md)
+[F-13](f13-prompt-injection.md) · [F-03](f03-failure-modes.md) · [S-03](../stacks/s03-tool-use.md) · [F-01](f01-shipping-ai.md) · [F-21](f21-data-privacy-pii.md)
 
 ## Go deeper
 Keywords: `NeMo Guardrails` · `Llama Guard` · `ShieldGemma` · `prompt injection` · `OWASP AI Security` · `defense in depth` · `content safety classifier`
