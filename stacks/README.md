@@ -31,3 +31,4 @@ Agent architectures and the patterns that build them. Each entry is a move — a
 | [S-25](s25-reflection.md) | Reflection | Generate, critique, refine — with a stop rule |
 | [S-26](s26-planning.md) | Planning | Decompose into subtasks, then execute |
 | [S-27](s27-reranking.md) | Reranking | Recall wide, then rerank for precision |
+| [S-28](s28-progressive-disclosure.md) | Progressive Disclosure | Index first; load the body only when needed |

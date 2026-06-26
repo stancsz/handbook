@@ -30,6 +30,7 @@
   - [S-25 · Reflection](stacks/s25-reflection.md)
   - [S-26 · Planning](stacks/s26-planning.md)
   - [S-27 · Reranking](stacks/s27-reranking.md)
+  - [S-28 · Progressive Disclosure](stacks/s28-progressive-disclosure.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)

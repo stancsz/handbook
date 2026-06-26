@@ -20,7 +20,7 @@ A folder — `SKILL.md` plus optional files — that teaches an agent *how* to d
 > This repo ships a working skill — `.claude/skills/handbook.md` (the `/handbook` navigator, ~2KB), a real instance of the pattern (Claude Code's skill format; the cross-tool standard adds YAML `name`/`description` frontmatter). Mechanism and token figures from Anthropic's [Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) writeup and analyses of its 17 official skills: discovery cost ≈55–235 tokens/skill (median ~80), activated bodies ~275–8,000 tokens (median ~2,000). Agent Skills became an open standard on 2025-12-18, since adopted across Claude Code, OpenAI Codex, Gemini CLI, GitHub Copilot, and Cursor. Verified 2026-06-25; token figures are reported, not independently measured here.
 
 ## See also
-[S-10](s10-mcp.md) · [W-06](../workspace/w06-agents-md.md) · [S-13](s13-context-engineering.md) · [S-03](s03-tool-use.md) · [S-19](s19-agent-loop.md)
+[S-28](s28-progressive-disclosure.md) · [S-10](s10-mcp.md) · [W-06](../workspace/w06-agents-md.md) · [S-13](s13-context-engineering.md) · [S-03](s03-tool-use.md)
 
 ## Go deeper
 Keywords: `Agent Skills` · `SKILL.md` · `progressive disclosure` · `MCP vs Skills` · `capability vs procedure` · `context window` · `skill discovery` · `bash tool`
