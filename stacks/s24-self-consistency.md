@@ -31,7 +31,7 @@ majority vote:          0.05  -> CORRECT, margin 8/9
 A modest but honest demonstration of the mechanism: a single sample had a real (~11%) chance of returning the wrong outlier; voting over 9 suppressed it and returned the correct answer with a strong 8/9 confidence margin. The gains are largest where single-sample accuracy is *lower* — Wang et al. report substantial improvements over greedy chain-of-thought on math benchmarks like GSM8K (exact figures are model- and setup-dependent; check the paper). Here the model was already mostly right, so the win is outlier suppression plus a free confidence signal — not a dramatic rescue.
 
 ## See also
-[S-16](s16-prompting.md) · [S-06](s06-model-routing.md) · [F-11](../forward-deployed/f11-agent-reliability.md) · [R-02](../frontier/r02-reasoning-models.md) · [S-05](s05-multi-agent-patterns.md)
+[S-25](s25-reflection.md) · [S-16](s16-prompting.md) · [S-06](s06-model-routing.md) · [F-11](../forward-deployed/f11-agent-reliability.md) · [R-02](../frontier/r02-reasoning-models.md)
 
 ## Go deeper
 Keywords: `self-consistency` · `majority vote` · `chain-of-thought` · `sampling temperature` · `Wang 2022` · `arXiv 2203.11171` · `vote margin` · `GSM8K` · `test-time compute`

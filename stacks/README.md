@@ -28,3 +28,4 @@ Agent architectures and the patterns that build them. Each entry is a move — a
 | [S-22](s22-tool-selection-at-scale.md) | Tool Selection at Scale | Retrieve the right tools; don't dump all of them |
 | [S-23](s23-workflows-vs-agents.md) | Workflows vs Agents | Default to a workflow; add autonomy only where needed |
 | [S-24](s24-self-consistency.md) | Self-Consistency | Sample k chains, take the majority vote |
+| [S-25](s25-reflection.md) | Reflection | Generate, critique, refine — with a stop rule |
