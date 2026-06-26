@@ -52,7 +52,7 @@ Question: {query}
 > Receipt pending — 2026-06-25. Pattern is well-established; specific chunk sizes and retrieval configurations should be tuned per corpus. Vector DB benchmarks change frequently — verify at ann-benchmarks.com before committing to a database.
 
 ## See also
-[S-27](s27-reranking.md) · [S-17](s17-embeddings.md) · [S-31](s31-prompt-compression.md) · [S-09](s09-memory-systems.md) · [R-03](../frontier/r03-fine-tuning-vs-prompting.md)
+[S-27](s27-reranking.md) · [S-17](s17-embeddings.md) · [S-31](s31-prompt-compression.md) · [S-09](s09-memory-systems.md) · [R-03](../frontier/r03-fine-tuning-vs-prompting.md) · [S-33](s33-live-data-vs-stale-snapshots.md)
 
 ## Go deeper
 Keywords: `RAG` · `vector database` · `Chroma` · `pgvector` · `Pinecone` · `Weaviate` · `FAISS` · `cross-encoder reranking` · `HyDE` · `RAGAS`
