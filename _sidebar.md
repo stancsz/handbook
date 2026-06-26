@@ -128,6 +128,7 @@
   - [S-120 · Output Schema Backward Compat Adapter](stacks/s120-output-schema-backward-compat-adapter.md)
   - [S-121 · Context Window Utilization Monitor](stacks/s121-context-window-utilization-monitor.md)
 
+  - [S-122 · Retrieved Chunk Deduplication at Prompt Assembly](stacks/s122-retrieved-chunk-dedup.md)
 - **Book of the Workspace**
   - [Overview](workspace/)
   - [W-01 · AI Dev Environment](workspace/w01-ai-dev-environment.md)
@@ -234,6 +235,7 @@
   - [F-91 · Rate Limit Proactive Pacing](forward-deployed/f91-rate-limit-proactive-pacing.md)
   - [F-92 · Agent Output Arithmetic Invariants](forward-deployed/f92-agent-output-arithmetic-invariants.md)
 
+  - [F-93 · Claim Verifiability Classification](forward-deployed/f93-claim-verifiability-classification.md)
 - **Book of the Frontier**
   - [Overview](frontier/)
   - [R-01 · Model Landscape](frontier/r01-model-landscape.md)
