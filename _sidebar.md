@@ -135,6 +135,7 @@
   - [S-126 · Event-Driven Cache Invalidation](stacks/s126-event-driven-cache-invalidation.md)
   - [S-127 · Cross-Sentence Redundancy Removal](stacks/s127-cross-sentence-redundancy-removal.md)
   - [S-128 · Freshness-Annotated Context Injection](stacks/s128-freshness-annotated-context-injection.md)
+  - [S-129 · Prompt Section Cache Stability Tracker](stacks/s129-prompt-section-cache-stability.md)
 - **Book of the Workspace**
   - [Overview](workspace/)
   - [W-01 · AI Dev Environment](workspace/w01-ai-dev-environment.md)
@@ -248,6 +249,7 @@
   - [F-97 · Output Field Confidence Annotation](forward-deployed/f97-output-field-confidence-annotation.md)
   - [F-98 · Live Source Fan-Out](forward-deployed/f98-live-source-fanout.md)
   - [F-99 · Numeric Unit Consistency Check](forward-deployed/f99-numeric-unit-consistency-check.md)
+  - [F-100 · Output Claim Temporal Scope Check](forward-deployed/f100-output-claim-temporal-scope.md)
 - **Book of the Frontier**
   - [Overview](frontier/)
   - [R-01 · Model Landscape](frontier/r01-model-landscape.md)
