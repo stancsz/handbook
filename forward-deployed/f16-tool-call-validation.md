@@ -53,7 +53,7 @@ Scenario 4 — Out-of-range value ("priority 9 urgent notification"):
 
 ## See also
 
-[F-04](f04-guardrails.md) · [F-13](f13-prompt-injection.md) · [S-03](../stacks/s03-tool-use.md) · [F-09](f09-human-in-the-loop.md)
+[F-04](f04-guardrails.md) · [F-13](f13-prompt-injection.md) · [S-03](../stacks/s03-tool-use.md) · [F-09](f09-human-in-the-loop.md) · [S-51](../stacks/s51-tool-schema-design.md)
 
 ## Go deeper
 

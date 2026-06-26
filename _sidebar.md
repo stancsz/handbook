@@ -56,6 +56,7 @@
   - [S-48 · Memory Write Routing](stacks/s48-memory-write-routing.md)
   - [S-49 · Retrieval Evaluation](stacks/s49-retrieval-evaluation.md)
   - [S-50 · Prompt Format and Structure](stacks/s50-prompt-format.md)
+  - [S-51 · Tool Schema Design](stacks/s51-tool-schema-design.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -97,6 +98,7 @@
   - [F-25 · Red-Teaming AI Systems](forward-deployed/f25-red-teaming.md)
   - [F-26 · Behavioral Drift Detection](forward-deployed/f26-behavioral-drift-detection.md)
   - [F-27 · Data Flywheel](forward-deployed/f27-data-flywheel.md)
+  - [F-28 · Prompt Debugging](forward-deployed/f28-prompt-debugging.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
