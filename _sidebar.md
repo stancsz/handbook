@@ -107,6 +107,7 @@
   - [S-99 · Agent Task Economics](stacks/s99-agent-task-economics.md)
   - [S-100 · Live Data Freshness Contracts](stacks/s100-live-data-freshness-contracts.md)
   - [S-101 · Deterministic Agent Sessions](stacks/s101-deterministic-agent-sessions.md)
+  - [S-102 · Composable Agent Data Layers](stacks/s102-composable-agent-data-layers.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -193,6 +194,7 @@
   - [F-70 · Verifiable Output Design](forward-deployed/f70-verifiable-output-design.md)
   - [F-71 · Cost-Driven Prompt Design](forward-deployed/f71-cost-driven-prompt-design.md)
   - [F-72 · Per-Feature Cost Analysis](forward-deployed/f72-per-feature-cost-analysis.md)
+  - [F-73 · Agent Output Lineage](forward-deployed/f73-agent-output-lineage.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
