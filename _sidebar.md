@@ -115,6 +115,7 @@
   - [S-107 · Pipeline Stage Output Budget](stacks/s107-pipeline-stage-output-budget.md)
   - [S-108 · Progressive Tool Results](stacks/s108-progressive-tool-results.md)
   - [S-109 · Agent Idle Cost](stacks/s109-agent-idle-cost.md)
+  - [S-110 · Incremental Vector Index Updates](stacks/s110-incremental-vector-index-updates.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -209,6 +210,7 @@
   - [F-78 · Confidence-Gated Delivery](forward-deployed/f78-confidence-gated-delivery.md)
   - [F-79 · Semantic Regression Detection](forward-deployed/f79-semantic-regression-detection.md)
   - [F-80 · Agent-to-Agent Authentication](forward-deployed/f80-agent-to-agent-authentication.md)
+  - [F-81 · Cost Attribution by User Action](forward-deployed/f81-cost-attribution-by-user-action.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
