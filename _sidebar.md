@@ -50,6 +50,7 @@
   - [S-42 · Event-Driven Agents](stacks/s42-event-driven-agents.md)
   - [S-43 · Tool Result Caching](stacks/s43-tool-result-caching.md)
   - [S-44 · Few-Shot Example Selection](stacks/s44-few-shot-example-selection.md)
+  - [S-45 · Sampling Parameters](stacks/s45-sampling-parameters.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
