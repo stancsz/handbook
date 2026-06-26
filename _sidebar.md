@@ -86,6 +86,7 @@
   - [S-78 · Agent-to-Human Escalation](stacks/s78-agent-to-human-escalation.md)
   - [S-79 · Hybrid Search](stacks/s79-hybrid-search.md)
   - [S-80 · Prompt Cache Warming](stacks/s80-prompt-cache-warming.md)
+  - [S-81 · Retrieval Metadata Filtering](stacks/s81-retrieval-metadata-filtering.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -151,6 +152,7 @@
   - [F-49 · Embedding Model Selection](forward-deployed/f49-embedding-model-selection.md)
   - [F-50 · RAG Answer Debugging](forward-deployed/f50-rag-answer-debugging.md)
   - [F-51 · Agent Action Rollback](forward-deployed/f51-agent-action-rollback.md)
+  - [F-52 · Conversation Branching](forward-deployed/f52-conversation-branching.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
