@@ -44,6 +44,7 @@
   - [F-07 · Evaluation-Driven Development](forward-deployed/f07-evaluation-driven-development.md)
   - [F-08 · Agent Cost Control](forward-deployed/f08-agent-cost-control.md)
   - [F-09 · Human in the Loop](forward-deployed/f09-human-in-the-loop.md)
+  - [F-10 · Agent Identity and Access](forward-deployed/f10-agent-identity-and-access.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)

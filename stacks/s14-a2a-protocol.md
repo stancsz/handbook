@@ -20,7 +20,7 @@ A standard for independent agents to discover, talk to, and delegate work to eac
 > A2A reached v1.0 in early 2026 (added gRPC, signed Agent Cards, multi-tenancy). Originated by Google; IBM's ACP merged into it (Aug 2025); now governed by the Linux Foundation's Agentic AI Foundation — the same body that governs MCP and [AGENTS.md](../workspace/w06-agents-md.md). Built on HTTP, JSON-RPC, and SSE. The exact Agent Card path (e.g. `/.well-known/agent.json`) is version-dependent — check the spec revision you target. Cross-vendor trust and per-delegation cost accounting are documented open gaps as of mid-2026. Sources verified 2026-06-25; not independently implemented here.
 
 ## See also
-[S-10](s10-mcp.md) · [S-05](s05-multi-agent-patterns.md) · [S-12](s12-streaming.md) · [W-06](../workspace/w06-agents-md.md) · [F-05](../forward-deployed/f05-agent-failure-taxonomy.md)
+[S-10](s10-mcp.md) · [S-05](s05-multi-agent-patterns.md) · [S-12](s12-streaming.md) · [W-06](../workspace/w06-agents-md.md) · [F-05](../forward-deployed/f05-agent-failure-taxonomy.md) · [F-10](../forward-deployed/f10-agent-identity-and-access.md)
 
 ## Go deeper
 Keywords: `A2A protocol` · `Agent Card` · `agent-to-agent` · `MCP` · `Agentic AI Foundation` · `JSON-RPC` · `agent interoperability` · `two-layer architecture`

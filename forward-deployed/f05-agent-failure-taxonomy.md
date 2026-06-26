@@ -59,7 +59,7 @@ Fix: explicit max-step budget enforced in the loop controller. Dead-end detectio
 
 ## See also
 
-[F-03](f03-failure-modes.md) · [F-02](f02-evaluation-at-scale.md) · [S-05](../stacks/s05-multi-agent-patterns.md) · [S-10](../stacks/s10-mcp.md)
+[F-03](f03-failure-modes.md) · [F-02](f02-evaluation-at-scale.md) · [S-05](../stacks/s05-multi-agent-patterns.md) · [S-10](../stacks/s10-mcp.md) · [F-10](f10-agent-identity-and-access.md)
 
 ## Go deeper
 
