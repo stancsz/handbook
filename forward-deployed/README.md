@@ -9,3 +9,4 @@ Shipping AI to real users — the field methods, the failure modes, what product
 | [F-03](f03-failure-modes.md) | Failure Modes | What breaks, when, and the receipts |
 | [F-04](f04-guardrails.md) | Agentic Safety and Guardrails | Defense layers before an agent touches production |
 | [F-05](f05-agent-failure-taxonomy.md) | Agent Failure Taxonomy | Agentic-specific failures that single-call LLMs don't produce |
+| [F-06](f06-agent-sandboxing.md) | Agent Sandboxing | Isolate agent-run code so a bad command can't reach the host |

@@ -21,7 +21,7 @@ The job: find the fewest tokens that maximize the chance of the right outcome. F
 This is the operational form of [Law 2](../laws.md) (Tokens are the budget): every token is defended or cut.
 
 ## Receipt
-> Term formalized by Anthropic, Sept 2025 — ["curating and maintaining the optimal set of tokens during LLM inference"](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents). Context-rot degradation measured by Chroma (2025) across frontier model families. The ~60% compaction threshold is a working rule of thumb, not a measured optimum — re-derive per model. Sources verified 2026-06-25; the frontier moves fast, so re-check the framing against current Anthropic docs.
+> Term formalized by Anthropic, Sept 2025 — ["curating and maintaining the optimal set of tokens during LLM inference"](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents). ["Context rot"](https://research.trychroma.com/context-rot) measured by Chroma (Hong, Troynikov, Huber — July 2025): all 18 frontier models tested degraded as input length grew, well before the window filled. Distinct from context-window *overflow* — a 200K model can rot at 50K. The ~60% compaction threshold is a working rule of thumb, not a measured optimum — re-derive per model. Sources verified 2026-06-25; the frontier moves fast, so re-check the framing against current Anthropic docs.
 
 ## See also
 [S-02](s02-context-budget.md) · [S-07](s07-rag.md) · [S-08](s08-prompt-caching.md) · [S-09](s09-memory-systems.md) · [S-05](s05-multi-agent-patterns.md)

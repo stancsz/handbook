@@ -32,6 +32,7 @@
   - [F-03 · Failure Modes](forward-deployed/f03-failure-modes.md)
   - [F-04 · Agentic Safety and Guardrails](forward-deployed/f04-guardrails.md)
   - [F-05 · Agent Failure Taxonomy](forward-deployed/f05-agent-failure-taxonomy.md)
+  - [F-06 · Agent Sandboxing](forward-deployed/f06-agent-sandboxing.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
