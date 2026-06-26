@@ -45,6 +45,7 @@
   - [S-37 · Batch vs Real-Time Pipelines](stacks/s37-batch-vs-realtime.md)
   - [S-38 · Agent State Design](stacks/s38-agent-state-design.md)
   - [S-39 · Output Parsing Robustness](stacks/s39-output-parsing-robustness.md)
+  - [S-40 · Multimodal Inputs](stacks/s40-multimodal-inputs.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
