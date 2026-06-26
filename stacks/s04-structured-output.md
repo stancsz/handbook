@@ -23,9 +23,9 @@ schema_tool = {
         "properties": {
             "name": {"type": "string"},
             "age": {"type": "integer"},
-            "email": {"type": "string"}
+            "employer": {"type": "string"}
         },
-        "required": ["name"]
+        "required": ["name", "age"]
     }
 }
 # Pass as tool, set tool_choice to force the call
