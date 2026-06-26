@@ -106,6 +106,7 @@
   - [S-98 · Streaming Agent Loop](stacks/s98-streaming-agent-loop.md)
   - [S-99 · Agent Task Economics](stacks/s99-agent-task-economics.md)
   - [S-100 · Live Data Freshness Contracts](stacks/s100-live-data-freshness-contracts.md)
+  - [S-101 · Deterministic Agent Sessions](stacks/s101-deterministic-agent-sessions.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -191,6 +192,7 @@
   - [F-69 · Output Surface Adapters](forward-deployed/f69-output-surface-adapters.md)
   - [F-70 · Verifiable Output Design](forward-deployed/f70-verifiable-output-design.md)
   - [F-71 · Cost-Driven Prompt Design](forward-deployed/f71-cost-driven-prompt-design.md)
+  - [F-72 · Per-Feature Cost Analysis](forward-deployed/f72-per-feature-cost-analysis.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
