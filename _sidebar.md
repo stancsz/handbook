@@ -99,6 +99,7 @@
   - [S-91 · Multilingual Prompt Management](stacks/s91-multilingual-prompt-management.md)
   - [S-92 · Tool Schema Migration](stacks/s92-tool-schema-migration.md)
   - [S-93 · Tool Side-Effect Idempotency](stacks/s93-tool-side-effect-idempotency.md)
+  - [S-94 · Agent Output Diffing](stacks/s94-agent-output-diffing.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -177,6 +178,7 @@
   - [F-62 · Handling Unexpected Model Refusals](forward-deployed/f62-handling-model-refusals.md)
   - [F-63 · Mid-Task Context Recovery](forward-deployed/f63-mid-task-context-recovery.md)
   - [F-64 · Prompt Template Testing](forward-deployed/f64-prompt-template-testing.md)
+  - [F-65 · Prompt Regression Testing](forward-deployed/f65-prompt-regression-testing.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
