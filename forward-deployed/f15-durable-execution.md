@@ -36,7 +36,7 @@ WITHOUT checkpointing (naive restart from scratch):
 Checkpointing resumed at the exact step of failure and each side effect fired **exactly once**. The naive restart re-ran the two pre-crash steps, firing their side effects **twice** — two charges, two emails. It also re-ran `extract` and got a *different* answer (4471 → 2), so the redo wasn't even consistent. That double-firing is the whole reason idempotency is pillar four: without it, "just retry" silently corrupts state.
 
 ## See also
-[S-09](../stacks/s09-memory-systems.md) · [F-09](f09-human-in-the-loop.md) · [F-11](f11-agent-reliability.md) · [S-23](../stacks/s23-workflows-vs-agents.md) · [F-05](f05-agent-failure-taxonomy.md)
+[S-09](../stacks/s09-memory-systems.md) · [F-09](f09-human-in-the-loop.md) · [F-11](f11-agent-reliability.md) · [S-23](../stacks/s23-workflows-vs-agents.md) · [F-05](f05-agent-failure-taxonomy.md) · [S-38](../stacks/s38-agent-state-design.md)
 
 ## Go deeper
 Keywords: `durable execution` · `checkpointing` · `resumability` · `idempotency key` · `Temporal` · `LangGraph checkpointer` · `event sourcing` · `continue-as-new` · `human-in-the-loop` · `exactly-once`
