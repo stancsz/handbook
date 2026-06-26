@@ -117,6 +117,7 @@
   - [S-109 · Agent Idle Cost](stacks/s109-agent-idle-cost.md)
   - [S-110 · Incremental Vector Index Updates](stacks/s110-incremental-vector-index-updates.md)
   - [S-111 · Partial Context Refresh](stacks/s111-partial-context-refresh.md)
+  - [S-112 · Speculative Pre-Generation](stacks/s112-speculative-pre-generation.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
@@ -213,6 +214,7 @@
   - [F-80 · Agent-to-Agent Authentication](forward-deployed/f80-agent-to-agent-authentication.md)
   - [F-81 · Cost Attribution by User Action](forward-deployed/f81-cost-attribution-by-user-action.md)
   - [F-82 · Agent Output Provenance Trail](forward-deployed/f82-agent-output-provenance-trail.md)
+  - [F-83 · Agent Capability Testing](forward-deployed/f83-agent-capability-testing.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
