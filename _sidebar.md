@@ -186,6 +186,7 @@
   - [S-177 · Output Length Overrun Gate](stacks/s177-output-length-overrun-gate.md)
   - [S-178 · Context Freshness Watermark](stacks/s178-context-freshness-watermark.md)
   - [S-179 · Adaptive Retrieval Top-K Selector](stacks/s179-adaptive-retrieval-top-k-selector.md)
+  - [S-180 · Cross-Layer Prompt Instruction Deduplicator](stacks/s180-cross-layer-prompt-instruction-deduplicator.md)
 - **Book of the Workspace**
   - [Overview](workspace/)
   - [W-01 · AI Dev Environment](workspace/w01-ai-dev-environment.md)
@@ -350,6 +351,7 @@
   - [F-148 · Extraction Field Source Quote Verification](forward-deployed/f148-extraction-field-source-quote-verification.md)
   - [F-149 · Extraction Date Plausibility Check](forward-deployed/f149-extraction-date-plausibility-check.md)
   - [F-150 · Extraction Mutual Field Completeness Check](forward-deployed/f150-extraction-mutual-field-completeness-check.md)
+  - [F-151 · Extraction Field Enum Validation](forward-deployed/f151-extraction-field-enum-validation.md)
 - **Book of the Frontier**
   - [Overview](frontier/)
   - [R-01 · Model Landscape](frontier/r01-model-landscape.md)
