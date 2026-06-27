@@ -197,6 +197,7 @@
   - [S-188 · Predictive Live Data Prefetch](stacks/s188-predictive-live-data-prefetch.md)
   - [S-189 · Request-Type Instruction Selector](stacks/s189-request-type-instruction-selector.md)
   - [S-190 · Live Data Delta Injection](stacks/s190-live-data-delta-injection.md)
+  - [S-191 · Parallel Fan-Out Cost Cap](stacks/s191-parallel-fan-out-cost-cap.md)
 - **Book of the Workspace**
   - [Overview](workspace/)
   - [W-01 · AI Dev Environment](workspace/w01-ai-dev-environment.md)
@@ -372,6 +373,7 @@
   - [F-159 · Tool Call Sequence Invariant](forward-deployed/f159-tool-call-sequence-invariant.md)
   - [F-160 · Agent Termination Condition Verifier](forward-deployed/f160-agent-termination-condition-verifier.md)
   - [F-161 · Extraction Version Diff Audit](forward-deployed/f161-extraction-version-diff-audit.md)
+  - [F-162 · Tool Result Freshness Assertion](forward-deployed/f162-tool-result-freshness-assertion.md)
 - **Book of the Frontier**
   - [Overview](frontier/)
   - [R-01 · Model Landscape](frontier/r01-model-landscape.md)
