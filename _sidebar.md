@@ -191,6 +191,7 @@
   - [S-182 · Streaming Output Budget Gate](stacks/s182-streaming-output-budget-gate.md)
   - [S-183 · Tool Description Compression](stacks/s183-tool-description-compression.md)
   - [S-184 · Input Token Structure Audit](stacks/s184-input-token-structure-audit.md)
+  - [S-185 · Task Merge vs Split Cost Model](stacks/s185-task-merge-vs-split-cost-model.md)
 - **Book of the Workspace**
   - [Overview](workspace/)
   - [W-01 · AI Dev Environment](workspace/w01-ai-dev-environment.md)
@@ -360,6 +361,7 @@
   - [F-153 · Extraction Temporal Arithmetic Check](forward-deployed/f153-extraction-temporal-arithmetic-check.md)
   - [F-154 · Extraction Field-Level Retry](forward-deployed/f154-extraction-field-level-retry.md)
   - [F-155 · Extraction Array Field Uniqueness Check](forward-deployed/f155-extraction-array-field-uniqueness-check.md)
+  - [F-156 · Extraction Field Length Bounds Check](forward-deployed/f156-extraction-field-length-bounds-check.md)
 - **Book of the Frontier**
   - [Overview](frontier/)
   - [R-01 · Model Landscape](frontier/r01-model-landscape.md)
