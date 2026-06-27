@@ -154,6 +154,7 @@
   - [S-145 · Derived Field Computation Registry](stacks/s145-derived-field-computation-registry.md)
   - [S-146 · Source Field Acceptance Testing](stacks/s146-source-field-acceptance-testing.md)
   - [S-147 · Entity-Level Source Priority Override](stacks/s147-entity-source-priority-override.md)
+  - [S-148 · Per-Action Data Freshness Budget](stacks/s148-per-action-data-freshness-budget.md)
 - **Book of the Workspace**
   - [Overview](workspace/)
   - [W-01 · AI Dev Environment](workspace/w01-ai-dev-environment.md)
@@ -286,6 +287,7 @@
   - [F-116 · Per-Field Extraction Error Rate Tracking](forward-deployed/f116-per-field-extraction-error-rate-tracking.md)
   - [F-117 · Post-Output Prompt Injection Detection](forward-deployed/f117-post-output-injection-detection.md)
   - [F-118 · Real-Time LLM Spend Rate Tracking](forward-deployed/f118-real-time-spend-rate-tracking.md)
+  - [F-119 · Intra-Session LLM Response Reuse](forward-deployed/f119-intra-session-llm-response-reuse.md)
 - **Book of the Frontier**
   - [Overview](frontier/)
   - [R-01 · Model Landscape](frontier/r01-model-landscape.md)
