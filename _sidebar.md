@@ -160,6 +160,7 @@
   - [S-151 · Source Response Latency Variance Monitor](stacks/s151-source-response-latency-variance-monitor.md)
   - [S-152 · Live Event Significance Scorer](stacks/s152-live-event-significance-scorer.md)
   - [S-153 · Tool Result Novelty Filter](stacks/s153-tool-result-novelty-filter.md)
+  - [S-154 · Per-Entity Event Dedup on Reconnect](stacks/s154-per-entity-event-dedup-on-reconnect.md)
 - **Book of the Workspace**
   - [Overview](workspace/)
   - [W-01 · AI Dev Environment](workspace/w01-ai-dev-environment.md)
@@ -298,6 +299,7 @@
   - [F-122 · Output-Context Consistency Assertions](forward-deployed/f122-output-context-consistency-assertions.md)
   - [F-123 · Session Cost Forecaster](forward-deployed/f123-session-cost-forecaster.md)
   - [F-124 · Assertion Coverage Audit](forward-deployed/f124-assertion-coverage-audit.md)
+  - [F-125 · Prompt Empty Section Pruner](forward-deployed/f125-prompt-empty-section-pruner.md)
 - **Book of the Frontier**
   - [Overview](frontier/)
   - [R-01 · Model Landscape](frontier/r01-model-landscape.md)
