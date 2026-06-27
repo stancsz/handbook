@@ -189,6 +189,7 @@
   - [S-180 · Cross-Layer Prompt Instruction Deduplicator](stacks/s180-cross-layer-prompt-instruction-deduplicator.md)
   - [S-181 · Live Data Event Deduplicator](stacks/s181-live-data-event-deduplicator.md)
   - [S-182 · Streaming Output Budget Gate](stacks/s182-streaming-output-budget-gate.md)
+  - [S-183 · Tool Description Compression](stacks/s183-tool-description-compression.md)
 - **Book of the Workspace**
   - [Overview](workspace/)
   - [W-01 · AI Dev Environment](workspace/w01-ai-dev-environment.md)
@@ -356,6 +357,7 @@
   - [F-151 · Extraction Field Enum Validation](forward-deployed/f151-extraction-field-enum-validation.md)
   - [F-152 · Extraction Field Null Rate Monitor](forward-deployed/f152-extraction-field-null-rate-monitor.md)
   - [F-153 · Extraction Temporal Arithmetic Check](forward-deployed/f153-extraction-temporal-arithmetic-check.md)
+  - [F-154 · Extraction Field-Level Retry](forward-deployed/f154-extraction-field-level-retry.md)
 - **Book of the Frontier**
   - [Overview](frontier/)
   - [R-01 · Model Landscape](frontier/r01-model-landscape.md)
