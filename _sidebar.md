@@ -172,6 +172,7 @@
   - [S-163 · Query-Aware Tool Cache](stacks/s163-query-aware-tool-cache.md)
   - [S-164 · Push-Pull Hybrid Scheduler](stacks/s164-push-pull-hybrid-scheduler.md)
   - [S-165 · Derived Value Freshness Tracker](stacks/s165-derived-value-freshness-tracker.md)
+  - [S-166 · Multi-Item Prompt Batching](stacks/s166-multi-item-prompt-batching.md)
 - **Book of the Workspace**
   - [Overview](workspace/)
   - [W-01 · AI Dev Environment](workspace/w01-ai-dev-environment.md)
@@ -322,6 +323,7 @@
   - [F-134 · Extraction Ensemble Voter](forward-deployed/f134-extraction-ensemble-voter.md)
   - [F-135 · Extraction Output Field Normalizer](forward-deployed/f135-extraction-output-field-normalizer.md)
   - [F-136 · Extraction Lifecycle Audit Record](forward-deployed/f136-extraction-lifecycle-audit-record.md)
+  - [F-137 · Linguistic Hedge Detector](forward-deployed/f137-linguistic-hedge-detector.md)
 - **Book of the Frontier**
   - [Overview](frontier/)
   - [R-01 · Model Landscape](frontier/r01-model-landscape.md)
