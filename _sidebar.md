@@ -142,6 +142,7 @@
   - [S-133 · Embedding Batch String Deduplication](stacks/s133-embedding-batch-string-dedup.md)
   - [S-134 · Cursor-Based Incremental Live Query](stacks/s134-cursor-based-incremental-live-query.md)
   - [S-135 · Per-Entity Cache Warming from Change Events](stacks/s135-per-entity-cache-warming-from-change-events.md)
+  - [S-136 · Adaptive Per-Entity Poll Rate](stacks/s136-adaptive-per-entity-poll-rate.md)
 - **Book of the Workspace**
   - [Overview](workspace/)
   - [W-01 · AI Dev Environment](workspace/w01-ai-dev-environment.md)
@@ -262,6 +263,7 @@
   - [F-104 · Live Source Health Monitor](forward-deployed/f104-live-source-health-monitor.md)
   - [F-105 · Output Claim Density Routing](forward-deployed/f105-output-claim-density-routing.md)
   - [F-106 · Intra-Output Contradiction Detection](forward-deployed/f106-intra-output-contradiction-detection.md)
+  - [F-107 · In-Flight Request Deduplication](forward-deployed/f107-in-flight-request-deduplication.md)
 - **Book of the Frontier**
   - [Overview](frontier/)
   - [R-01 · Model Landscape](frontier/r01-model-landscape.md)
