@@ -164,6 +164,7 @@
   - [S-155 · Tool Call Argument Size Cap](stacks/s155-tool-call-argument-size-cap.md)
   - [S-156 · Tool Result Size Drift Detector](stacks/s156-tool-result-size-drift-detector.md)
   - [S-157 · Context Carry Cost Tracker](stacks/s157-context-carry-cost-tracker.md)
+  - [S-158 · Agent Turn Early Exit](stacks/s158-agent-turn-early-exit.md)
 - **Book of the Workspace**
   - [Overview](workspace/)
   - [W-01 · AI Dev Environment](workspace/w01-ai-dev-environment.md)
@@ -306,6 +307,7 @@
   - [F-126 · Output Field Change Velocity](forward-deployed/f126-output-field-change-velocity.md)
   - [F-127 · Extraction Field Null Rate Monitor](forward-deployed/f127-extraction-field-null-rate-monitor.md)
   - [F-128 · Cross-Field Agreement Rate Tracker](forward-deployed/f128-cross-field-agreement-rate-tracker.md)
+  - [F-129 · Per-Entity Output Regression Check](forward-deployed/f129-per-entity-output-regression-check.md)
 - **Book of the Frontier**
   - [Overview](frontier/)
   - [R-01 · Model Landscape](frontier/r01-model-landscape.md)
