@@ -156,6 +156,7 @@
   - [S-147 · Entity-Level Source Priority Override](stacks/s147-entity-source-priority-override.md)
   - [S-148 · Per-Action Data Freshness Budget](stacks/s148-per-action-data-freshness-budget.md)
   - [S-149 · Multi-Source Data Consistency Snapshot](stacks/s149-multi-source-data-consistency-snapshot.md)
+  - [S-150 · Prompt Context Block Deduplication](stacks/s150-prompt-context-block-deduplication.md)
 - **Book of the Workspace**
   - [Overview](workspace/)
   - [W-01 · AI Dev Environment](workspace/w01-ai-dev-environment.md)
@@ -290,6 +291,7 @@
   - [F-118 · Real-Time LLM Spend Rate Tracking](forward-deployed/f118-real-time-spend-rate-tracking.md)
   - [F-119 · Intra-Session LLM Response Reuse](forward-deployed/f119-intra-session-llm-response-reuse.md)
   - [F-120 · Output Field Mutual Exclusivity](forward-deployed/f120-output-field-mutual-exclusivity.md)
+  - [F-121 · Output Field Value Anomaly Detection](forward-deployed/f121-output-field-value-anomaly-detection.md)
 - **Book of the Frontier**
   - [Overview](frontier/)
   - [R-01 · Model Landscape](frontier/r01-model-landscape.md)
