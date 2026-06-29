@@ -128,6 +128,7 @@
   - [F-165 · Agent Benchmark Exploitation](forward-deployed/f165-agent-benchmark-exploitation.md)
   - [F-166 · Agent Adversarial Failure Injection](forward-deployed/f166-agent-adversarial-failure-injection.md)
   - [F-167 · RAG Faithfulness Gate](forward-deployed/f167-rag-faithfulness-gate.md)
+  - [F-168 · Runtime Constitutional Agent Governance](forward-deployed/f168-runtime-constitutional-agent-governance.md)
   - [F-110 · Agent Sandboxing](forward-deployed/f110-agent-sandboxing.md)
 
 - **Book of the Frontier**
