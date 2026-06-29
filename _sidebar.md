@@ -83,6 +83,7 @@
   - [S-204 · Agent Circuit Breaker](stacks/s204-agent-circuit-breaker.md)
   - [S-205 · Agent Sandbox Isolation](stacks/s205-agent-sandbox-isolation.md)
   - [S-206 · Context Debt](stacks/s206-context-debt.md)
+  - [S-207 · Semantic Caching for Agents](stacks/s207-semantic-caching-for-agents.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
