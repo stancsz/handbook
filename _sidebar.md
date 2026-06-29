@@ -124,6 +124,7 @@
   - [F-30 · Runtime Output Validation](forward-deployed/f30-runtime-output-validation.md)
   - [F-164 · Agent Memory Decay and Staleness](forward-deployed/f164-agent-memory-decay.md)
   - [F-165 · Agent Benchmark Exploitation](forward-deployed/f165-agent-benchmark-exploitation.md)
+  - [F-166 · Agent Adversarial Failure Injection](forward-deployed/f166-agent-adversarial-failure-injection.md)
   - [F-110 · Agent Sandboxing](forward-deployed/f110-agent-sandboxing.md)
 
 - **Book of the Frontier**
