@@ -73,6 +73,7 @@
   - [S-194 · Synthetic Data Generation for Fine-Tuning](stacks/s194-synthetic-data-fine-tuning-pipeline.md)
   - [S-195 · Agent Checkpoint and Resume](stacks/s195-agent-checkpoint-resume.md)
   - [S-196 · LLM Telemetry via OTel GenAI Conventions](stacks/s196-otel-genai-telemetry.md)
+  - [S-197 · MCP + A2A Two-Layer Orchestration](stacks/s197-mcp-a2a-two-layer-orchestration.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
