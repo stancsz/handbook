@@ -77,6 +77,7 @@
   - [S-198 · Agent Tool-Call Guardrails](stacks/s198-agent-tool-call-guardrails.md)
   - [S-199 · Agent Self-Healing Loops](stacks/s199-agent-self-healing-loops.md)
   - [S-200 · Agent Reliability Compounding](stacks/s200-agent-reliability-compounding.md)
+  - [S-201 · MCP Server Security Hardening](stacks/s201-mcp-server-security-hardening.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
