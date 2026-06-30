@@ -134,6 +134,7 @@
   - [F-28 · Prompt Debugging](forward-deployed/f28-prompt-debugging.md)
   - [F-29 · Cost Attribution](forward-deployed/f29-cost-attribution.md)
   - [F-30 · Runtime Output Validation](forward-deployed/f30-runtime-output-validation.md)
+  - [F-100 · Agent Runtime Authorization & Observability](forward-deployed/f100-agent-sandboxing-guardrails.md)
   - [F-164 · Agent Memory Decay and Staleness](forward-deployed/f164-agent-memory-decay.md)
   - [F-165 · Agent Benchmark Exploitation](forward-deployed/f165-agent-benchmark-exploitation.md)
   - [F-166 · Agent Adversarial Failure Injection](forward-deployed/f166-agent-adversarial-failure-injection.md)
