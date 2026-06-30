@@ -177,5 +177,6 @@
   - [R-09 · Long-Context Models](frontier/r09-long-context-models.md)
   - [R-10 · Speculative Decoding](frontier/r10-speculative-decoding.md)
   - [R-11 · Agent Simulation Environments](frontier/r11-agent-simulation-environments.md)
+  - [R-12 · Agent-RLVR Training Loop](frontier/r12-agent-rlvr-training-loop.md)
 
 - [Contributing](CONTRIBUTING.md)
