@@ -101,6 +101,7 @@
   - [S-233 · Agent Failure Classification and Recovery Pipeline](stacks/s233-agent-failure-classification-and-recovery-pipeline.md)
   - [S-235 · Production Failure → Regression Test](stacks/s235-production-failure-to-regression-test.md)
   - [S-240 · MCP Tool Execution Isolation](stacks/s240-mcp-tool-execution-isolation.md)
+  - [S-244 · Semantic Caching at the Vector Layer](stacks/s244-semantic-caching-at-the-vector-layer.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
