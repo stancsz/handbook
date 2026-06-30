@@ -87,6 +87,7 @@
   - [S-208 · Per-Tenant LLM Cost Attribution](stacks/s208-per-tenant-llm-cost-attribution.md)
   - [S-209 · Agent Production Observability](stacks/s209-agent-production-observability.md)
   - [S-210 · Agentic Knowledge Compilation](stacks/s210-agent-knowledge-compilation.md)
+  - [S-211 · Agent Token Budget Guardrails](stacks/s211-agent-token-budget-guardrails.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
