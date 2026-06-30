@@ -114,6 +114,8 @@
   - [S-257 · The Five Failure Modes That Kill Production Agents](stacks/s257-the-five-failure-modes-that-kill-production-agents.md)
   - [S-258 · PydanticAI vs LangGraph: Two Production Bets](stacks/s258-pydanticai-vs-langgraph-two-production-bets.md)
   - [S-259 · OWASP ASI Top 10 for Agentic AI](stacks/s259-owasp-asi-top-10-for-agentic-applications.md)
+  - [S-260 · The Agent Stack Is Stratifying Into Six Layers](stacks/s260-the-agent-stack-is-stratifying-into-six-layers.md)
+  - [S-261 · MCP Security — The Attack Surface You Inherited](stacks/s261-mcp-security-attack-surface.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
