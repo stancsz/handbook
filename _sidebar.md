@@ -116,7 +116,11 @@
   - [S-259 · OWASP ASI Top 10 for Agentic AI](stacks/s259-owasp-asi-top-10-for-agentic-applications.md)
   - [S-260 · The Agent Stack Is Stratifying Into Six Layers](stacks/s260-the-agent-stack-is-stratifying-into-six-layers.md)
   - [S-261 · MCP Security — The Attack Surface You Inherited](stacks/s261-mcp-security-attack-surface.md)
+  - [S-262 · Multi-Agent Pilot Failure — 40 Percent](stacks/s262-multi-agent-pilot-failure-40-percent.md)
+  - [S-263 · Multi-Agent Orchestration Patterns — Cost Truth](stacks/s263-multi-agent-orchestration-patterns-cost-truth.md)
   - [S-264 · Per-Engineer AI Cost Attribution](stacks/s264-per-engineer-ai-cost-attribution.md)
+  - [S-265 · When to Use a Framework and When to Go Direct](stacks/s265-when-to-use-a-framework-and-when-to-go-direct.md)
+  - [S-266 · Inter-Agent Trust Delegation](stacks/s266-inter-agent-trust-delegation.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
