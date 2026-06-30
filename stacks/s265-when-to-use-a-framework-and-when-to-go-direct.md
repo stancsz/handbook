@@ -1,0 +1,37 @@
+# S-265 · When to Reach for a Framework and When to Go Direct
+
+Your agent works in the demo. It crashes in production — not because the model failed, but because you were missing a layer. The agent infrastructure stack is decomposing into six distinct horizontal layers, each with different operational models, different competitive dynamics, and different failure modes. Treat it as a monolith and you will debug mysterious failures at 2am.
+
+## Forces
+
+- **The abstraction tax is real.** Every orchestration layer adds 50–150ms latency per agent step and obscures the exact failure point. When your agent loops 20 times calling a tool, tracing which step produced the bad output requires instrumentation the framework may not expose cleanly.
+- **The 92→55% gap is the industry's dirty secret.** A team running an AI-powered matching agent in production saw 92% test success collapse to 55% in production. The culprit: framework abstractions that worked fine on clean synthetic data but could not surface the 47 different data format issues the agent encountered with real users. Naive RAG pipelines fail 40% of the time at retrieval — frameworks do not fix retrieval quality.
+- **Multi-agent complexity compounds asymmetrically.** Adding a second agent does not double your debugging surface — it multiplies it by the number of coordination paths. One agent looping in production is tractable. Three agents in a hierarchy where the manager agent loops while delegating to a sub-agent that retries a failed tool call, while a third monitors quality — that is a distributed system with no standard observability.
+
+## The move
+
+**Start with direct LLM API calls. Graduate to a framework only when the workflow control justifies the operational cost.**
+
+- **Begin direct.** Call the LLM API, pass tools as schemas, handle the response loop in code you own. This is 50–100 lines of Python. You will understand every decision the model makes, every tool call, every retry. This is where Anthropic's own engineering team says to start.
+- **Detect the threshold.** Reach for a framework (LangGraph, CrewAI, Temporal) when you have two or more of: (a) complex conditional branching in your workflow, (b) a need for durable execution (survive restarts mid-task), (c) multi-step task graphs you want visualized, or (d) a team that needs to onboard quickly to shared agent logic.
+- **Choose LangGraph for controllable graphs.** LangGraph is inspired by Pregel and Apache Beam. It gives you explicit state machines, checkpointing, and the ability to interrupt and resume. Use it when you need to own the control flow, not just configure it. The tradeoff: more boilerplate, more explicit state management.
+- **Choose CrewAI for rapid multi-agent prototyping.** CrewAI's role-based agent model (agents with roles, goals, backstories) ships a multi-agent system in hours. The hierarchical process with a manager agent handles delegation and error recovery. The tradeoff: implicit shared context, harder to debug at the state level, less granular control than LangGraph.
+- **Never choose AutoGen for production.** AutoGen is popular but undergoing rapid changes and may merge into Semantic Kernel. Building on it in 2025 forces future migration work.
+- **Instrument before you abstract.** Before reaching for a framework, add structured logging of every LLM call: input, output, tool calls, token count, latency, cost. This data tells you when you actually need a framework and which layer is failing. Without it, you are guessing.
+- **Treat multi-agent as a last resort, not a first design.** HN practitioners consistently report that a well-prompted single agent with good tools outperforms two loosely-coordinated agents. Split when agents have genuinely independent expertise domains and you need parallel execution — not for organizational neatness.
+
+## Evidence
+
+- **Anthropic engineering guidance (official):** "We suggest that developers start by using LLM APIs directly." The article defines agents as systems where LLMs dynamically direct their own processes and tool usage — not as a framework feature. — [Anthropic / HN discussion, June 2025](https://news.ycombinator.com/item?id=44301809)
+- **HN community consensus:** After weeks of research and production experience, practitioners consistently report: CrewAI is simplest to start, LangGraph gives more freedom for complexity. "Popular frameworks aren't always the most stable or developer-friendly. Don't base your decision only on GitHub stars." AutoGen flagged as not production-ready. — [Hacker News, Dec 2024](https://news.ycombinator.com/item?id=42449741)
+- **Production cost reality check:** An 18-month production deployment showed 92% test success vs 55% production success on an AI matching agent. Root cause: 47 different data format issues not anticipated in synthetic test data. Monthly cost ran $847 vs $200 budgeted. Switching from a framework abstraction to direct API calls with structured error handling was the fix. — [Calder's Lab, Jan 2025](https://calderbuild.github.io/blog/2025/01/16/ai-agent-2025-breakthrough/)
+- **Enterprise multi-agent evaluation:** Amazon's Bedrock AgentCore team evaluated thousands of agents and found that automated metrics alone miss failure modes in multi-agent systems. Required dimensions: inter-agent communication quality, task decomposition appropriateness, conflict resolution strategy, logical consistency across agents. HITL (human-in-the-loop) evaluation is critical for production agents. — [AWS Blog / Amazon, Feb 2026](https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon)
+- **Real production multi-agent stack:** Opensoul — an open-source agentic marketing stack — uses 6 agents (Director, Strategist, Creative, Producer, Growth Marketer, Analyst) built on Paperclip orchestration. Each agent runs autonomously on scheduled heartbeats, checking work queues, executing tasks, delegating to teammates. Deployed as a pre-configured deployment, not a custom build. — [Show HN, 2025](https://news.ycombinator.com/item?id=47336615)
+
+## Gotchas
+
+- **The framework does not fix your retrieval.** If your RAG pipeline retrieves the wrong chunks, wrapping it in CrewAI or LangGraph does not help. Fix retrieval first — then add orchestration complexity.
+- **Sequential agent chains beyond 5 agents fail silently.** Each delegation adds ~150ms latency and compounds failure risk. If you need more than 5 specialized agents, move to a hierarchical process with a manager agent, not a sequential chain.
+- **Checkpointing is not optional for production.** If your agent task runs for more than a few minutes and can be interrupted, you need durable execution with state checkpointing. LangGraph's checkpointing and Temporal both handle this — raw API calls do not.
+- **Tool migration between frameworks is mostly direct.** CrewAI tools and LangGraph tools both use the LangChain tool interface — most tools transfer without modification. State refactoring (CrewAI's implicit shared context → LangGraph's explicit state annotations) is the labor-intensive migration step.
+- **Memory-first frameworks are the emerging frontier.** Systems treating episodic, semantic, and working memory as first-class citizens with explicit read/write policies are outperforming vector-store-bolted approaches on long-running agent tasks. The cost is complexity — you are curating a mind, not just an agent.
