@@ -107,7 +107,13 @@
   - [S-250 · Four Multi-Agent Orchestration Patterns in Production](stacks/s250-four-multi-agent-orchestration-patterns-production.md)
   - [S-251 · Golden Dataset Curation as Code](stacks/s251-golden-dataset-curation-as-code.md)
   - [S-252 · The Production Agent Reckoning](stacks/s252-the-production-agent-reckoning.md)
-  - [S-253 · Provider-Agnostic Agent Architecture](stacks/s255-provider-agnostic-agent-architecture.md)
+  - [S-253 · Agent Sandboxing as a First-Class Layer](stacks/s253-agent-sandboxing-as-a-first-class-layer.md)
+  - [S-254 · Multi-Agent Orchestration Patterns](stacks/s254-multi-agent-orchestration-patterns.md)
+  - [S-255 · Provider-Agnostic Agent Architecture](stacks/s255-provider-agnostic-agent-architecture.md)
+  - [S-256 · MCP as De Facto Tool Integration Standard](stacks/s256-mcp-as-de-facto-tool-integration-standard.md)
+  - [S-257 · The Five Failure Modes That Kill Production Agents](stacks/s257-the-five-failure-modes-that-kill-production-agents.md)
+  - [S-258 · PydanticAI vs LangGraph: Two Production Bets](stacks/s258-pydanticai-vs-langgraph-two-production-bets.md)
+  - [S-259 · OWASP ASI Top 10 for Agentic AI](stacks/s259-owasp-asi-top-10-for-agentic-applications.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
