@@ -106,6 +106,8 @@
   - [S-249 · Agentic Payment Layer — AP2](stacks/s249-agentic-payment-layer-ap2.md)
   - [S-250 · Four Multi-Agent Orchestration Patterns in Production](stacks/s250-four-multi-agent-orchestration-patterns-production.md)
   - [S-251 · Golden Dataset Curation as Code](stacks/s251-golden-dataset-curation-as-code.md)
+  - [S-252 · The Production Agent Reckoning](stacks/s252-the-production-agent-reckoning.md)
+  - [S-253 · Provider-Agnostic Agent Architecture](stacks/s255-provider-agnostic-agent-architecture.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
