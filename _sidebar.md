@@ -89,6 +89,9 @@
   - [S-210 · Agentic Knowledge Compilation](stacks/s210-agent-knowledge-compilation.md)
   - [S-211 · Agent Token Budget Guardrails](stacks/s211-agent-token-budget-guardrails.md)
   - [S-212 · Semantic Output Validation Gate](stacks/s212-semantic-output-validation-gate.md)
+  - [S-213 · Stratified Agent Stack](stacks/s213-stratified-agent-stack.md)
+  - [S-214 · Multi-Agent Orchestration Pattern Selection](stacks/s214-multi-agent-pattern-selection.md)
+  - [S-215 · Model Merging for Agent Specialization](stacks/s215-model-merging.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
