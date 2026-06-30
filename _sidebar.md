@@ -146,6 +146,7 @@
   - [F-173 · Agentic Corrective RAG](forward-deployed/f173-agentic-corrective-rag.md)
   - [F-174 · Constraint Decay in Code Agents](forward-deployed/f174-constraint-decay-in-code-agents.md)
   - [F-175 · Agent Capability Negotiation](forward-deployed/f175-agent-capability-negotiation.md)
+  - [F-176 · Agent Runbook-Driven Reliability](forward-deployed/f176-agent-runbook-driven-reliability.md)
   - [F-110 · Agent Sandboxing](forward-deployed/f110-agent-sandboxing.md)
 
 - **Book of the Frontier**
