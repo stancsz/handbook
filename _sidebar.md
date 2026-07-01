@@ -177,6 +177,7 @@
   - [F-29 · Cost Attribution](forward-deployed/f29-cost-attribution.md)
   - [F-30 · Runtime Output Validation](forward-deployed/f30-runtime-output-validation.md)
   - [F-100 · Agent Runtime Authorization & Observability](forward-deployed/f100-agent-sandboxing-guardrails.md)
+  - [F-110 · Agent Sandboxing](forward-deployed/f110-agent-sandboxing.md)
   - [F-164 · Agent Memory Decay and Staleness](forward-deployed/f164-agent-memory-decay.md)
   - [F-165 · Agent Benchmark Exploitation](forward-deployed/f165-agent-benchmark-exploitation.md)
   - [F-166 · Agent Adversarial Failure Injection](forward-deployed/f166-agent-adversarial-failure-injection.md)
@@ -197,7 +198,7 @@
   - [F-181 · Silent Tool Call Failures](forward-deployed/f181-silent-tool-call-failures.md)
   - [F-182 · MCP Server CVE Supply Chain Exploits](forward-deployed/f182-mcp-server-cve-supply-chain-exploits.md)
   - [F-183 · Agent Session Continuity](forward-deployed/f183-agent-session-continuity.md)
-  - [F-110 · Agent Sandboxing](forward-deployed/f110-agent-sandboxing.md)
+  - [F-184 · Agent Loop Invariant Checking](forward-deployed/f184-agent-loop-invariant-checking.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
