@@ -140,6 +140,7 @@
   - [S-302 · You Have Logs, But No Answers: The Agent Eval Gap](stacks/s302-you-have-logs-but-no-answers-the-agent-eval-gap.md)
   - [S-303 · Agentic Memory: From Stateless to Stateful Agents](stacks/s303-agentic-memory-from-stateless-to-stateful-agents.md)
   - [S-304 · The Agent Cost Trace: Making Invisible Spend Visible](stacks/s304-agent-cost-trace-attribution-in-production.md)
+  - [S-305 · Agent Trajectory Assertions](stacks/s305-agent-trajectory-assertions.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
