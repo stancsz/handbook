@@ -136,6 +136,10 @@
   - [S-292 · LLM-as-Judge Failure Modes](stacks/s292-llm-as-judge-failure-modes.md)
   - [S-295 · Synthetic Trajectory Fine-Tuning Pipeline](stacks/s295-synthetic-trajectory-fine-tuning-pipeline.md)
   - [S-300 · Reward Hacking in RL-Trained Agents](stacks/s300-reward-hacking-in-rl-trained-agents.md)
+  - [S-301 · MCP Is Eating the World](stacks/s301-mcp-is-eating-the-world.md)
+  - [S-302 · You Have Logs, But No Answers: The Agent Eval Gap](stacks/s302-you-have-logs-but-no-answers-the-agent-eval-gap.md)
+  - [S-303 · Agentic Memory: From Stateless to Stateful Agents](stacks/s303-agentic-memory-from-stateless-to-stateful-agents.md)
+  - [S-304 · The Agent Cost Trace: Making Invisible Spend Visible](stacks/s304-agent-cost-trace-attribution-in-production.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
