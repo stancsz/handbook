@@ -145,6 +145,8 @@
   - [S-307 · The Agent Stack Is Stratifying — Stop Building Monoliths](stacks/s307-the-agent-stack-is-stratifying.md)
   - [S-308 · Production Per-Turn Agent Evaluation: Closing the Eval-Production Gap](stacks/s308-production-per-turn-agent-evaluation.md)
   - [S-313 · Agent Credential Lifecycle Security](stacks/s313-agent-credential-lifecycle-security.md)
+  - [S-314 · Agent Memory Layer Architecture](stacks/s314-agent-memory-layer-architecture.md)
+  - [S-315 · Agent Conformance Testing](stacks/s315-agent-conformance-testing.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
