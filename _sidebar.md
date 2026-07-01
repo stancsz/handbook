@@ -221,6 +221,7 @@
   - [F-188 · AI Agent Red Teaming](forward-deployed/f188-ai-agent-red-teaming.md)
   - [F-189 · Private Eval Dataset Construction](forward-deployed/f189-private-eval-dataset-construction.md)
   - [F-190 · Kubernetes Agent Sandbox Controller](forward-deployed/f190-kubernetes-agent-sandbox-controller.md)
+  - [F-191 · AI Agent Evaluation Harness](forward-deployed/f191-ai-agent-evaluation-harness.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
