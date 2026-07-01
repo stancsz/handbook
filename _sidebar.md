@@ -225,6 +225,7 @@
   - [F-189 · Private Eval Dataset Construction](forward-deployed/f189-private-eval-dataset-construction.md)
   - [F-190 · Kubernetes Agent Sandbox Controller](forward-deployed/f190-kubernetes-agent-sandbox-controller.md)
   - [F-191 · AI Agent Evaluation Harness](forward-deployed/f191-ai-agent-evaluation-harness.md)
+  - [F-192 · Cost Velocity Circuit Breaker](forward-deployed/f192-cost-velocity-circuit-breaker.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
