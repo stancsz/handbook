@@ -151,6 +151,7 @@
   - [S-322 · Multi-Agent Cost Observability Patterns](stacks/s322-multi-agent-cost-observability-patterns.md)
   - [S-323 · Agent Goal Abandonment: When Success Looks Right But Isn't](stacks/s323-agent-goal-abandonment-detection.md)
   - [S-327 · LLM Noisy-Neighbor Scheduling: When One Tenant Triples Everyone's Latency](stacks/s327-llm-noisy-neighbor-scheduling-layer.md)
+  - [S-331 · LLM-as-a-Judge Evaluation](stacks/s331-llm-as-judge-evaluation.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
