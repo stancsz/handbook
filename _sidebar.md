@@ -125,6 +125,7 @@
   - [S-268 · Multi-Agent Coordination Patterns](stacks/s268-multi-agent-coordination-patterns.md)
   - [S-269 · MCP Tool Abstraction Layer](stacks/s269-mcp-tool-abstraction-layer.md)
   - [S-270 · Choosing an Eval Framework](stacks/s270-choosing-an-eval-framework.md)
+  - [S-272 · Agent Circuit Breakers and Spend Guards](stacks/s272-agent-circuit-breakers-and-spend-guards.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
