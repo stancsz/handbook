@@ -184,6 +184,7 @@
   - [F-178 · Synthetic Test Data Generation](forward-deployed/f178-synthetic-test-data-generation.md)
   - [F-179 · Multi-Agent Coordination Failures](forward-deployed/f179-multi-agent-coordination-failures.md)
   - [F-180 · AI Incident Commander](forward-deployed/f180-ai-incident-commander.md)
+  - [F-181 · Silent Tool Call Failures](forward-deployed/f181-silent-tool-call-failures.md)
   - [F-110 · Agent Sandboxing](forward-deployed/f110-agent-sandboxing.md)
 
 - **Book of the Frontier**
