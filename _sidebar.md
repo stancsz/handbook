@@ -133,6 +133,7 @@
   - [S-282 · Agent Guardrails](stacks/s282-agent-guardrails.md)
   - [S-289 · Agentic Red Teaming: Structured Methodology](stacks/s289-agentic-red-teaming-structured-methodology.md)
   - [S-292 · LLM-as-Judge Failure Modes](stacks/s292-llm-as-judge-failure-modes.md)
+  - [S-295 · Synthetic Trajectory Fine-Tuning Pipeline](stacks/s295-synthetic-trajectory-fine-tuning-pipeline.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
