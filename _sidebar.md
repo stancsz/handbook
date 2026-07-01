@@ -148,6 +148,8 @@
   - [S-314 · Agent Memory Layer Architecture](stacks/s314-agent-memory-layer-architecture.md)
   - [S-315 · Agent Conformance Testing](stacks/s315-agent-conformance-testing.md)
   - [S-321 · Dynamic Agent Capability Negotiation](stacks/s321-dynamic-agent-capability-negotiation.md)
+  - [S-322 · Multi-Agent Cost Observability Patterns](stacks/s322-multi-agent-cost-observability-patterns.md)
+  - [S-323 · Agent Goal Abandonment: When Success Looks Right But Isn't](stacks/s323-agent-goal-abandonment-detection.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
