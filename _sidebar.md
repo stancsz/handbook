@@ -245,5 +245,6 @@
   - [R-11 · Agent Simulation Environments](frontier/r11-agent-simulation-environments.md)
   - [R-12 · Agent-RLVR Training Loop](frontier/r12-agent-rlvr-training-loop.md)
   - [R-13 · Agent Trajectory Synthesis](frontier/r13-agent-trajectory-synthesis.md)
+  - [R-14 · Agent Memory Controller](frontier/r14-agent-memory-controller.md)
 
 - [Contributing](CONTRIBUTING.md)
