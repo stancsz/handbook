@@ -153,6 +153,7 @@
   - [S-327 · LLM Noisy-Neighbor Scheduling: When One Tenant Triples Everyone's Latency](stacks/s327-llm-noisy-neighbor-scheduling-layer.md)
   - [S-331 · LLM-as-a-Judge Evaluation](stacks/s331-llm-as-judge-evaluation.md)
   - [S-335 · Preference Data Pipeline Engineering](stacks/s335-preference-data-pipeline-engineering.md)
+  - [S-340 · Agent Hard Enforcement Plane](stacks/s340-agent-hard-enforcement-plane.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
