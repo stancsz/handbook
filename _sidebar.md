@@ -230,6 +230,7 @@
   - [F-191 · AI Agent Evaluation Harness](forward-deployed/f191-ai-agent-evaluation-harness.md)
   - [F-192 · Cost Velocity Circuit Breaker](forward-deployed/f192-cost-velocity-circuit-breaker.md)
   - [F-193 · Agent Escalation Gating](forward-deployed/f193-agent-escalation-gating.md)
+  - [F-194 · AgentJacking & MCP Tool-Response Poisoning](forward-deployed/f194-agentjacking-mcp-tool-response-poisoning.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)
