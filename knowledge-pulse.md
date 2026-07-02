@@ -17,6 +17,8 @@
 | I-010 | Agentic Prompt Injection: Defense-in-Depth for Production | prompt-injection, defense-in-depth, capability-gating, mcp-security, zero-trust, a2a-signed-cards, blast-radius, guardrails, indirect-injection, owasp-llm01, environmental-input, human-in-the-loop, security, agent-hijacking | 10 | 10 | 9 | 9 | 7 | **9.35** | WRITTEN — S-375 | 2026-07-02 | 2026-07-02 |
 | I-011 | Entity Grounding: Knowledge Graphs as Verifiable Memory | entity-grounding, knowledge-graph, graphrag, provenance, entity-resolution, hallucination, retrieval-grounding, multi-hop, entity-linking, knowledge-graph-verification, graph-traversal, hybrid-retrieval, grounding-layer | 9 | 9 | 9 | 10 | 9 | **9.25** | WRITTEN — S-378 | 2026-07-02 | 2026-07-02 |
 | I-012 | Antagonistic Validation: Team of Rivals Architecture | antagonistic-validation, team-of-rivals, multi-agent-veto, adversarial-review, swiss-cheese-model, self-correction-failure, bounded-veto, hard-soft-veto, composer-antagonist-integrator, organizational-reliability, structural-opposition, channel-capacity, shannon | 9 | 10 | 9 | 10 | 9 | **9.45** | WRITTEN — S-380 | 2026-07-02 | 2026-07-02 |
+| I-013 | Goal Drift: The Silent Competence Erosion Pattern | goal-drift, objective-integrity, goal-persistence, goal-anchoring, intent-drift, long-horizon-agents, competence-erosion, goal-pin, semantic-drift, inherited-goal-drift, goal-sanity-check | 9 | 9 | 9 | 9 | 8 | **8.95** | WRITTEN — S-383 | 2026-07-02 | 2026-07-02 |
+| I-014 | Agent Trajectory Evaluation: Process vs. Outcome Scoring | trajectory-eval, process-evaluation, outcome-vs-process, six-dimension, tool-selection, error-recovery, plan-coherence, result-utilization, eval-rubric, dimension-scoring, trajectory-variance, CI-gate | 9 | 10 | 9 | 9 | 7 | **9.10** | WRITTEN — S-385 | 2026-07-02 | 2026-07-02 |
 | I-007 | Agent Span Tracing: Observable Agent Sessions | opentelemetry, span, trace, observability, session-span, tool-call-trace, retrieval-trace, llm-span, trace-eval, otel-agent, agent-debugging, lineage, trace-to-eval | 9 | 9 | 9 | 10 | 8 | **9.10** | WRITTEN — S-368 | 2026-07-02 | 2026-07-02 |
 
 *Composite = Urgency×0.35 + Gap×0.25 + Specificity×0.20 + Timeliness×0.10 + Density×0.10*
@@ -156,7 +158,28 @@ adversarial-review → I-012
 self-correction → I-012
 structural-opposition → I-012
 bounded-veto → I-012
+goal-drift → I-013
+goal-persistence → I-013
+goal-anchoring → I-013
+intent-drift → I-013
+competence-erosion → I-013
+goal-pin → I-013
+semantic-drift → I-013
+inherited-goal-drift → I-013
+goal-sanity-check → I-013
 compositional-agent → I-012
+trajectory-eval → I-014
+process-evaluation → I-014
+outcome-vs-process → I-014
+six-dimension → I-014
+tool-selection → I-014
+error-recovery → I-014
+plan-coherence → I-014
+result-utilization → I-014
+eval-rubric → I-014
+dimension-scoring → I-014
+trajectory-variance → I-014
+CI-gate → I-014
 ```
 
 ## Recent Decisions
@@ -164,6 +187,7 @@ compositional-agent → I-012
 | Run Date | Idea ID | Decision | Rationale |
 |----------|---------|----------|-----------|
 | 2026-07-02 | I-012 | WRITTEN — S-380 | Antagonistic Validation: Team of Rivals — gap: no handbook entry covers the organizational architecture for multi-agent adversarial validation. s05-multi-agent-patterns covers coordination but not structural opposition. ArXiv:2601.14351 (Vijayaraghavan et al.) provides the theoretical foundation (Swiss Cheese Model, Shannon capacity, bounded veto). APEX-Agents benchmark shows <25% first-attempt task completion; this pattern directly addresses the architectural root cause. Composite 9.45. Chosen over: semantic drift / catastrophic forgetting (covered by s94-agent-output-diffing, s79-semantic-regression-detection), recursive collapse (related but distinct failure mode, less specific pattern). |
+| 2026-07-02 | I-013 | WRITTEN — S-383 | Goal Drift: The Silent Competence Erosion Pattern — gap: no handbook entry covers the tendency of long-horizon agents to silently diverge from stated objectives through context accumulation, environmental pressure, and model update side effects. Distinct from hallucination (fabrication) and tool misuse (wrong method): this is pursuing the wrong goal correctly. ICLR 2026 paper (arXiv:2603.03258, Menon et al.) on Inherited Goal Drift provides empirical backing; Zylos Research (April 2026) independently identifies goal drift as a defining production challenge. Three-layer pattern: goal pinning → periodic sanity checks → semantic drift detection. Composite 8.95. Chosen over: Operational Hallucination (related to S-360 governance decay, less specific pattern), Agent-Driven Scope Creep (adjacent but different failure class). |
 | 2026-07-02 | I-011 | WRITTEN — S-378 | Entity Grounding: Knowledge Graphs as Verifiable Memory — gap: no handbook entry covers the architectural distinction between chunk-based RAG (vector) and entity-level graph grounding, despite GraphRAG achieving 3.4× accuracy gains on multi-hop reasoning (16.7% → 56.2%). S-212 (semantic output validation) and S-221/S-374 (agentic RAG) cover adjacent ground but not the core architectural shift. Composite 9.25. Chosen over multi-agent state synchronization (partial coverage via S-373 authority design), agent memory architectures (covered by S-303/S-314, less specific), and event-driven agent coordination (covered by S-377). |
 | 2026-07-02 | I-007 | WRITTEN — S-368 | Agent Span Tracing (observable agent sessions) — gap: observability for multi-turn agents is completely uncovered despite being a top-3 production pain point. Tracing per-LLM-call, per-tool-call, and per-retrieval spans with OpenTelemetry enables trace-driven eval (isolating which step failed) and cross-agent causality analysis. Tiered export to Langfuse/Braintrust (LLM spans), Datadog (tool spans), and S3 (full tree for audit). Connects to S-100 (retrieval spans), S-331 (LLM-as-judge eval), S-362 (cost per span), and S-93 (error recording). Confirmed via Zylos observability research, Databricks MLflow OTel guide, and Digital Applied sandbox analysis. |
 | 2026-07-02 | I-004 | WRITTEN — S-360 | Governance Decay (context compaction silently erases safety constraints) — completely uncovered in the handbook. arXiv:2606.22528 (Chen, 27 Jun 2026) just published. Violation rates jump 0%→59% with no model/prompt changes. The same compaction systems teams deploy to avoid context overflow are simultaneously destroying safety guarantees. Directly related to S-355 (bounded autonomy — L3+ agents are highest risk), S-198 (tool-call guardrails — enforcement downstream of where decay happens). |
@@ -176,10 +200,11 @@ compositional-agent → I-012
 | 2026-07-02 | I-006 | WRITTEN — S-365 | MCP Supply Chain (artifact integrity from npx to production catalog) — gap: MCP server hardening (s201), attack surface (s261), and protocol convergence (s359) are covered, but the CI/CD artifact pipeline for MCP servers (hash-pinning, SBOM, signed digests, catalog governance gates) is completely missing. Key pattern: treating MCP servers as production artifacts with the same rigor as container images. Timely: JFrog detected active MCP server exploits in Q1 2026; Kong MCP Registry, Cisco/CrowdStrike MCP governance, and OBOT.ai's pipeline hardening guide all published in mid-2026. The npx→production gap is where the next major MCP security incident will come from. |
 | 2026-07-02 | I-001 | WRITTEN — S-352 | Compensation keys (distinct from idempotency keys) cover the layer above: reversing correctly-executed wrong-intent actions. All existing entries (S-93, S-181, F-107) cover prevention/deduplication — none cover autonomous reversal. Gap confirmed by Cordum, AgentMag, and early GitHub discussions on agentic compensation. |
 | 2026-07-02 | I-003 | WRITTEN — S-357 | Long-Running Agent Orchestration (Planner-Worker, CORPGEN three-layer temporal decomposition). Completely uncovered in handbook — zero entries on task decomposition, planner-worker, or strategic/tactical/operational layer separation. 3.5x completion improvement and 90% cost reduction are concrete and verifiable. Runner-up: Synthetic Data Pipelines (R-13 covers research angle, stacks thin but not a gap), Constitutional Guardrails (S-349 already covers four-layer enforcement). |
+| 2026-07-02 | I-014 | WRITTEN — S-385 | Agent Trajectory Evaluation: Process vs. Outcome Scoring — gap: all existing eval entries (S-219, S-220, S-202, S-251, S-249) cover eval infrastructure and CI gates, but none address the fundamental distinction between outcome and process scoring. An agent can succeed via a terrible trajectory (lucky hallucination, 47 tool calls instead of 3, infinite retry loop that happened to converge). This is the architectural gap that causes "passed eval, broken production" failures. Six-dimension trajectory rubric (tool selection, argument extraction, result utilization, error recovery, plan coherence, task completion) is an established production pattern from Jobs By Culture, Adaline AI, QASkills, and JetBrains eval research (May–June 2026). Per-dimension CI gates catch regressions that aggregate scores hide. Composite 9.10. Chosen over: eval contamination detection (related to S-251 golden dataset rotation, less specific pattern), semantic output validation (covered by S-212), OTEL span-level scoring (related but infrastructure-level, not rubric-level). |
 
 ## Meta
 
 - Created: 2026-07-02
-- Last Updated: 2026-07-02
-- Total ideas discovered: 1
-- Total patterns distilled: 4
+- Last Updated: 2026-07-02 (run 2: +I-014 trajectory-eval / S-385)
+- Total ideas discovered: 14
+- Total patterns distilled: 5
