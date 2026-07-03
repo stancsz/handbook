@@ -80,6 +80,8 @@
 | Quadratic Context Degradation (Smart Zone / Dumb Zone) | LLMs degrade O(n²) in attention, creating a sharp smart zone (~100K tokens) beyond which reasoning quality drops regardless of advertised context. This is orthogonal to context-window overflow: a 200K model can degrade at 70K. Long context supports retrieval but not reasoning — the two are conflated by vendor marketing. Defenses: live token budget tracking, clear-and-restart over compaction, task-level RAG-style chunking, per-model profiling. Matt Pocock / Dex Hardy framing (2026); corroborated by RULER benchmark research. | I-038 | Distinct from S-13 context-rot (entropy-based degradation over time) and S-21 context-compaction (the lossy mitigation). Smart zone is about the fixed per-call reasoning ceiling. |
 | Self-Assessment Is Untrusted | Agents evaluating their own completion is a trust inversion: the system that might have failed is the same one that declares success. False success (agent asserts completion, environment state proves otherwise) occurs at 45–48% of tau2-bench failures and 75.8% of AppWorld coding-agent trajectories. LLM judges amplify the problem by relying on the same completion narrative. TF-IDF detectors (AUROC 0.83–0.95) outperform LLM judges (AUROC 0.54–0.65) by 4–8x on the same flag rate. The fix: state-based exit gates, not text-based self-assessment. | I-039 | arXiv:2606.09863 (Advani, FAGEN@ICML 2026). Complements S-433 (semantic exit gates — pre-delivery check) and S-438 (trace vs eval gap). TF-IDF approach is fast (3,300x lower latency) and domain-calibrated. |
 
+| Irreversible Action Recovery | Agent mistakes live in external state mutations, not code — traditional rollback doesn't apply because the mutation already happened and downstream processes already consumed the new state. The fix requires: (1) proactive checkpointing before any state-mutating tool call, (2) an undo registry that maps mutations to compensating operations, (3) tenant-aware selective rollback so one tenant's failure doesn't undo another tenant's good work. Four reversibility tiers: fully reversible (file writes via snapshot), partially reversible (DB writes via write-back, but dependent transactions already fired), compensatable (external API calls via apology/correction), unrecoverable (notifications, email). Key insight: ACID transactions don't span cross-system tool calls, so you must build the transaction boundary yourself. GitHub agent-undo (97 commits) and how2.sh tenant-aware rollback independently confirmed the same pattern. | I-044 | Extends S-352 (compensation keys: pre-action) to post-action recovery; pairs with S-253 (blast-radius containment). |
+
 ## Deduplication Index
 
 *Keyword → idea ID mapping. Updated after each run.*
@@ -299,6 +301,15 @@ zero-trust-agent → I-033
 trust-tier → I-033
 delegation-chain → I-033
 attestation → I-033
+checkpoint → I-044
+rollback → I-044
+undo → I-044
+undo-registry → I-044
+agent-undo → I-044
+tenant-aware-rollback → I-044
+irreversible-action → I-044
+irreversibility → I-044
+blast-radius → I-001, I-008, I-010, I-044
 human-agent-binding → I-033
 identity-anchor → I-033
 policy-enforcement → I-033
@@ -347,4 +358,5 @@ kill-switch → I-033
 || I-031 | Tool Call Hallucination | tool-hallucination, reliability-alignment, schema-anchoring, tool-selection, tool-usage, parameter-mismatch, unregistered-tool, RelyToolBench, output-gating, pretraining-bleed | 9 | 7 | 8 | 8 | 8 | **8.15** | WRITTEN — S-396 | 2026-07-02 | 2026-07-02 |
 || I-038 | Smart Zone / Dumb Zone: Context Attention Degradation at Scale | smart-zone, dumb-zone, attention-degradation, effective-context, 100k-threshold, context-quality, quadratic-attention, clear-restart, token-budget, RULER, context-cliff | 9 | 9 | 9 | 9 | 8 | **8.75** | WRITTEN — S-436 | 2026-07-03 | 2026-07-03 |
 | I-043 | Render-Evasion Prompt Injection: CSS-Enabled Invisible Instructions | render-evasion, css-hiding, invisible-injection, white-on-white, text-extraction, sanitizer-gap, content-extraction, visual-grounding, DOM-vs-rendering, CVE-2026-2256, CVE-2025-32711, Notion-3.0 | 10 | 9 | 9 | 10 | 8 | **9.35** | WRITTEN — S-453 | 2026-07-03 | 2026-07-03 |
-| 2026-07-03 | I-017 | WRITTEN — S-414 | Protocol Convergence Thesis — gap: S-10, S-14, S-197, S-249, S-390 exist individually but no entry covers the convergence thesis: MCP-as-agent blurring the tool/agent line, AAIF governance, three seam cases in dual-protocol stacks, version-drift risks, and convergence signal tracking. Composite 8.95. Chosen over: Longitudinal Eval (I-016 already written), OWASP Agentic Top 10 (covered by S-375, S-390), MCP A2A interop (not yet spec'd — premature). |
+| I-044 | Agent Checkpoint & Rollback Engineering: Proactive Undo for Stateful Pipelines | checkpoint, rollback, undo, replay, compensation, reversibility, agent mistakes, external state, tenant-aware, snapshot, agent-undo, undo registry, blast-radius, transaction boundary | 9 | 10 | 9 | 10 | 7 | **8.85** | WRITTEN — S-457 | 2026-07-03 | 2026-07-03 |
+| 2026-07-03 | I-044 | WRITTEN — S-457 | Agent Checkpoint & Rollback Engineering — gap: no handbook entry covers proactive pre-mutation snapshots + undo registries for agent pipelines. Distinct from S-352 (pre-action compensation) and S-106 (post-hoc replay). S-253 covers blast-radius containment but not recovery after containment fails. AgentMarketCap (April 2026), how2.sh (February 2026), GitHub agent-undo project (97 commits) all independently confirmed the same gap: agent mistakes live in external state, not code, and no transaction boundary spans tool calls. Reversibility table cross-validated against Expacti blog. Composite 8.85. Chosen over: Agent Identity in A2A (covered by S-420), MCP Schema Drift (I-035 pattern), synthetic data for eval (not agent-specific). |
