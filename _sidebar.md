@@ -119,6 +119,8 @@
   - [S-453 · Render-Evasion Prompt Injection](stacks/s453-render-evasion-prompt-injection.md)
   - [S-454 · Agent Behavioral Contracts: Design-by-Contract for the Autonomous Era](stacks/s454-agent-behavioral-contracts.md)
   - [S-457 · Agent Checkpoint & Rollback Engineering](stacks/s457-agent-checkpoint-rollback-engineering.md)
+  - [S-459 · Cross-Session Memory Poisoning](stacks/s459-cross-session-memory-poisoning.md)
+  - [S-462 · Agentic Prompt Caching: Cache-Aware Agent Loop Design](stacks/s462-agentic-prompt-caching.md)
   - [S-201 · MCP Server Security Hardening](stacks/s201-mcp-server-security-hardening.md)
   - [S-202 · LLM-as-Judge Evaluation Harness](stacks/s202-llm-as-judge-harness.md)
   - [S-203 · Inference Engine Selection](stacks/s203-inference-engine-selection.md)
