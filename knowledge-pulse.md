@@ -19,6 +19,11 @@
 | I-012 | Antagonistic Validation: Team of Rivals Architecture | antagonistic-validation, team-of-rivals, multi-agent-veto, adversarial-review, swiss-cheese-model, self-correction-failure, bounded-veto, hard-soft-veto, composer-antagonist-integrator, organizational-reliability, structural-opposition, channel-capacity, shannon | 9 | 10 | 9 | 10 | 9 | **9.45** | WRITTEN — S-380 | 2026-07-02 | 2026-07-02 |
 | I-013 | Goal Drift: The Silent Competence Erosion Pattern | goal-drift, objective-integrity, goal-persistence, goal-anchoring, intent-drift, long-horizon-agents, competence-erosion, goal-pin, semantic-drift, inherited-goal-drift, goal-sanity-check | 9 | 9 | 9 | 9 | 8 | **8.95** | WRITTEN — S-383 | 2026-07-02 | 2026-07-02 |
 | I-014 | Agent Trajectory Evaluation: Process vs. Outcome Scoring | trajectory-eval, process-evaluation, outcome-vs-process, six-dimension, tool-selection, error-recovery, plan-coherence, result-utilization, eval-rubric, dimension-scoring, trajectory-variance, CI-gate | 9 | 10 | 9 | 9 | 7 | **9.10** | WRITTEN — S-385 | 2026-07-02 | 2026-07-02 |
+| I-015 | Constrained Decoding for Hallucination Prevention | constrained-decoding, vocabulary-mask, grammar-guided, fsm-decoding, hallucination-prevention, token-masking, attribution-generation, output-bounding, outlines, lm-format-enforcer, logits-mask | 8 | 9 | 9 | 7 | 8 | **8.35** | WRITTEN — S-388 | 2026-07-02 | 2026-07-02 |
+| I-016 | Agent Drift: The Longitudinal Regression Problem | agent-drift, behavioral-degradation, silent-drift, longitudinal-eval, semantic-drift, coordination-drift, behavioral-drift, golden-dataset, drift-detection, temporal-regression, drift-monitor, continuous-evaluation, model-update-drift, production-monitoring | 10 | 10 | 9 | 10 | 8 | **9.55** | WRITTEN — S-401 | 2026-07-02 | 2026-07-02 |
+| I-017 | The Protocol Convergence Thesis | mcp-a2a-ap2, protocol-stack, interoperability, mcp-as-agent, aaif, convergence, signed-agent-card, two-layer, ap2, agentic-commerce, multi-protocol, tool-agent-boundary, seam-cases | 9 | 9 | 9 | 9 | 8 | **8.95** | WRITTEN — S-414 | 2026-07-03 | 2026-07-03 |
+| I-017 | Tool Affordance Design | affordance, discoverability, tool-schema, tool-naming, constraint, destructive-tool, parameter-invention, tool-hallucination, mcp, pydantic, schema-validation, tool-description, type-signature | 8 | 10 | 9 | 9 | 8 | **8.80** | WRITTEN — S-406 | 2026-07-02 | 2026-07-02 |
+| I-031 | Distribution Collapse Under Metric Optimisation | metric-optimisation, output-entropy, reward-hacking, aggregate-metric, distribution-collapse, diversity-collapse, AUC-gap, entropy-audit, eval-harness, proxy-convergence | 9 | 10 | 9 | 10 | 8 | **8.60** | WRITTEN — S-412 | 2026-07-03 | 2026-07-03 |
 | I-007 | Agent Span Tracing: Observable Agent Sessions | opentelemetry, span, trace, observability, session-span, tool-call-trace, retrieval-trace, llm-span, trace-eval, otel-agent, agent-debugging, lineage, trace-to-eval | 9 | 9 | 9 | 10 | 8 | **9.10** | WRITTEN — S-368 | 2026-07-02 | 2026-07-02 |
 
 *Composite = Urgency×0.35 + Gap×0.25 + Specificity×0.20 + Timeliness×0.10 + Density×0.10*
@@ -33,7 +38,7 @@
 | Governance Agent Overlay | For L4+ multi-agent systems: a dedicated rule-engine (not LLM) monitors agents, detects policy violations, and can autonomously demote privileges. Governance agent is deterministic — no LLM in the enforcement path. | I-002 | Sourced from CSA v2.0 + Zylos. Prevents circular LLM dependency. |
 | Three-Layer Key Model | Intent key / Execution key / Compensation key — each encodes a different phase and survives agent restarts. | I-001 | Deterministic hashing from action metadata (not UUIDs) so any process can find and operate. |
 | Three-Layer Temporal Decomposition | Strategic (months) → Tactical (days) → Operational (minutes) layers separate intent from execution. The worker never re-derives intent — it reads tactical context from memory. 3.5x completion improvement (15.2% vs 4.3% baseline). CORPGEN from Zylos. | I-003 | Planner fires 2x max per session: initial decompose + replan-on-failure. Calling planner every step is the #1 anti-pattern. |
-| Planner-Worker Cost Asymmetry | Capable model (Sonnet-4/o4) = ~5% of calls (planning); cheap model (Haiku/Llama 8B) = ~95% (execution). Up to 90% cost reduction vs single-agent. Split is about call frequency, not model quality. | I-003 | Architecture pays for planning overhead by making execution cheap. Pairs with compensation keys (I-001) for recovery. |
+| Distribution Collapse Under Metric Optimisation | Agents optimising aggregate proxies (AUC, accuracy) silently converge on narrow output distributions. Entropy collapses before accuracy degrades. Standard metrics stay green while individual-case quality erodes. Detection requires output entropy audits + per-cohort diversity metrics. Confirmed at billion-event scale. arXiv:2605.01604 (Pandey, May 2026). | I-031 | The eval harness is part of the attack surface — it defines what gets optimised for. | | Capable model (Sonnet-4/o4) = ~5% of calls (planning); cheap model (Haiku/Llama 8B) = ~95% (execution). Up to 90% cost reduction vs single-agent. Split is about call frequency, not model quality. | I-003 | Architecture pays for planning overhead by making execution cheap. Pairs with compensation keys (I-001) for recovery. |
 | Governance Decay | Context compaction (summarization/eviction) silently erases in-context safety constraints — violation rates jump from 0% to 30–59% without model or prompt changes. Compaction optimizes for task continuity, not constraint preservation. Defense: Constraint Pinning (~47 pinned tokens restores 0% violations). | I-004 | Chen, arXiv:2606.22528 (27 Jun 2026). The same mechanism that prevents context overflow also destroys safety guarantees. |
 | Phase-State Machines | Action records need explicit lifecycle states (PENDING → COMMITTED → COMPENSATING → COMPENSATED) to survive distributed retries and multi-agent handoffs. | I-001 | Analogous to saga pattern in distributed transactions. |
 | Blast Radius Isolation | Compensation actions must themselves be idempotent. Using the compensation key as the idempotency key for the reversal prevents double-credit. | I-001 | Confirmed via Cordum's production guide. |
@@ -45,7 +50,8 @@
 
 *Add synthesized insights here when pattern density ≥ 3*
 
-|| Retrieval Grounding vs Generation Grounding | Hallucination has two distinct failure modes: retrieval hallucination (wrong chunks) and generation hallucination (model confabulation). Vector RAG + semantic output validation addresses the second. Knowledge graph grounding addresses the first by replacing chunk retrieval with entity-level traversal. Confusing which layer you're fixing leads to wrong architectural choices. | I-011 | Microsoft GraphRAG: 16.7% → 56.2% on multi-hop reasoning (3.4×). Confirmed by PolyglotSoft, Neo4j, Atolio, and OpenReview (ICLR 2026). |
+|| Longitudinal Drift Taxonomy | Agent drift has three distinct axes: semantic (output deviates from original intent), behavioral (tool selection / reasoning depth / refusal patterns shift), and coordination (multi-agent consensus breaks down). Each requires different detection: golden dataset rerun, behavioral telemetry, and inter-agent agreement rates respectively. Key insight: all three accumulate silently across background factors (model updates, data shifts, context rot) with no code change trigger. Stanford 2026 AI Index and practitioner reports confirm 10–14 day degradation window before visible failure. | I-016 | Separates from S-383 goal-drift (which covers long-horizon task-level drift) by covering temporal regression in all task types from background factors. |
+| Retrieval Grounding vs Generation Grounding | Hallucination has two distinct failure modes: retrieval hallucination (wrong chunks) and generation hallucination (model confabulation). Vector RAG + semantic output validation addresses the second. Knowledge graph grounding addresses the first by replacing chunk retrieval with entity-level traversal. Confusing which layer you're fixing leads to wrong architectural choices. | I-011 | Microsoft GraphRAG: 16.7% → 56.2% on multi-hop reasoning (3.4×). Confirmed by PolyglotSoft, Neo4j, Atolio, and OpenReview (ICLR 2026). |
 || Inference-Time Cost-Accuracy Agility | The cost-quality tradeoff for agents is solved at inference time via dynamic ICL + self-consistency cascades — no training required. Agility (rapid iteration without human bottlenecks) is preserved while shifting the Pareto frontier. | I-009 | Sarukkai et al., arXiv:2512.02543, Stanford ICLR 2026 Workshop DATA-FM. |
 | Action Metamorphic Relations | Correctness defined by end-state equivalence, not text similarity. "Refund processed" and "Refund processed via batch" are equally correct if the balance updated. Prevents false negatives from cosmetic output drift. | I-008 | Key insight from ReliabilityBench methodology. |
 | Structural Input Separation | Environmental inputs (web, email, docs) must be wrapped in explicit structural markers that distinguish untrusted content from system directives. The model learns to treat marked content as informational, not authoritative. This shifts injection defense from content filtering to structural boundary enforcement. | I-010 | Inspired by Zylos 2026 research; mirrors the principle behind S-363 context position architecture (what enters the context carries weight). |
@@ -179,7 +185,36 @@ result-utilization → I-014
 eval-rubric → I-014
 dimension-scoring → I-014
 trajectory-variance → I-014
-CI-gate → I-014
+constrained-decoding → I-015
+vocabulary-mask → I-015
+grammar-guided → I-015
+fsm-decoding → I-015
+hallucination-prevention → I-011, I-015
+token-masking → I-015
+attribution-generation → I-015
+output-bounding → I-015
+outlines → I-015
+logits-mask → I-015
+agent-drift → I-016
+behavioral-degradation → I-016
+silent-drift → I-016
+longitudinal-eval → I-016
+drift-detection → I-016
+temporal-regression → I-016
+drift-monitor → I-016
+continuous-evaluation → I-016
+model-update-drift → I-016
+production-monitoring → I-016
+protocol-stack → I-017
+interoperability → I-017
+mcp-as-agent → I-017
+aaif → I-017
+two-layer → I-017
+ap2 → I-017
+agentic-commerce → I-017
+tool-agent-boundary → I-017
+seam-cases → I-017
+mcp-a2a → I-006, I-017
 ```
 
 ## Recent Decisions
@@ -202,9 +237,15 @@ CI-gate → I-014
 | 2026-07-02 | I-003 | WRITTEN — S-357 | Long-Running Agent Orchestration (Planner-Worker, CORPGEN three-layer temporal decomposition). Completely uncovered in handbook — zero entries on task decomposition, planner-worker, or strategic/tactical/operational layer separation. 3.5x completion improvement and 90% cost reduction are concrete and verifiable. Runner-up: Synthetic Data Pipelines (R-13 covers research angle, stacks thin but not a gap), Constitutional Guardrails (S-349 already covers four-layer enforcement). |
 | 2026-07-02 | I-014 | WRITTEN — S-385 | Agent Trajectory Evaluation: Process vs. Outcome Scoring — gap: all existing eval entries (S-219, S-220, S-202, S-251, S-249) cover eval infrastructure and CI gates, but none address the fundamental distinction between outcome and process scoring. An agent can succeed via a terrible trajectory (lucky hallucination, 47 tool calls instead of 3, infinite retry loop that happened to converge). This is the architectural gap that causes "passed eval, broken production" failures. Six-dimension trajectory rubric (tool selection, argument extraction, result utilization, error recovery, plan coherence, task completion) is an established production pattern from Jobs By Culture, Adaline AI, QASkills, and JetBrains eval research (May–June 2026). Per-dimension CI gates catch regressions that aggregate scores hide. Composite 9.10. Chosen over: eval contamination detection (related to S-251 golden dataset rotation, less specific pattern), semantic output validation (covered by S-212), OTEL span-level scoring (related but infrastructure-level, not rubric-level). |
 
+| 2026-07-02 | I-031 | WRITTEN — S-396 | Tool Call Hallucination — gap: S-03 (basic tool def) and S-393 (output semantic verification) exist, but no entry covers tool-call hallucination at the input/schema level (wrong tool names, wrong params, unregistered tool invocations). RelyToolBench taxonomy (Xu et al., arXiv:2412.04141) + Salman Qazi blog (June 2026) + Kumar Medium (Feb 2026) provide concrete evidence. Three-layer defense: schema anchoring, reliability calibration/probing, output gating. Composite 8.15. Chosen over: Agent Memory Forgetting/Recall Interference (composite 7.65 — less specific, overlaps with S-09 and I-004). |
+
 ## Meta
 
 - Created: 2026-07-02
-- Last Updated: 2026-07-02 (run 2: +I-014 trajectory-eval / S-385)
-- Total ideas discovered: 14
+- Last Updated: 2026-07-02 (run 4: +I-030 untrusted-content-ingestion-gate / S-389)
+- Total ideas discovered: 16
 - Total patterns distilled: 5
+
+| I-030 | Untrusted Content Ingestion Gate | content-sanitization, indirect-prompt-injection, trust-boundary, document-security, content-boundary, ingestion-layer, CVE-2026-2256, EchoLeak, data-exfiltration, defense-in-depth | 9 | 10 | 9 | 9 | 7 | **8.85** | WRITTEN — S-389 | 2026-07-02 | 2026-07-02 |
+| I-031 | Tool Call Hallucination | tool-hallucination, reliability-alignment, schema-anchoring, tool-selection, tool-usage, parameter-mismatch, unregistered-tool, RelyToolBench, output-gating, pretraining-bleed | 9 | 7 | 8 | 8 | 8 | **8.15** | WRITTEN — S-396 | 2026-07-02 | 2026-07-02 |
+| 2026-07-03 | I-017 | WRITTEN — S-414 | Protocol Convergence Thesis — gap: S-10, S-14, S-197, S-249, S-390 exist individually but no entry covers the convergence thesis: MCP-as-agent blurring the tool/agent line, AAIF governance, three seam cases in dual-protocol stacks, version-drift risks, and convergence signal tracking. Composite 8.95. Chosen over: Longitudinal Eval (I-016 already written), OWASP Agentic Top 10 (covered by S-375, S-390), MCP A2A interop (not yet spec'd — premature). |
