@@ -69,6 +69,9 @@
   - [S-413 · The Test-Production Reliability Gap](stacks/s413-production-reliability-gap.md)
   - [S-417 · Agent Failure Mode Taxonomy and Self-Healing Architecture](stacks/s417-agent-failure-mode-taxonomy-and-self-healing-architecture.md)
   - [S-420 · Agent Identity Governance: The AI-Principal Paradigm](stacks/s420-agent-identity-governance-the-AI-principal-paradigm.md)
+  - [S-425 · Agent Coordination Primitives](stacks/s425-agent-coordination-primitives.md)
+  - [S-427 · MCP Schema Contracts](stacks/s427-mcp-schema-contracts.md)
+  - [S-430 · Agent Benchmark Gaming: Scores Without Proof](stacks/s430-agent-benchmark-gaming.md)
   - [S-401 · Agent Drift: The Longitudinal Regression Problem](stacks/s401-agent-drift-the-longitudinal-regression-problem.md)
   - *— Meta & Process —*
   - [S-36 · System Prompt Architecture](stacks/s36-system-prompt-architecture.md)
@@ -264,6 +267,7 @@
   - [F-192 · Cost Velocity Circuit Breaker](forward-deployed/f192-cost-velocity-circuit-breaker.md)
   - [F-193 · Agent Escalation Gating](forward-deployed/f193-agent-escalation-gating.md)
   - [F-194 · AgentJacking & MCP Tool-Response Poisoning](forward-deployed/f194-agentjacking-mcp-tool-response-poisoning.md)
+  - [F-195 · Outcome Delivery Verification](forward-deployed/f195-outcome-delivery-verification.md)
 
 - **Book of the Frontier**
   - [Overview](frontier/)

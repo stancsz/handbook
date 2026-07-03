@@ -26,6 +26,9 @@
 | I-031 | Distribution Collapse Under Metric Optimisation | metric-optimisation, output-entropy, reward-hacking, aggregate-metric, distribution-collapse, diversity-collapse, AUC-gap, entropy-audit, eval-harness, proxy-convergence | 9 | 10 | 9 | 10 | 8 | **8.60** | WRITTEN — S-412 | 2026-07-03 | 2026-07-03 |
 | I-007 | Agent Span Tracing: Observable Agent Sessions | opentelemetry, span, trace, observability, session-span, tool-call-trace, retrieval-trace, llm-span, trace-eval, otel-agent, agent-debugging, lineage, trace-to-eval | 9 | 9 | 9 | 10 | 8 | **9.10** | WRITTEN — S-368 | 2026-07-02 | 2026-07-02 |
 | I-033 | Agent Identity Governance: The AI-Principal Paradigm | agent-identity, AI-principal, NHI, IAM-mesh, action-management, capability-contract, zero-trust-agent, trust-tier, delegation-chain, attestation, agent-credential, human-agent-binding, identity-anchor, policy-enforcement, behavior-telemetry, kill-switch | 10 | 10 | 9 | 10 | 8 | **9.55** | WRITTEN — S-420 | 2026-07-03 | 2026-07-03 |
+| I-034 | Outcome Delivery Verification: The Cron That Won But Never Delivered | outcome-verification, delivery-confirmation, side-effect-verification, cron-silent-failure, run-success-gap, effect-delivery, post-run-confirm, delivery-gate, rollback-trigger, budget-cut, announce-step | 9 | 10 | 9 | 10 | 8 | **9.30** | WRITTEN — F-195 | 2026-07-03 | 2026-07-03 |
+| I-035 | MCP Schema Contracts | mcp-schema-drift, schema-contract, tool-contract, schema-versioning, schema-snapshot, schema-diff, breaking-change, tool-description-drift, mcp-security, tool-poisoning, dependency-hell, mcp-contracts, mcpdiff | 9 | 10 | 9 | 10 | 8 | **9.30** | WRITTEN — S-427 | 2026-07-03 | 2026-07-03 |
+| I-036 | Agent Benchmark Gaming: Scores Without Proof | benchmark-gaming, benchmark-integrity, eval-exploit, benchmark-spoof, swebench, webarena, benchmark-leakage, pytest-trojan, terminal-trojan, oracle-leakage, future-commit, benchmark-verification, clean-room-audit, swebench-pro, terminal-bench, artifact-drift | 10 | 10 | 10 | 10 | 9 | **9.80** | WRITTEN — S-430 | 2026-07-03 | 2026-07-03 |
 | I-032 | Agent Failure Mode Taxonomy and Self-Healing Architecture | failure-mode, self-heal, watchdog, loop-detector, circuit-breaker, supervisor-tree, graceful-degradation, rollback, deadlock, resource-contention, silent-corruption, irreversible-action, steer-vs-kill, fault-tolerance, production-resilience, compounding-fail | 9 | 9 | 9 | 9 | 8 | **8.85** | WRITTEN — S-417 | 2026-07-03 | 2026-07-03 |
 
 *Composite = Urgency×0.35 + Gap×0.25 + Specificity×0.20 + Timeliness×0.10 + Density×0.10*
@@ -36,6 +39,8 @@
 |---------|-------------|---------------------|-------|
 | L0–L5 Autonomy Taxonomy | Inspired by SAE J3016 automotive standards; the dividing line is L2 vs L3 (pre-action approval vs post-action audit). Production ceiling is L3–L4. L5 is explicitly unsafe for enterprise across CSA, ASDLC, Zylos, and SAE frameworks. | I-002 | Critical convergence: all independent frameworks agree on the same levels. |
 | Bounded Autonomy | Agents get wide latitude within enforceable fences; escalation is mandatory at defined boundaries. The absence of an explicit level is not L0 — it is "whatever the agent can get away with." | I-002 | L3+ requires undo stack + governance agent overlay. |
+| Delivery-Gate Pattern | Run success ≠ delivery success. The agent runtime tracks loop completion; the user receives the outcome. When budget cuts or timeouts interrupt, delivery (the last step) is the first casualty. Treat verification as a required gate, not a best-effort step. | I-034 | Confirmed across Pazi.ai (cron "succeed but never deliver"), Harness Engineering (11-day stale-token case), Maxim AI observability guide. Gates must be out-of-band reads, not tool return values. |
+| MCP Schema Contract Pattern | MCP tool schemas have no built-in versioning — when a server updates, every connected agent silently gets the new schema with no signal that anything changed. Breaking changes (required params, renamed fields) surface as silent behavior drift, not errors. Schema snapshots + diffing + governance gates detect both breaking changes and tool poisoning via description injection. | I-035 | mcp-contracts/mcp-contracts GitHub (847 stars); Tian Pan (May 2026) on stale tool descriptions; Adarsh Singh (June 2026) on MCP drift. Extends S-201 (MCP security) to the contract/change-management dimension. |
 | Read-to-Write Escalation Gate | The transition from reading information to modifying external systems is the single most actionable governance heuristic. Confirmed across CSA, Zylos, and Vitalora. Every escalation taxonomy converges here. | I-002 | This is a technical gate (function), not a policy document. |
 | Governance Agent Overlay | For L4+ multi-agent systems: a dedicated rule-engine (not LLM) monitors agents, detects policy violations, and can autonomously demote privileges. Governance agent is deterministic — no LLM in the enforcement path. | I-002 | Sourced from CSA v2.0 + Zylos. Prevents circular LLM dependency. |
 | Three-Layer Key Model | Intent key / Execution key / Compensation key — each encodes a different phase and survives agent restarts. | I-001 | Deterministic hashing from action metadata (not UUIDs) so any process can find and operate. |
@@ -124,10 +129,33 @@ cost-per-outcome → I-005
 agent-economics → I-003, I-005
 context-accumulation → I-003, I-005
 mcp-supply-chain → I-006
+schema-drift → I-035
+mcp-schema-drift → I-035
+tool-contract → I-035
+schema-contract → I-035
+mcp-contracts → I-035
+mcpdiff → I-035
+schema-versioning → I-035
+schema-snapshot → I-035
+schema-diff → I-035
+tool-description-drift → I-035
+breaking-change → I-035
 trace → I-007
 observability → I-007
 tracing → I-007
-span → I-007
+benchmark-gaming → I-036
+benchmark-integrity → I-036
+eval-exploit → I-036
+benchmark-spoof → I-036
+oracle-leakage → I-036
+artifact-drift → I-036
+pytest-trojan → I-036
+terminal-trojan → I-036
+future-commit → I-036
+benchmark-verification → I-036
+clean-room-audit → I-036
+```
+
 opentelemetry → I-007
 eval → I-007, I-008
 artifact-pinning → I-006
@@ -253,6 +281,8 @@ kill-switch → I-033
 | 2026-07-02 | I-013 | WRITTEN — S-383 | Goal Drift: The Silent Competence Erosion Pattern — gap: no handbook entry covers the tendency of long-horizon agents to silently diverge from stated objectives through context accumulation, environmental pressure, and model update side effects. Distinct from hallucination (fabrication) and tool misuse (wrong method): this is pursuing the wrong goal correctly. ICLR 2026 paper (arXiv:2603.03258, Menon et al.) on Inherited Goal Drift provides empirical backing; Zylos Research (April 2026) independently identifies goal drift as a defining production challenge. Three-layer pattern: goal pinning → periodic sanity checks → semantic drift detection. Composite 8.95. Chosen over: Operational Hallucination (related to S-360 governance decay, less specific pattern), Agent-Driven Scope Creep (adjacent but different failure class). |
 | 2026-07-02 | I-011 | WRITTEN — S-378 | Entity Grounding: Knowledge Graphs as Verifiable Memory — gap: no handbook entry covers the architectural distinction between chunk-based RAG (vector) and entity-level graph grounding, despite GraphRAG achieving 3.4× accuracy gains on multi-hop reasoning (16.7% → 56.2%). S-212 (semantic output validation) and S-221/S-374 (agentic RAG) cover adjacent ground but not the core architectural shift. Composite 9.25. Chosen over multi-agent state synchronization (partial coverage via S-373 authority design), agent memory architectures (covered by S-303/S-314, less specific), and event-driven agent coordination (covered by S-377). |
 | 2026-07-02 | I-007 | WRITTEN — S-368 | Agent Span Tracing (observable agent sessions) — gap: observability for multi-turn agents is completely uncovered despite being a top-3 production pain point. Tracing per-LLM-call, per-tool-call, and per-retrieval spans with OpenTelemetry enables trace-driven eval (isolating which step failed) and cross-agent causality analysis. Tiered export to Langfuse/Braintrust (LLM spans), Datadog (tool spans), and S3 (full tree for audit). Connects to S-100 (retrieval spans), S-331 (LLM-as-judge eval), S-362 (cost per span), and S-93 (error recording). Confirmed via Zylos observability research, Databricks MLflow OTel guide, and Digital Applied sandbox analysis. |
+| 2026-07-02 | I-034 | WRITTEN — F-195 | Outcome Delivery Verification — gap: no handbook entry covers the silent failure where agent run succeeds but delivery never happens (budget cuts, timeouts truncate the final announce step). Framework run != user outcome. Delivery gates must be out-of-band reads, not tool return values. Confirmed via Pazi.ai case study and Harness Engineering (11-day stale-token). Chosen over: rollback trigger patterns (covered by S-204/S-425), escalation gate (covered by S-355/S-193). |
+| 2026-07-03 | I-035 | WRITTEN — S-427 | MCP Schema Contracts — gap: MCP tool schemas have no built-in versioning. When an MCP server updates, every connected agent silently gets the new schema with no signal anything changed. Breaking changes surface as silent behavior drift, not errors. Related but distinct from I-006 (supply chain) and I-017 (tool affordance design): I-006 covers artifact provenance, I-017 covers tool naming/discoverability, this covers schema evolution over time. mcp-contracts/mcp-contracts on GitHub (847 stars) provides the implementation. Tian Pan (May 2026) and Adarsh Singh (June 2026) independently identified the problem. Composite 9.30. Chosen over: agent output verification (covered by F-195), MCP protocol convergence (covered by S-225/S-14), observability stack (covered by S-209/S-196). |
 | 2026-07-02 | I-004 | WRITTEN — S-360 | Governance Decay (context compaction silently erases safety constraints) — completely uncovered in the handbook. arXiv:2606.22528 (Chen, 27 Jun 2026) just published. Violation rates jump 0%→59% with no model/prompt changes. The same compaction systems teams deploy to avoid context overflow are simultaneously destroying safety guarantees. Directly related to S-355 (bounded autonomy — L3+ agents are highest risk), S-198 (tool-call guardrails — enforcement downstream of where decay happens). |
 | 2026-07-02 | I-005 | WRITTEN — S-362 | Budget-Aware Agents (cost as first-class behavioral dimension) — gap: cost observability (s322, s346, f192) is covered but budget-embedded agent behavior is not. Key pattern: 3-mode cost system (full→conservative→terminate) at 50%/80% budget thresholds, cost tracker as an explicit state object, cost-per-step projections enabling early termination before budget exhaustion. Connects to S-355 (bounded autonomy — budget as governance constraint) and S-356 (context accumulation cost compounding). |
 | 2026-07-02 | I-006 | WRITTEN — S-365 | MCP Supply Chain (from npx to production catalog) — gap: MCP is covered in S-10 but the supply-chain security implications of installing arbitrary server packages are not. Key pattern: artifact pinning + SBOM + signed digest + catalog governance mirror the npm security model that failed. Confirmed via Zylos MCP security research, Anthropic MCP audit guide, OWASP A06:2025. Tiered defense (pinning → SBOM → signature verification → catalog governance) closes the full chain. |
@@ -267,12 +297,13 @@ kill-switch → I-033
 | 2026-07-02 | I-014 | WRITTEN — S-385 | Agent Trajectory Evaluation: Process vs. Outcome Scoring — gap: all existing eval entries (S-219, S-220, S-202, S-251, S-249) cover eval infrastructure and CI gates, but none address the fundamental distinction between outcome and process scoring. An agent can succeed via a terrible trajectory (lucky hallucination, 47 tool calls instead of 3, infinite retry loop that happened to converge). This is the architectural gap that causes "passed eval, broken production" failures. Six-dimension trajectory rubric (tool selection, argument extraction, result utilization, error recovery, plan coherence, task completion) is an established production pattern from Jobs By Culture, Adaline AI, QASkills, and JetBrains eval research (May–June 2026). Per-dimension CI gates catch regressions that aggregate scores hide. Composite 9.10. Chosen over: eval contamination detection (related to S-251 golden dataset rotation, less specific pattern), semantic output validation (covered by S-212), OTEL span-level scoring (related but infrastructure-level, not rubric-level). |
 
 | 2026-07-02 | I-031 | WRITTEN — S-396 | Tool Call Hallucination — gap: S-03 (basic tool def) and S-393 (output semantic verification) exist, but no entry covers tool-call hallucination at the input/schema level (wrong tool names, wrong params, unregistered tool invocations). RelyToolBench taxonomy (Xu et al., arXiv:2412.04141) + Salman Qazi blog (June 2026) + Kumar Medium (Feb 2026) provide concrete evidence. Three-layer defense: schema anchoring, reliability calibration/probing, output gating. Composite 8.15. Chosen over: Agent Memory Forgetting/Recall Interference (composite 7.65 — less specific, overlaps with S-09 and I-004). |
+| 2026-07-03 | I-036 | WRITTEN — S-430 | Agent Benchmark Gaming: Scores Without Proof — gap: no handbook entry covers benchmark gaming / benchmark integrity for AI agents. S-249, S-281, S-193, S-230 cover internal eval infrastructure, not the trustworthiness of external benchmark scores. Berkeley RDI (arXiv:2605.12673, April 2026) documents automated exploits achieving 100% on SWE-bench Verified (10-line conftest.py), WebArena (config leakage), Terminal-Bench (fake curl binary), FieldWorkArena (empty JSON). KanseiLink independently confirmed IQuest-Coder fabricated 81.4% → real 76.2%. Composite 9.80. Discovered fresh (not in Ideas Bank). |
 
 ## Meta
 
 - Created: 2026-07-02
-- Last Updated: 2026-07-03 (run: +I-033 agent-identity-governance-ai-principal / S-420)
-- Total ideas discovered: 17
+- Last Updated: 2026-07-03 (run: +I-036 agent-benchmark-gaming / S-430)
+- Total ideas discovered: 19
 - Total patterns distilled: 5
 
 | I-030 | Untrusted Content Ingestion Gate | content-sanitization, indirect-prompt-injection, trust-boundary, document-security, content-boundary, ingestion-layer, CVE-2026-2256, EchoLeak, data-exfiltration, defense-in-depth | 9 | 10 | 9 | 9 | 7 | **8.85** | WRITTEN — S-389 | 2026-07-02 | 2026-07-02 |

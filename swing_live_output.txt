@@ -1,0 +1,144 @@
+SWING SCAN — 2026-07-02 10:05 UTC
+
+=== INDEX SNAPSHOT ===
+  QQQ   : $  725.17 | -1.52% | SMA50 $  707.13 | RSI  59.2 | ATR $17.27 | BULL | HH/HL (BULL)
+  SPY   : $  745.76 | -0.14% | SMA50 $  735.06 | RSI  62.4 | ATR $10.87 | BULL | HH/HL (BULL)
+  IWM   : $  299.32 | -0.38% | SMA50 $  285.61 | RSI  74.1 | ATR $5.32 | BULL | HH/HL (BULL)
+  ^VIX  : $   16.69 | +0.60% | SMA50 $   17.64 | RSI  40.5 | ATR $1.90 | BEAR | LH/LL (BEAR)
+  TLT   : $   85.52 | -0.68% | SMA50 $   85.09 | RSI  57.9 | ATR $0.68 | BULL | LH/LL (BEAR)
+
+=== NASDAQ 100 COMPONENT SCAN (60 tickers) ===
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ABB"}}}
+$ABB: possibly delisted; no timezone found
+
+SYM    SCORE PRICE    1D%    5D%    20D%   RSI   MACD     VolR  RP    SMA50   
+KLAC      14 $ 266.19 -11.77% +10.69% +30.15%  61.0 +20.3522   1.5x  0.64 ABOVE
+LRCX      14 $ 391.26 -9.71% +4.39% +17.08%  61.1 +25.9396   1.3x  0.65 ABOVE
+AMAT      14 $ 650.91 -9.97% +10.52% +32.83%  64.7 +57.7268   1.3x  0.69 ABOVE
+AMAT      14 $ 650.91 -9.97% +10.52% +32.83%  64.7 +57.7268   1.3x  0.69 ABOVE
+PAYX      14 $ 102.71 +4.45% +6.66% +1.90%  53.5  +1.0300   1.2x  0.88 ABOVE
+ADP       14 $ 235.73 +5.26% +7.22% +2.74%  56.3  +2.1285   1.0x  0.95 ABOVE
+ORLY      14 $  92.69 +0.65% +5.55% +7.49%  56.8  +0.0467   1.0x  0.97 ABOVE
+MELI      13 $1742.19 +2.64% +4.98% +4.15%  66.6  +5.4740   1.0x  0.89 ABOVE
+AMD       13 $ 540.88 -6.89% +4.07% +3.71%  63.2 +26.2082   0.9x  0.70 ABOVE
+LIN       13 $ 533.55 +2.82% +3.46% +7.93%  65.5  +4.3796   1.2x  0.88 ABOVE
+FAST      13 $  47.75 -0.58% +3.22% +6.75%  62.8  +0.6429   0.9x  0.80 ABOVE
+BIIB      13 $ 209.74 -2.93% +5.09% +11.07%  66.4  +5.1470   1.0x  0.69 ABOVE
+KDP       13 $  33.37 +1.96% +7.03% +10.70%  63.9  +0.9511   1.0x  0.89 ABOVE
+SNOW      12 $ 261.19 +2.63% +15.60% +0.02%  64.4 +13.6855   0.7x  0.95 ABOVE
+CDNS      12 $ 377.73 +0.64% +1.43% -9.28%  44.2  +1.9260   0.6x  0.33 ABOVE
+EA        12 $ 205.45 +0.20% +0.45% +1.70%  71.6  +0.8292   0.8x  0.87 ABOVE
+BKNG      12 $ 182.64 +2.47% +0.77% +9.50%  70.0  +3.9780   0.8x  0.86 ABOVE
+INTC      11 $ 127.02 -9.03% -3.52% +17.69%  60.6  +6.6779   0.9x  0.65 ABOVE
+GEHC      11 $  64.86 +1.33% -0.03% +4.63%  53.8  +0.1474   0.8x  0.76 ABOVE
+MU        11 $1032.28 -10.57% -1.55% -2.99%  56.8 +79.4270   0.9x  0.44 ABOVE
+
+======================================================================
+TOP 3 SWING TRADE SETUPS — DETAILED ANALYSIS
+======================================================================
+
+======================================================================
+SETUP #1: KLAC [Semiconductors]
+======================================================================
+  PRICE & MOMENTUM:
+    Current:      $266.19
+    1-Day Chg:    -11.77%
+    5-Day Chg:    +10.69%
+    20-Day Chg:   +30.15%
+    RSI(14):      61.0 (OVERBOUGHT)
+    MACD:         +20.3522 (Signal: +18.0866) — POSITIVE
+  TECHNICAL LEVELS:
+    SMA20:        $242.62 | ABOVE
+    SMA50:        $207.58 | ABOVE
+    SMA200:       N/A
+    20d Range:    $192.77 — $307.37
+    Range Pos:   0.64 (MID-RANGE)
+  VOLUME:
+    Today:        24.1M | Avg20d: 15.7M | Ratio: 1.5x
+  RISK PARAMETERS:
+    ATR(14):      $22.13 (8.3% of price)
+    Stop Loss:   $221.93 (16.6% below entry)
+    Risk/Share:  $44.26
+    T1 (2:1):     $354.71 (+33.3%) — R/R: 2.0:1
+    T2 (3:1):     $398.96 (+49.9%) — R/R: 3.0:1
+  INVALUATION TRIGGERS:
+    1. Close below $192.77 (20d low)
+    2. QQQ breaks below SMA50
+    3. Macro regime shifts to BEAR
+
+======================================================================
+SETUP #2: LRCX [Semiconductors]
+======================================================================
+  PRICE & MOMENTUM:
+    Current:      $391.26
+    1-Day Chg:    -9.71%
+    5-Day Chg:    +4.39%
+    20-Day Chg:   +17.08%
+    RSI(14):      61.1 (OVERBOUGHT)
+    MACD:         +25.9396 (Signal: +24.7593) — POSITIVE
+  TECHNICAL LEVELS:
+    SMA20:        $368.86 | ABOVE
+    SMA50:        $319.05 | ABOVE
+    SMA200:       N/A
+    20d Range:    $302.53 — $438.50
+    Range Pos:   0.65 (MID-RANGE)
+  VOLUME:
+    Today:        18.7M | Avg20d: 14.1M | Ratio: 1.3x
+  RISK PARAMETERS:
+    ATR(14):      $30.52 (7.8% of price)
+    Stop Loss:   $330.22 (15.6% below entry)
+    Risk/Share:  $61.04
+    T1 (2:1):     $513.34 (+31.2%) — R/R: 2.0:1
+    T2 (3:1):     $574.38 (+46.8%) — R/R: 3.0:1
+  INVALUATION TRIGGERS:
+    1. Close below $302.53 (20d low)
+    2. QQQ breaks below SMA50
+    3. Macro regime shifts to BEAR
+
+======================================================================
+SETUP #3: AMAT [Semiconductors]
+======================================================================
+  PRICE & MOMENTUM:
+    Current:      $650.91
+    1-Day Chg:    -9.97%
+    5-Day Chg:    +10.52%
+    20-Day Chg:   +32.83%
+    RSI(14):      64.7 (OVERBOUGHT)
+    MACD:         +57.7268 (Signal: +50.5604) — POSITIVE
+  TECHNICAL LEVELS:
+    SMA20:        $580.31 | ABOVE
+    SMA50:        $485.79 | ABOVE
+    SMA200:       N/A
+    20d Range:    $452.91 — $739.67
+    Range Pos:   0.69 (MID-RANGE)
+  VOLUME:
+    Today:        16.0M | Avg20d: 12.8M | Ratio: 1.3x
+  RISK PARAMETERS:
+    ATR(14):      $50.44 (7.7% of price)
+    Stop Loss:   $550.04 (15.5% below entry)
+    Risk/Share:  $100.87
+    T1 (2:1):     $852.66 (+31.0%) — R/R: 2.0:1
+    T2 (3:1):     $953.53 (+46.5%) — R/R: 3.0:1
+  INVALUATION TRIGGERS:
+    1. Close below $452.91 (20d low)
+    2. QQQ breaks below SMA50
+    3. Macro regime shifts to BEAR
+
+======================================================================
+SECTOR ROTATION — TOP 10 SETUPS
+======================================================================
+  Semiconductors      : █████ (5)
+  IT Services         : ██ (2)
+  Consumer Disc.      : █ (1)
+  FinTech             : █ (1)
+  Industrials         : █ (1)
+
+======================================================================
+MACRO CONTEXT
+======================================================================
+  VIX: $16.69 (+0.60%) — LOW VOL = BULL CONFIRMATION
+  QQQ: $725.17 (-1.52%) — Regime: BULL
+  QQQ Structure: HH/HL (BULL)
+  IWM: $299.32 (-0.38%) — SMALL CAP LAGGING
+
+[Data saved to market_data_live.json and scan_results_live.csv]
