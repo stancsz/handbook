@@ -66,8 +66,10 @@
   - [S-396 · Tool Call Hallucination](stacks/s396-tool-call-hallucination.md)
   - [S-406 · Tool Affordance Design](stacks/s406-tool-affordance-design.md)
   - [S-412 · Distribution Collapse Under Metric Optimisation](stacks/s412-distribution-collapse-under-metric-optimisation.md)
-  - [S-401 · Agent Drift: The Longitudinal Regression Problem](stacks/s401-agent-drift-the-longitudinal-regression-problem.md)
   - [S-413 · The Test-Production Reliability Gap](stacks/s413-production-reliability-gap.md)
+  - [S-417 · Agent Failure Mode Taxonomy and Self-Healing Architecture](stacks/s417-agent-failure-mode-taxonomy-and-self-healing-architecture.md)
+  - [S-420 · Agent Identity Governance: The AI-Principal Paradigm](stacks/s420-agent-identity-governance-the-AI-principal-paradigm.md)
+  - [S-401 · Agent Drift: The Longitudinal Regression Problem](stacks/s401-agent-drift-the-longitudinal-regression-problem.md)
   - *— Meta & Process —*
   - [S-36 · System Prompt Architecture](stacks/s36-system-prompt-architecture.md)
   - [S-37 · Batch vs Real-Time Pipelines](stacks/s37-batch-vs-realtime.md)

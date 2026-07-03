@@ -25,6 +25,8 @@
 | I-017 | Tool Affordance Design | affordance, discoverability, tool-schema, tool-naming, constraint, destructive-tool, parameter-invention, tool-hallucination, mcp, pydantic, schema-validation, tool-description, type-signature | 8 | 10 | 9 | 9 | 8 | **8.80** | WRITTEN — S-406 | 2026-07-02 | 2026-07-02 |
 | I-031 | Distribution Collapse Under Metric Optimisation | metric-optimisation, output-entropy, reward-hacking, aggregate-metric, distribution-collapse, diversity-collapse, AUC-gap, entropy-audit, eval-harness, proxy-convergence | 9 | 10 | 9 | 10 | 8 | **8.60** | WRITTEN — S-412 | 2026-07-03 | 2026-07-03 |
 | I-007 | Agent Span Tracing: Observable Agent Sessions | opentelemetry, span, trace, observability, session-span, tool-call-trace, retrieval-trace, llm-span, trace-eval, otel-agent, agent-debugging, lineage, trace-to-eval | 9 | 9 | 9 | 10 | 8 | **9.10** | WRITTEN — S-368 | 2026-07-02 | 2026-07-02 |
+| I-033 | Agent Identity Governance: The AI-Principal Paradigm | agent-identity, AI-principal, NHI, IAM-mesh, action-management, capability-contract, zero-trust-agent, trust-tier, delegation-chain, attestation, agent-credential, human-agent-binding, identity-anchor, policy-enforcement, behavior-telemetry, kill-switch | 10 | 10 | 9 | 10 | 8 | **9.55** | WRITTEN — S-420 | 2026-07-03 | 2026-07-03 |
+| I-032 | Agent Failure Mode Taxonomy and Self-Healing Architecture | failure-mode, self-heal, watchdog, loop-detector, circuit-breaker, supervisor-tree, graceful-degradation, rollback, deadlock, resource-contention, silent-corruption, irreversible-action, steer-vs-kill, fault-tolerance, production-resilience, compounding-fail | 9 | 9 | 9 | 9 | 8 | **8.85** | WRITTEN — S-417 | 2026-07-03 | 2026-07-03 |
 
 *Composite = Urgency×0.35 + Gap×0.25 + Specificity×0.20 + Timeliness×0.10 + Density×0.10*
 
@@ -59,6 +61,7 @@
 | Environmental Input Attack Surface | Agents ingest untrusted content from the environment (web pages, emails, documents, tool responses) that carries no intrinsic trust signal. The attacker's surface = every input the agent reads. Indirect injection via RAG poisoning requires only 5 crafted documents to manipulate responses 90% of the time. | I-010 | Expands the threat model beyond adversarial user input to include passive, non-interactive attack vectors. |
 | Seven-Layer Defense-in-Depth | No single mitigation (regex filter, system prompt instruction, moderation API) is sufficient. Effective defense requires seven independent layers: structural separation, capability gating, MCP hardening, output validation, A2A identity, blast radius containment, and human-in-the-loop. Each layer covers failure modes the others miss. | I-010 | Consistent with Zylos, AgDex, OWASP LLM01 guidance. Raises attacker cost beyond practical exploitation. |
 | Antagonistic Validation | Reliability emerges from disagreement, not consensus. Multiple imperfect agents with misaligned incentives and bounded veto authority create structural opposition — errors must survive adversarial scrutiny before propagation. Three roles: Composer (generates), Antagonist (attacks), Integrator (decides). Vetoes are categorized hard/soft/advisory. Iteration count is bounded. Based on Swiss Cheese Model (Reason 2000) and Shannon's channel capacity. | I-012 | arXiv:2601.14351; GitHub multi-agent reliability analysis. Complements S-101 (deterministic sessions) and S-355 (L3+ autonomy requires structured oversight). |
+| Failure Mode Taxonomy + Self-Healing | Agent failures are qualitatively distinct from web service failures: F1 (loop), F2 (deadlock), F3 (resource contention), F4 (silent corruption), F5 (irreversible action). Recovery is layered: detect (watchdog/loop detector), contain (circuit breaker/budget watcher), recover (steer vs. kill decision). The compounding math is brutal: 10 steps at 85% reliability = 20% success. Zylos (2026-05-06) provides the failure taxonomy; the supervisor tree + circuit breaker architecture closes the loop. | I-032 | Zylos Research 2026-05-06; AgentCircuit (HN). Steer-vs-kill rule from practitioner HN thread. |
 
 ## Deduplication Index
 
@@ -67,12 +70,22 @@
 ai-agent → I-001, I-002, I-008
 llm →
 evaluation → I-008
-reliability → I-001, I-002, I-008
+reliability → I-001, I-002, I-008, I-032
 cost →
 mcp →
 multi-agent → I-001, I-003
 sandbox →
 guardrails → I-002
+failure-mode → I-032
+self-heal → I-032
+loop → I-032
+deadlock → I-032
+circuit-breaker → I-032
+watchdog → I-032
+supervisor-tree → I-032
+graceful-degradation → I-032
+steer-vs-kill → I-032
+compensation → I-001, I-032
 routing →
 memory →
 rag →
@@ -215,6 +228,21 @@ agentic-commerce → I-017
 tool-agent-boundary → I-017
 seam-cases → I-017
 mcp-a2a → I-006, I-017
+agent-identity → I-033
+ai-principal → I-033
+nhi → I-033
+iam-mesh → I-033
+action-management → I-033
+capability-contract → I-033
+zero-trust-agent → I-033
+trust-tier → I-033
+delegation-chain → I-033
+attestation → I-033
+human-agent-binding → I-033
+identity-anchor → I-033
+policy-enforcement → I-033
+behavior-telemetry → I-033
+kill-switch → I-033
 ```
 
 ## Recent Decisions
@@ -233,6 +261,7 @@ mcp-a2a → I-006, I-017
 || 2026-07-02 | I-005 | WRITTEN — S-362 | Budget-Aware Agents (cost as first-class behavioral dimension) — gap: cost observability (s322, s346, f192) is covered but budget-embedded agent behavior is not. Key pattern: 3-mode cost system (full→conservative→terminate) at 50%/80% budget thresholds, cost tracker as an explicit state object, cost-per-step projections enabling early termination before budget exhaustion. Connects to S-355 (bounded autonomy — budget as governance constraint) and S-356 (context accumulation cost compounding). |
 | 2026-07-02 | I-005 | WRITTEN — S-362 | Budget-Aware Agents (cost as first-class behavioral dimension) — gap: cost observability (s322, s346, f192) is covered but budget-embedded agent behavior is not. Key pattern: 3-mode cost system (full→conservative→terminate) at 50%/80% budget thresholds, cost tracker injection into context, cost-aware tool selection. Timely: AgentMarketCap (Apr 2026) shows 40–60% cost reduction via budget-aware design; Orq.ai FinOps (Jun 2026) on cost-per-outcome KPIs. NOT covered by s346 (token cost trap — focuses on multiplicative compounding economics) or f192 (cost velocity circuit breaker — reactive, not behavioral). |
 | 2026-07-02 | I-006 | WRITTEN — S-365 | MCP Supply Chain (artifact integrity from npx to production catalog) — gap: MCP server hardening (s201), attack surface (s261), and protocol convergence (s359) are covered, but the CI/CD artifact pipeline for MCP servers (hash-pinning, SBOM, signed digests, catalog governance gates) is completely missing. Key pattern: treating MCP servers as production artifacts with the same rigor as container images. Timely: JFrog detected active MCP server exploits in Q1 2026; Kong MCP Registry, Cisco/CrowdStrike MCP governance, and OBOT.ai's pipeline hardening guide all published in mid-2026. The npx→production gap is where the next major MCP security incident will come from. |
+| 2026-07-03 | I-033 | WRITTEN — S-420 | Agent Identity Governance: The AI-Principal Paradigm — gap: s313 covers agent credential lifecycle (issuance, rotation, revocation), s266 covers inter-agent delegation trust chains. Neither covers the paradigm shift to AI-principal identity, action-level vs. access-level policy enforcement, the IAM mesh (human-to-agent, agent-to-agent, agent-to-downstream), or zero-trust for agent tool calls. Market urgency: 80% of organizations report unintended agent actions (SailPoint/Dimensional 2025), 1-in-5 experienced agent security incidents (Neural Trust Nov 2025), NIST concept paper (Feb 2026), Forrester Identiverse 2026, Gartner 2026 IAM priority. Composite 9.55. Chosen over: AgentOps maturity frameworks (covered by S-418/S-413/S-370), synthetic trajectory RL (S-194 covers synthetic data pipeline), graph harness eval (covered by S-202, S-230). |
 | 2026-07-02 | I-001 | WRITTEN — S-352 | Compensation keys (distinct from idempotency keys) cover the layer above: reversing correctly-executed wrong-intent actions. All existing entries (S-93, S-181, F-107) cover prevention/deduplication — none cover autonomous reversal. Gap confirmed by Cordum, AgentMag, and early GitHub discussions on agentic compensation. |
 | 2026-07-02 | I-003 | WRITTEN — S-357 | Long-Running Agent Orchestration (Planner-Worker, CORPGEN three-layer temporal decomposition). Completely uncovered in handbook — zero entries on task decomposition, planner-worker, or strategic/tactical/operational layer separation. 3.5x completion improvement and 90% cost reduction are concrete and verifiable. Runner-up: Synthetic Data Pipelines (R-13 covers research angle, stacks thin but not a gap), Constitutional Guardrails (S-349 already covers four-layer enforcement). |
 | 2026-07-02 | I-014 | WRITTEN — S-385 | Agent Trajectory Evaluation: Process vs. Outcome Scoring — gap: all existing eval entries (S-219, S-220, S-202, S-251, S-249) cover eval infrastructure and CI gates, but none address the fundamental distinction between outcome and process scoring. An agent can succeed via a terrible trajectory (lucky hallucination, 47 tool calls instead of 3, infinite retry loop that happened to converge). This is the architectural gap that causes "passed eval, broken production" failures. Six-dimension trajectory rubric (tool selection, argument extraction, result utilization, error recovery, plan coherence, task completion) is an established production pattern from Jobs By Culture, Adaline AI, QASkills, and JetBrains eval research (May–June 2026). Per-dimension CI gates catch regressions that aggregate scores hide. Composite 9.10. Chosen over: eval contamination detection (related to S-251 golden dataset rotation, less specific pattern), semantic output validation (covered by S-212), OTEL span-level scoring (related but infrastructure-level, not rubric-level). |
@@ -242,8 +271,8 @@ mcp-a2a → I-006, I-017
 ## Meta
 
 - Created: 2026-07-02
-- Last Updated: 2026-07-02 (run 4: +I-030 untrusted-content-ingestion-gate / S-389)
-- Total ideas discovered: 16
+- Last Updated: 2026-07-03 (run: +I-033 agent-identity-governance-ai-principal / S-420)
+- Total ideas discovered: 17
 - Total patterns distilled: 5
 
 | I-030 | Untrusted Content Ingestion Gate | content-sanitization, indirect-prompt-injection, trust-boundary, document-security, content-boundary, ingestion-layer, CVE-2026-2256, EchoLeak, data-exfiltration, defense-in-depth | 9 | 10 | 9 | 9 | 7 | **8.85** | WRITTEN — S-389 | 2026-07-02 | 2026-07-02 |
