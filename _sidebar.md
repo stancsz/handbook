@@ -261,6 +261,9 @@
   - [S-605 · The Agent Stack Is Stratifying Into Six Layers](stacks/s605-the-agent-stack-is-stratifying-into-six-layers.md)
   - [S-606 · The Benchmark Laundering Problem](stacks/s606-the-benchmark-laundering-problem.md)
   - [S-616 · Agentic Plan Caching: The 50% Cost Reduction Pattern](stacks/s616-agentic-plan-caching-the-50-cost-reduction-pattern.md)
+  - [S-627 · Action Completion Verification: When "Done" Doesn't Mean Done](stacks/s627-action-completion-verification-when-done-doesnt-mean-done.md)
+  - [S-631 · The RAG Failure Cascade: Nine Predictable Modes Nobody Evaluates](stacks/s631-the-rag-failure-cascade-nine-predictable-modes-nobody-evaluates.md)
+  - [S-633 · The Recovery Paradox: When Self-Healing Mechanisms Burn the Budget](stacks/s633-the-recovery-paradox-when-self-healing-mechanisms-burn-the-budget.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
