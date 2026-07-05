@@ -263,7 +263,10 @@
   - [S-616 · Agentic Plan Caching: The 50% Cost Reduction Pattern](stacks/s616-agentic-plan-caching-the-50-cost-reduction-pattern.md)
   - [S-627 · Action Completion Verification: When "Done" Doesn't Mean Done](stacks/s627-action-completion-verification-when-done-doesnt-mean-done.md)
   - [S-631 · The RAG Failure Cascade: Nine Predictable Modes Nobody Evaluates](stacks/s631-the-rag-failure-cascade-nine-predictable-modes-nobody-evaluates.md)
+  - [S-635 · Silent Failure Detection in Agentic Loops](stacks/s635-silent-failure-detection-in-agentic-loops.md)
   - [S-633 · The Recovery Paradox: When Self-Healing Mechanisms Burn the Budget](stacks/s633-the-recovery-paradox-when-self-healing-mechanisms-burn-the-budget.md)
+  - [S-638 · Agent Spend Guardrails: The Multiplication Problem](stacks/s638-agent-spend-guardrails-the-multiplication-problem.md)
+  - [S-643 · The Coordination Layer Is the Product](stacks/s643-the-coordination-layer-is-the-product.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
