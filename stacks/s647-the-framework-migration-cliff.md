@@ -1,0 +1,30 @@
+# S-647 · The Framework Migration Cliff
+
+[Multi-agent frameworks sell on developer experience, not on production outcomes. The same low-boilerplate ergonomics that get you from zero to demo in an afternoon become the ceiling you crash into when the system needs to be reliable, observable, and cost-controlled.]
+
+## Forces
+- **CrewAI gets you to a working demo in one day.** The agent-role-task-cresw YAML structure maps directly to how people think about agent teams. That's a feature for prototyping and a liability for production — the abstractions hide the control flow you need to debug.
+- **The migration cost is always higher than expected.** The same team that spent a sprint building the crew in CrewAI spends two sprints migrating to LangGraph, and discovers the graph primitives they need don't map 1:1. The apparent productivity gain from the beginner-friendly framework evaporates.
+- **Pydantic AI is the FastAPI of agent frameworks — but its multi-agent story is still emerging.** Type safety and dependency injection are real advantages over LangChain's runtime surprises, but the framework is younger and the ecosystem is smaller. Teams that adopt it early are often doing so because they already live in the Pydantic/FastAPI ecosystem.
+- **LangGraph owns the production middle ground — but the learning curve is real.** The graph-based control flow gives you checkpointing, conditional branching, and human-in-the-loop at every node. That's what you need for reliable multi-agent systems. The cost is steeper upfront investment.
+
+## The move
+**Choose the framework that matches where you need to be in 6 months, not where you are today.**
+
+- **Start in CrewAI** only if your use case is bounded (fixed number of agents, known roles, no need for checkpointing or complex state) AND you are certain it will stay bounded. The moment you need conditional branching, per-node retry logic, or trace-level observability, you're rewriting.
+- **Start in LangGraph** when reliability, debuggability, and long-running workflows are non-negotiable. The investment in learning the graph primitives pays back in production. The DevStarsJ 2026 production stack guide explicitly maps this as the "execution engine" layer in the production agent architecture.
+- **Consider Pydantic AI** if you're already in the FastAPI/Pydantic ecosystem and want type-safe agents with minimal dependency footprint. The dependency injection system maps cleanly to tool injection at runtime. The multi-agent orchestration primitives are less mature than LangGraph but improving.
+- **Always instrument before you commit.** Add LangSmith, Phoenix, or custom tracing on day one, not after the first incident. RaftLabs found 89% of teams have observability but only 52% have evals — the gap explains why multi-agent debugging is mostly guesswork.
+- **Model the cost before the architecture.** A 4-agent orchestrator-worker workflow runs $5–8 per complex task. CrewAI's simple sequential mode looks cheap until you add the parallel/hierarchical modes that real use cases demand.
+
+## Evidence
+- **HN Show HN:** Opensoul built a 6-agent marketing stack (Director, Strategist, Creative, Producer, Growth Marketer, Analyst) on Paperclip, explicitly choosing an orchestration platform over a framework — finding that the framework-ecosystem lock-in wasn't worth it for a production marketing agency workflow. — [https://news.ycombinator.com/item?id=47336615](https://news.ycombinator.com/item?id=47336615)
+- **r/LocalLLaMA discussion:** A user building a researcher stack with configurable agent counts evaluated CrewAI and explicitly flagged: "Built on LangChain — too bloated, wants to be everything." The top response recommended starting in CrewAI to validate the concept, then copying the API design and building a custom minimal framework — confirming the migration pattern. — [https://www.reddit.com/r/LocalLLaMA/comments/1bskjki/llm_agent_platforms/](https://www.reddit.com/r/LocalLLaMA/comments/1bskjki/llm_agent_platforms/)
+- **RaftLabs production guide:** 89% of teams have observability but only 52% have evals. The inference cost compounds to $5–8 per complex task in a 4-agent workflow. Multi-agent inquiry volume grew 1,445% (Gartner Q1 2024 → Q2 2025) — most teams are encountering these trade-offs for the first time. — [https://www.raftlabs.com/blog/multi-agent-systems-guide](https://www.raftlabs.com/blog/multi-agent-systems-guide)
+- **Vstorm OSS comparison:** Pydantic AI vs LangChain from 30+ production implementations: Pydantic AI wins on type safety and bundle size; LangChain wins on provider breadth and ecosystem. The advice: "Pydantic AI for new projects; LangChain if you need specific integrations or your team already knows it." — [https://oss.vstorm.co/blog/pydantic-ai-vs-langchain/](https://oss.vstorm.co/blog/pydantic-ai-vs-langchain/)
+- **DevStarsJ production architecture (April 2026):** Maps the production agent stack into planning engine, execution engine, memory layer, and safety/guardrails layer — confirming LangGraph-style graph control as the production-standard execution engine. — [https://devstarsj.github.io/ai/architecture/2026/04/11/ai-agents-production-architecture-patterns-memory-safety-reliability](https://devstarsj.github.io/ai/architecture/2026/04/11/ai-agents-production-architecture-patterns-memory-safety-reliability)
+
+## Gotchas
+- **LangChain's own 1.0 announcement admitted the abstractions were "too heavy"** and the package surface "grown unwieldy." The lesson: the incumbent framework also has migration debt. Don't assume the old guard is the safe choice just because it has more stars.
+- **CrewAI's async support is still maturing in 2026.** Teams running high-throughput agent workloads hit concurrency ceilings that require either the enterprise AMP platform or a framework rewrite.
+- **Pydantic AI's multi-agent primitives are functional but not as battle-tested as LangGraph's.** If you need complex agent-to-agent negotiation patterns, the tooling gaps are real. Check the changelog before committing.
