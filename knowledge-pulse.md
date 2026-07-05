@@ -117,6 +117,19 @@ anti-regression → I-042
 | server-isolation → I-050 |
 | typosquatting → I-050, I-006 |
 | cve-2026-30856 → I-050 |
+session-consolidation → I-064
+memory-graduation → I-064
+memory-consolidation → I-064
+over-consolidation → I-064
+under-consolidation → I-064
+memory-hygiene → I-064
+quarantine → I-064
+consolidation-window → I-064
+agent-sprawl → I-065
+agent-control-plane → I-065
+governance → I-065
+non-human-identity → I-065
+nhi → I-065, I-033
 *Keyword → idea ID mapping. Updated after each run.*
 ```
 ai-agent → I-001, I-002, I-008
@@ -438,8 +451,8 @@ t |
 ## Meta
 
 - Created: 2026-07-02
-- Last Updated: 2026-07-04 (run: +I-049 behavioral-output-contracting / S-553, +I-052 eval-illusion / S-569)
-- Total ideas discovered: 22
+- Last Updated: 2026-07-05 (run: +I-065 agent-sprawl-governance / S-622)
+- Total ideas discovered: 24
 - Total patterns distilled: 7
 
 | I-030 | Untrusted Content Ingestion Gate | content-sanitization, indirect-prompt-injection, trust-boundary, document-security, content-boundary, ingestion-layer, CVE-2026-2256, EchoLeak, data-exfiltration, defense-in-depth | 9 | 10 | 9 | 9 | 7 | **8.85** | WRITTEN — S-389 | 2026-07-02 | 2026-07-02 |
@@ -476,6 +489,8 @@ t |
 | I-061 | Immutable Agent Audit Ledger: Append-Only Provenance for Regulatory Compliance | immutable-audit, append-only-ledger, tamper-evident, compliance, gdpr-art22, eu-ai-act, ca-admt, audit-trail, sha256-chain, event-sourcing, policy-reference, decision-record, invocation-record, outcome-delivery, regulatory, provenance, chain-linking, nhi-accountability, accountability | 8 | 8 | 9 | 9 | 8 | **8.35** | WRITTEN — S-604 | 2026-07-05 | 2026-07-05 |
 | I-062 | The Authorized Intent Chain: When Agents Bypass Every Security Control | authorized-intent, agentjack, agenthijack, technically-authorized, privilege-equivalent, no-anomaly, evasion-by-compliance, sentry-injection, mcp-injection, intent-provenance, signal-vs-instruction, credential-scoping, short-lived-token, security-control-gap, agent-security, tenant-isolat, tenet-security | 10 | 10 | 10 | 10 | 9 | **9.85** | WRITTEN — S-614 | 2026-07-05 | 2026-07-05 |
 | I-063 | Agentic Plan Caching (APC): 50% Cost Reduction via Test-Time Plan Reuse | agentic-plan-caching, apc, plan-template, test-time-memory, plan-reuse, trajectory-extraction, structural-caching, model-agnostic-cache, plan-adaptation, similarity-threshold, success-rate-invalidation, cost-reduction, latency-reduction, stanford, neurips2025, arxiv2506.14852 | 9 | 10 | 9 | 9 | 8 | **8.85** | WRITTEN — S-616 | 2026-07-05 | 2026-07-05 |
+| I-064 | Session-to-Long-Term Memory Consolidation: The Graduation Problem | memory-consolidation, session-graduation, memory-hygiene, over-consolidation, under-consolidation, memory-pollution, memory-debt, quarantine, shadow-read, contradiction-detection, deduplication, frequency-gate, novelty-filter, confidence-gate, consolidation-window, memory-poison, mem0, letta, zep, retrieval-robustness, staleness | 9 | 9 | 9 | 9 | 8 | **8.85** | WRITTEN — S-619 | 2026-07-05 | 2026-07-05 |
+| I-065 | Agent Sprawl Governance: The Agent Control Plane | agent-sprawl, governance, control-plane, registry, lifecycle-management, policy-enforcement, observability-bridge, inter-agent-protocol, eu-ai-act, compliance, iam, nhi, non-human-identity, ibm, mcp-vs-control-plane, audit-trail, auto-suspend, capability-registry, 45-to-1 | 9 | 10 | 9 | 10 | 8 | **9.35** | WRITTEN — S-622 | 2026-07-05 | 2026-07-05 |
 | Plan Template (Structural Cache) | Unlike KV cache (model-specific) or semantic cache (data-dependent), plan templates cache the *sequence of tool-call patterns* with a task-signature hash. Reuse happens when the structural schema matches, regardless of input values. Extracted from successful trajectories, adapted on retrieval, success-rate-gated on reuse. | I-063 | Stanford APC (NeurIPS 2025): 50.31% cost, 27.28% latency reduction. Fills the gap between [S-08] (provider caching) and [S-607] (cost compounding). |
 | Green-Dashboard Bad Output | Agents complete workflows and return 200 OK while silently producing wrong results. The problem isn't failure detection — it's that the success path has an undetected quality failure mode. Requires behavioral output contracting (I-049) and state verification (I-039). | I-039, I-049 | Also called "gray failure" — visible as success, catastrophic in outcome. |
 | Tool Name Collision / Permission Combination | MCP's open registry lets malicious servers hijack tool names or combine benign-looking permissions into dangerous escalation paths. Neither tool-level allowlisting nor server-level permission scopes catch the interaction effect. Requires origin-tracked tool resolution + cross-server permission audit. | I-050 | CVE-2026-30856 confirmed real exploit. OWASP MCP04-2025 covers supply chain but not runtime combination attacks. |
