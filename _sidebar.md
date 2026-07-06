@@ -273,6 +273,13 @@
   - [S-653 · LLM-as-Judge Failure Modes](stacks/s653-llm-as-judge-failure-modes.md)
   - [S-658 · Golden Trace Set Curation](stacks/s658-golden-trace-set-curation.md)
   - [S-661 · Agent Protocol Abstraction: Governing a Multi-Framework Fleet](stacks/s661-agent-protocol-abstraction-layer.md)
+  - [S-663 · MCP Credential Provisioning at Scale](stacks/s663-mcp-credential-provisioning-at-scale.md)
+  - [S-664 · Agent Stack Stratification: The Sandboxing Layer](stacks/s664-agent-stack-stratification-sandboxing-layer.md)
+  - [S-665 · Competing Mandates: When Every Layer Claims the Same Context](stacks/s665-competing-mandates-when-every-layer-claims-the-same-context.md)
+  - [S-666 · Agent Token Economics: Compounding Costs](stacks/s666-agent-token-economics-compounding-costs.md)
+  - [S-667 · Multi-Agent Orchestration: When to Split and How to Coordinate](stacks/s667-multi-agent-orchestration-when-to-split-and-how-to-coordinate.md)
+  - [S-668 · The Trace-Eval Gap: Why Instrumented Teams Still Ship Blind](stacks/s668-the-trace-eval-gap-why-instrumented-teams-still-ship-blind.md)
+  - [S-669 · Competence Without Integrity: The Corrupt Success Pattern](stacks/s669-competence-without-integrity-the-corrupt-success-pattern.md)
 
 - **Book of the Workspace**
   - [Overview](workspace/)
