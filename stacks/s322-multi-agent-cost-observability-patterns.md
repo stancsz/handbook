@@ -1,0 +1,33 @@
+# S-322 · Multi-Agent Cost Leakage and the Observability Gap
+
+Your agent team has grown from 1 to 6 agents. The Copilot suggestions are great. But your monthly LLM bill has grown 9x — and you can't tell which agent, which flow, or which prompt is driving it. The cost is real but invisible, because multi-agent systems create cost leakage that single-agent tooling was never designed to surface. The fix is correlating per-agent token budgets against outcome quality, not just total spend.
+
+## Forces
+
+- **Context accumulation is non-linear across agents.** Each agent in a multi-agent system carries its own system prompt, memory context, and tool-result artifacts. In a 6-agent pipeline, a single user request can generate 40-60K tokens across the system — far more than any single-agent equivalent — and most dashboards show only the final response token count.
+- **Token duplication compounds silently.** Research benchmarks (MetaGPT 72%, CAMEL 86%, AgentVerse 53%) show that token overlap between collaborating agents is a major hidden cost driver. Production systems show the same pattern: shared context gets re-included by every agent that touches it.
+- **Observability platforms were built for request-response, not agent graphs.** LangSmith, Phoenix, and Arize can trace individual calls, but connecting a trace to a cost center — which agent, which capability, which customer — requires custom instrumentation that most teams skip.
+- **Enterprise teams are consistently surprised by the bill.** A 2025-2026 production audit found the median developer spending $480/month on agent inference; the 90th percentile hits $1,650; and individual teams have reported $4,200 single-weekend overruns from agents looping longer than expected. Most tutorials quote "pennies per request" and skip the 24/7 autonomy case entirely.
+
+## The move
+
+Build a three-layer cost observability stack before you scale beyond 2 agents:
+
+- **Per-agent token budgets with hard caps.** Assign each agent a token budget per task (e.g., Planner: 30%, Retriever: 20%, Generator: 30%, Checker: 20%). A 2026 production case study showed that role-specialized agents with enforced budgets cut hallucination-inducing retrievals by 60-70% compared to a single-agent baseline — while simultaneously making cost predictable.
+- **Trace-to-cost correlation using distributed tracing.** Instrument every agent with a trace ID that flows through tool calls, memory lookups, and inter-agent handoffs. OpenTelemetry spans let you attach cost metadata (token count, model, latency) to each trace. LangSmith, LangFuse, and Arize Phoenix all support this pattern. This turns a cost dashboard into a debugging tool.
+- **Model routing as the primary cost lever.** Input token pricing dropped 85% from GPT-4 launch to Q1 2026. Output tokens remain 3-5x more expensive than input across all providers, making output-heavy agent patterns the primary cost driver. Routing simple classification or routing decisions to smaller models (e.g., mistral-small for loop control, gpt-4o-mini for routing) while reserving frontier models for synthesis saves 60-75% on non-synthesis tokens.
+- **Loop detection as a cost-safety circuit.** Agent loops are not just latency problems — they are cost explosions. A self-referential refactoring agent that ran over a weekend produced a $4,200 bill before anyone noticed. Budget enforcement with exponential backoff and a hard task-level timeout is table stakes.
+- **Hierarchical coordination to contain context explosion.** Enterprise-scale multi-agent systems (20+ agents) benefit from hierarchical over peer-to-peer or swarm patterns. A supervisor agent routes to specialist agents, and only the supervisor carries the full conversation context — containing token duplication that otherwise scales as O(n²) with team size.
+
+## Evidence
+
+- **Production cost audit (Operator Collective, 2025):** 6 months of real invoices across research, content, and operations agents. Found ~€30-80/month for moderately active agents (~100-200 tasks/day), with API costs being 40-70% of total. Identified three hidden buckets teams miss: infrastructure (15-35%), tool integrations, and error-handling overhead. — [theoperatorcollective.org/blog/ai-agent-cost-breakdown](https://theoperatorcollective.org/blog/ai-agent-cost-breakdown)
+- **Enterprise agent billing analysis (Beam.ai / LeanOps, 2026):** Audit of 30 engineering teams running coding agents. Median developer: $480/month. 90th percentile: $1,650/month. One team burned $4,200 in a single weekend on an autonomous refactoring loop. SaaS company with 35 engineers: $87,000/month combined agent bill before routing optimization. — [beam.ai/agentic-insights](https://beam.ai/agentic-insights/anthropics-new-billing-split-reveals-what-ai-agents-actually-cost)
+- **Token routing cost benchmarks (Operator Collective, 2026):** Input token pricing collapsed from ~$30/M tokens (mid-2023) to under $3/M tokens (Q1 2026). Output tokens remain 3-5x more expensive. Tiered model routing — small models for routing, frontier for synthesis — delivers 60-75% cost savings on non-synthesis token volume. — [theoperatorcollective.org/blog/real-cost-running-ai-agents-production](https://theoperatorcollective.org/blog/real-cost-running-ai-agents-production)
+- **Multi-agent orchestration patterns (Zylos Research, 2025):** 72% of enterprise AI projects now involve multi-agent systems (up from 23% in 2024). Token duplication rates: MetaGPT 72%, CAMEL 86%, AgentVerse 53%. Real-world outcomes: 80% reduction in insurance claims processing, $18.7M annual savings in banking fraud. — [zylos.ai/research/multi-agent-orchestration-2025](https://zylos.ai/research/multi-agent-orchestration-2025)
+
+## Gotchas
+
+- **Cost dashboards show total spend, not cost-per-outcome.** You can see that this month cost $12K more than last month. You cannot see whether the extra $12K produced 30% more value or zero. Wire outcome quality metrics into your cost dashboard, not just token counts.
+- **MCP tool result artifacts bloat context silently.** Every MCP tool call returns a result that gets included in the next context window. In a multi-agent system, tool results from agent A become part of agent B's context, which becomes part of agent C's — compounding token costs you never instrumented.
+- **Autonomous heartbeat schedules create cost spikes.** Many teams set agents to run on hourly or 15-minute heartbeats. In a 6-agent team, a naive heartbeat schedule can generate 6×24 or 6×96 LLM calls per day regardless of workload — a baseline cost that scales linearly with team size and is easy to miss until the bill arrives.

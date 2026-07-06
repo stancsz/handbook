@@ -1,0 +1,128 @@
+=== NASDAQ Swing Scan | 2026-07-02 12:37 ===
+
+  Fetched SPY — Close: $745.76  ATR: $10.87 (1.5%)  RSI: 55.2  5d ret: +1.7%
+  Fetched QQQ — Close: $725.17  ATR: $17.27 (2.4%)  RSI: 52.8  5d ret: +2.0%
+  Fetched AAPL — Close: $294.38  ATR: $8.35 (2.8%)  RSI: 51.3  5d ret: +0.4%
+  Fetched MSFT — Close: $384.28  ATR: $13.51 (3.5%)  RSI: 47.0  5d ret: +5.1%
+  Fetched NVDA — Close: $197.58  ATR: $6.23 (3.2%)  RSI: 43.3  5d ret: -0.7%
+  Fetched GOOGL — Close: $361.21  ATR: $12.38 (3.4%)  RSI: 50.8  5d ret: +4.6%
+  Fetched AMZN — Close: $241.70  ATR: $8.87 (3.7%)  RSI: 48.2  5d ret: +3.2%
+  Fetched META — Close: $612.91  ATR: $21.85 (3.6%)  RSI: 58.6  5d ret: +9.9%
+  Fetched AVGO — Close: $369.34  ATR: $15.59 (4.2%)  RSI: 42.1  5d ret: -3.3%
+  Fetched TSM — Close: $444.23  ATR: $20.77 (4.7%)  RSI: 53.1  5d ret: +0.8%
+  Fetched AMD — Close: $540.88  ATR: $36.71 (6.8%)  RSI: 56.5  5d ret: +4.1%
+  Fetched QCOM — Close: $181.92  ATR: $15.34 (8.4%)  RSI: 40.1  5d ret: -7.8%
+  Fetched PANW — Close: $352.04  ATR: $13.42 (3.8%)  RSI: 81.3  5d ret: +23.4%
+  Fetched ORLY — Close: $92.69  ATR: $2.33 (2.5%)  RSI: 60.3  5d ret: +5.5%
+  Fetched AMAT — Close: $650.91  ATR: $50.44 (7.7%)  RSI: 60.5  5d ret: +10.5%
+  Fetched ADP — Close: $235.73  ATR: $6.14 (2.6%)  RSI: 65.0  5d ret: +7.2%
+  Fetched INTU — Close: $267.08  ATR: $11.84 (4.4%)  RSI: 37.9  5d ret: +1.8%
+  Fetched HON — Close: $221.75  ATR: $9.19 (4.1%)  RSI: 46.9  5d ret: -2.5%
+  Fetched LRCX — Close: $391.26  ATR: $30.52 (7.8%)  RSI: 56.4  5d ret: +4.4%
+  Fetched MU — Close: $1032.28  ATR: $106.00 (10.3%)  RSI: 51.9  5d ret: -1.5%
+  Fetched KLAC — Close: $266.19  ATR: $22.13 (8.3%)  RSI: 58.2  5d ret: +10.7%
+  Fetched ADI — Close: $388.98  ATR: $18.87 (4.9%)  RSI: 44.3  5d ret: -5.9%
+  Fetched CRWD — Close: $193.18  ATR: $8.02 (4.2%)  RSI: 71.6  5d ret: +14.8%
+  Fetched SNPS — Close: $454.53  ATR: $16.91 (3.7%)  RSI: 43.9  5d ret: -2.0%
+  Fetched CDNS — Close: $377.73  ATR: $13.90 (3.7%)  RSI: 50.7  5d ret: +1.4%
+
+Successfully analyzed: 25/25 tickers
+
+=== LONG SCORES (top 10) ===
+  META   (Meta Platforms        ) score= 14  RSI= 58.6  above50=True  5d=  +9.9%  volR=2.30  distHi=4.7%
+  TSM    (TSMC ADR              ) score= 12  RSI= 53.1  above50=True  5d=  +0.8%  volR=1.25  distHi=7.8%
+  ADP    (ADP                   ) score= 12  RSI= 65.0  above50=True  5d=  +7.2%  volR=0.98  distHi=0.5%
+  AMZN   (Amazon                ) score= 11  RSI= 48.2  above50=False  5d=  +3.2%  volR=0.84  distHi=6.4%
+  LRCX   (Lam Research          ) score= 11  RSI= 56.4  above50=True  5d=  +4.4%  volR=1.32  distHi=12.1%
+  KLAC   (KLA Corp              ) score= 11  RSI= 58.2  above50=True  5d= +10.7%  volR=1.53  distHi=15.5%
+  AAPL   (Apple                 ) score= 10  RSI= 51.3  above50=True  5d=  +0.4%  volR=0.74  distHi=7.8%
+  AMD    (AMD                   ) score= 10  RSI= 56.5  above50=True  5d=  +4.1%  volR=0.88  distHi=8.1%
+  ORLY   (O'Reilly Automotive   ) score= 10  RSI= 60.3  above50=True  5d=  +5.5%  volR=1.00  distHi=0.2%
+  AMAT   (Applied Materials     ) score=  9  RSI= 60.5  above50=True  5d= +10.5%  volR=1.25  distHi=13.6%
+
+=== SHORT SCORES (top 10) ===
+  MSFT   (Microsoft             ) score=  7  RSI= 47.0  above50=False  5d=  +5.1%  distLo=9.1%
+  NVDA   (NVIDIA                ) score=  7  RSI= 43.3  above50=False  5d=  -0.7%  distLo=3.9%
+  QCOM   (Qualcomm              ) score=  7  RSI= 40.1  above50=False  5d=  -7.8%  distLo=0.2%
+  SNPS   (Synopsys              ) score=  7  RSI= 43.9  above50=False  5d=  -2.0%  distLo=3.5%
+  AVGO   (Broadcom              ) score=  6  RSI= 42.1  above50=False  5d=  -3.3%  distLo=2.4%
+  ADI    (Analog Devices        ) score=  6  RSI= 44.3  above50=False  5d=  -5.9%  distLo=1.6%
+  GOOGL  (Alphabet              ) score=  5  RSI= 50.8  above50=False  5d=  +4.6%  distLo=8.6%
+  AMZN   (Amazon                ) score=  5  RSI= 48.2  above50=False  5d=  +3.2%  distLo=6.7%
+  AMAT   (Applied Materials     ) score=  5  RSI= 60.5  above50=True  5d= +10.5%  distLo=30.4%
+  CDNS   (Cadence Design        ) score=  5  RSI= 50.7  above50=True  5d=  +1.4%  distLo=5.0%
+
+
+======================================================================
+=== TOP SWING TRADE SETUPS ===
+======================================================================
+
+─────────────────────────────────────────────────────────────────
+SETUP #1:  META — Meta Platforms
+Direction: LONG  |  Confidence Score: 14  |  Regime: TRANSITIONAL
+─────────────────────────────────────────────────────────────────
+  Current Price:    $612.91
+  Entry:            BUY @ market ($612.91)
+  Stop Loss:        $547.37  (risk: 10.7% / 3.6% ATR)
+  T1 (2:1 R/R):     $743.99  (+2.0x) — partial take profit here
+  T2 (3:1 R/R):     $809.53  (+3.0x) — close position here
+  Invalidation:     Break below 540.18 (20d swing low) OR daily close below $547.37 (3ATR stop)
+  Catalyst:        MACD bullish crossover on declining RSI pullback — momentum shift confirmation
+  ─── Technical ────────────────────────────────────────────────
+  RSI(14):         58.6  (neutral zone)
+  ATR(14):         $21.85  (3.6% of price)
+  Above 50MA:      True  |  Above 200MA: True
+  MACD Cross Up:   True  |  Higher Low: True  |  Higher High: True
+  5d Return:       +9.9%  |  20d Return: +2.7%
+  Dist to 20d High:4.7%  |  Dist to 20d Low: 11.9%
+  Volume Ratio:    2.30x  (today vs 20d avg)
+
+─────────────────────────────────────────────────────────────────
+SETUP #2:  TSM — TSMC ADR
+Direction: LONG  |  Confidence Score: 12  |  Regime: TRANSITIONAL
+─────────────────────────────────────────────────────────────────
+  Current Price:    $444.23
+  Entry:            BUY @ market ($444.23)
+  Stop Loss:        $381.93  (risk: 14.0% / 4.7% ATR)
+  T1 (2:1 R/R):     $568.83  (+2.0x) — partial take profit here
+  T2 (3:1 R/R):     $631.13  (+3.0x) — close position here
+  Invalidation:     Break below 404.56 (20d swing low) OR daily close below $381.93 (3ATR stop)
+  Catalyst:        Above 50MA with higher low formation — trend continuation
+  ─── Technical ────────────────────────────────────────────────
+  RSI(14):         53.1  (neutral zone)
+  ATR(14):         $20.77  (4.7% of price)
+  Above 50MA:      True  |  Above 200MA: True
+  MACD Cross Up:   False  |  Higher Low: True  |  Higher High: False
+  5d Return:       +0.8%  |  20d Return: -0.3%
+  Dist to 20d High:7.8%  |  Dist to 20d Low: 8.9%
+  Volume Ratio:    1.25x  (today vs 20d avg)
+
+─────────────────────────────────────────────────────────────────
+SETUP #3:  MSFT — Microsoft
+Direction: SHORT  |  Confidence Score: 7  |  Regime: TRANSITIONAL
+─────────────────────────────────────────────────────────────────
+  Current Price:    $384.28
+  Entry:            SHORT @ market ($384.28)
+  Stop Loss:        $411.31  (risk: 7.0% / 3.5% ATR)
+  T1 (2:1 R/R):     $330.22  (+2.0x) — partial take profit here
+  T2 (3:1 R/R):     $303.19  (+3.0x) — close position here
+  Invalidation:     Break above $411.31 (2ATR resistance) OR daily close above MA50 @ $407.87
+  Catalyst:        RSI=47, below MA50=True, MACDbearish=MACD < Signal
+  ─── Technical ────────────────────────────────────────────────
+  RSI(14):         47.0  (neutral zone)
+  ATR(14):         $13.51  (3.5% of price)
+  Above 50MA:      False  |  Above 200MA: True
+  MACD Cross Up:   False  |  Higher Low: True  |  Higher High: True
+  5d Return:       +5.1%  |  20d Return: -12.9%
+  Dist to 20d High:14.6%  |  Dist to 20d Low: 9.1%
+  Volume Ratio:    0.98x  (today vs 20d avg)
+
+
+======================================================================
+POSITION SIZING & RISK MANAGEMENT
+======================================================================
+  META (LONG): Risk $10693 @ 10.7% per share | Size @ 1% risk = 9352 shares | Size @ 2% risk = 18703 shares
+  TSM (LONG): Risk $14024 @ 14.0% per share | Size @ 1% risk = 7130 shares | Size @ 2% risk = 14261 shares
+  MSFT (SHORT): Risk $7034 @ 7.0% per share | Size @ 1% risk = 14217 shares | Size @ 2% risk = 28434 shares
+
+[Results exported to /opt/data/handbook/swing_scan_results.json]

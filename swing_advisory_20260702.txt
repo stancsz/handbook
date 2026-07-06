@@ -1,0 +1,298 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  QUANTITATIVE SWING TRADE ADVISORY
+  NASDAQ (QQQ) · SPY · NASDAQ-100 COMPONENTS
+  Scan Time: July 2, 2026 · 10:05 UTC (6:05 AM ET)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 1. EXECUTIVE SUMMARY & MARKET REGIME
+
+  REGIME CLASSIFICATION: ██ BULL ██  (Structural Bull, confirming)
+
+  QQQ  $725.17  (-1.52%) | SMA50 $707.13 | HH/HL (BULL) | RSI 59.2
+  SPY  $745.76  (-0.14%) | SMA50 $735.06 | HH/HL (BULL) | RSI 62.4
+  IWM  $299.32  (-0.38%) | SMA50 $285.61 | HH/HL (BULL) | RSI 74.1 ← extended
+  ^VIX  $16.69  (+0.60%) | WELL BELOW 20  →  Low vol confirms bull
+
+  MACRO VERDICT: Bull market intact. All three major indices above
+  their 50-SMA with Higher Highs/Higher Lows structure. VIX at
+  16.69 (sub-20) eliminates systemic fear. Today's -1.52% QQQ dip
+  is a NORMAL PULLBACK within a bull trend — not a breakdown.
+  IWM RSI of 74.1 signals small-cap fatigue but does not flip
+  the regime. No FOMC, CPI, or material macro events within the
+  next 5 trading days. Q2 earnings season opens ~July 14-15.
+
+  SECTOR ROTATION: Capital remains in Technology and
+  Semiconductors. The semi equipment group (KLAC, LRCX, AMAT) is
+  the strongest thematic cluster by 20-day momentum (+11% to +33%
+  over 20 days). Financials (PAYX, ADP) showing defensive strength.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 2. RESEARCH SYNTHESIS
+
+  ▸ MACRO: Bull confirmed. No regime change signals. VIX < 20
+    is textbook bull. TLT at $85.52 (below 200-SMA, regime BEAR)
+    confirms risk-on posture. No policy risk within 21-day window.
+    Fed on hold until ~July 29-30 FOMC.
+
+  ▸ TECHNICAL: QQQ sitting ~2.5% above its 50-SMA ($707.13).
+    Healthy. The -1.52% intraday dip is unwinding the overbought
+    IWM reading. Broad market 4H structure still bullish.
+    Notable: Semis (KLAC, LRCX, AMAT) pulling back sharply today
+    (-10 to -12%) after +10-33% runs over 20 days — CLASSIC
+    MEAN REVERSION SETUP in a bull market.
+
+  ▸ FUNDAMENTAL: No immediate earnings catalysts within window
+    (Q2 reporting starts July 15). CPI release July 14 is the
+    key macro risk event — positions should be lighter or hedged
+    entering that date. Semiconductor equipment demand remains
+    robust on AI infrastructure buildout narrative.
+
+  ▸ SENTIMENT: Semi equipment stocks (AMAT, KLAC, LRCX) had
+    exceptional runs into late June. Today's sharp pullback is
+    likely short-term profit-taking by over-leveraged momentum
+    players. 4H RSI readings for all three are in the 36-43
+    range — deeply oversold on the shorter timeframe while
+    daily momentum (MACD) remains strongly positive.
+
+  ▸ VOLUME: KLAC trading 24.1M shares (1.5x avg) on the dip —
+    BULLISH ACCUMULATION signal. LRCX at 1.3x. AMAT at 1.3x.
+    ORLY and ADP near average on their rallies — steady,
+    controlled moves.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 3. COGNITIVE CRITIQUE & REGIME ALIGNMENT RISK
+
+  ⚠️  SETUP #1 (KLAC) — AGGRESSIVE CAUTION:
+      20-day momentum is +30%. RSI at 61 daily and 42 4H is
+      healthy but today's -11.77% single-day drop is aggressive.
+      The ATR stop represents 16.6% of capital — THIS IS A
+      LARGE POSITION SIZE TRAP. A 2ATR stop on KLAC costs $44.26
+      per share. Risk 5% on $100K = $5,000 risk → 113 shares max.
+      The 20d low is $192.77; a close below that
+      would be catastrophic for momentum structure.
+
+  ⚠️  SETUP #2 (LRCX) — SAME CONCERN:
+      +17% over 20 days. ATR stop is 15.6% risk. The 20d range
+      spans $302 to $438, meaning today's pullback from $438 has
+      further to run before touching 20d support. Wait for
+      stabilization before initiating.
+
+  ⚠️  SETUP #3 (AMAT) — RED FLAGS:
+      +33% over 20 days with RSI at 64.7 (elevated). Range
+      position at 0.69 means not as extended as KLAC/LRCX, but
+      the $100+ price drop in one session demands respect. 4H
+      RSI at 36.7 is oversold — bounce likely, but could be a
+      DEAD CAT BOUNCE if broader market rotates lower.
+
+  BEAR CASE FOR ALL THREE SEMIS:
+      Momentum has run extremely hot. If QQQ breaks below its
+      50-SMA ($707.13) on escalating tariff headlines or a
+      hawkish CPI surprise on July 14, these high-beta names
+      will crater first and hardest. The bull case requires
+      QQQ to HOLD $700 as support.
+
+  ⚠️  SETUP #4 (ORLY) — OVERBOUGHT on 4H:
+      4H RSI of 88 is EXTREMELY overbought intraday. This is
+      NOT an entry — wait for 4H pullback to EMA9 (~$92.26) or
+      a retest of the $90-91 zone before entering. Range pos 0.97
+      means it's hugging the 20d high. Aggressive chase here is
+      a losing play.
+
+  ⚠️  SETUP #5 (ADP) — OVERBOUGHT on 4H:
+      4H RSI of 79.7. Already up +5.26% today. This is a CHASE
+      at current levels. Wait for a pullback to ~$230-231 zone.
+
+  ⚠️  SETUP #6 (PAYX) — BEST CANDIDATE BUT VOLATILE:
+      Low ATR (3.4% of price) makes this the cleanest setup.
+      RSI 53.5 neutral, 4H data shows pullback zone near $100.
+      The risk is the 20d range is tight — a move to $93 support
+      would be -9.5% and stop you out cleanly. This is the
+      proper setup for a cautious environment.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 4. TACTICAL ORDER BLUEPRINT
+
+══════════════════════════════════════════════════════════════
+  SETUP #1 → WATCH (NOT YET)  |  KLAC  |  Semiconductors
+══════════════════════════════════════════════════════════════
+  Direction:        LONG (higher timeframe bull; awaiting entry)
+  Setup Rationale:  Extreme -11.77% pullback on 1.5x volume into
+                    mid-range (0.64). 4H RSI 42 = oversold. 20d
+                    momentum +30% confirms trend quality.
+
+  ENTRY TYPE:       AGGRESSIVE LIMIT BUY
+  Entry Zone:       $243 – $250
+                    (Between today's 5d low $243.09 and 10d
+                     low $235 — give the stock room to settle.
+                     A LIMIT buy at $248 catches the bounce.)
+
+  Stop Loss:        $221.93  (2ATR below $266.19 entry,
+                    tightest anchored to 20d swing low)
+                    Risk: 16.6% per share  ← AGGRESSIVE
+
+  T1 (2:1 R/R):     $314.45  (+26.8%)   R/R: 2.0:1
+  T2 (3:1 R/R):     $354.71  (+43.0%)   R/R: 3.0:1
+  T3 (4:1 R/R):     $394.97  (+59.2%)   R/R: 4.0:1
+
+  Position Sizing:  Risk 5% of portfolio → $5,000 on $100K
+                    ÷ $44.26 risk/share = 113 shares max
+                    ÷ $248 entry = $28,000 notional
+                    → Scale to 50 shares (2.2% risk) or
+                      use this with smaller setups
+
+  Trailing Stop:    Once T1 hit ($314), raise stop to
+                    $271 (breakeven + $5 buffer).
+                    At T2, raise to $295.
+
+  Invalidation:     Close below $192.77 (20d low) →
+                    FULL EXIT. Also invalidates if QQQ
+                    closes below $700.
+
+  Macro Hedge:      If QQQ threatens $707, cut KLAC to 50%
+                    immediately regardless of P&L.
+
+  TIMING: Wait for 4H RSI to cross above 50 and price to
+          reclaim $265 before entering. Ideal entry is a
+          2nd day of less severe selling or a doji candle
+          on the 4H chart. Do NOT enter on the open following
+          this morning's gap-down — wait for price discovery.
+
+  SCORECARD: 4/10 Confidence (good setup, but high
+             ATR-risk demands size discipline)
+
+══════════════════════════════════════════════════════════════
+  SETUP #2 → WATCH (NOT YET)  |  AMAT  |  Semiconductors
+══════════════════════════════════════════════════════════════
+  Direction:        LONG (AI infrastructure tailwind intact)
+  Setup Rationale:  $100+ single-session pullback on 1.3x volume.
+                   20d momentum +33% is exceptional. 4H RSI at
+                   36.7 = deeply oversold. ATR of $50.44 is large
+                   but the pullback has created a better entry.
+
+  ENTRY TYPE:       LIMIT BUY
+  Entry Zone:       $600 – $620
+                    (Between today's 5d low $609.70 and 10d
+                     low $569.49. Preferred entry: $612 LIMIT.)
+
+  Stop Loss:        $550.04  (2ATR below $650.91)
+                    Risk: 15.5% per share
+
+  T1 (2:1 R/R):    $751.37  (+22.8%)   R/R: 2.0:1
+  T2 (3:1 R/R):    $852.83  (+39.3%)   R/R: 3.0:1
+
+  Position Sizing:  Risk 5% of portfolio → $5,000 on $100K
+                    ÷ $100.87 risk/share = ~50 shares
+                    ÷ $612 entry = $30,600 notional
+
+  Trailing Stop:    At T1 ($751), raise stop to $670.
+                    At T2 ($853), raise to $760.
+
+  Invalidation:     Close below $452.91 (20d low) → EXIT.
+                    Also if QQQ breaks $700.
+
+  TIMING: AMAT has been the strongest of the trio (20d
+          +33% vs KLAC +30%, LRCX +17%). The deeper pullback
+          is proportional to the prior run. Wait for 4H
+          candle confirmation. Ideal entry: tomorrow morning
+          if AMAT opens below $640 but above $600.
+
+  SCORECARD: 4/10 Confidence
+
+══════════════════════════════════════════════════════════════
+  SETUP #3 → WATCH (NOT YET)  |  PAYX  |  Financials/IT Svcs
+══════════════════════════════════════════════════════════════
+  Direction:        LONG (defensive momentum, tight ATR)
+  Setup Rationale:  Neutral RSI (53.5 daily) with +4.45% today.
+                    Small-cap financials benefiting from bull
+                    market breadth. ATR of only $3.45 makes this
+                    the cleanest risk/reward in the scan — a 2ATR
+                    stop is only 6.7% of capital. Perfect for
+                    compounding small edges.
+
+  ENTRY TYPE:       LIMIT BUY (awaiting pullback)
+  Entry Zone:       $99.50 – $101.50
+                    (4H EMA9 is $101.60; 5d low is $99.73.
+                     Prefer a pullback to $100.00 for entry.
+                     If no pullback, a breakout above today's
+                     high $103.50 with volume confirmation is
+                     acceptable.)
+
+  Stop Loss:        $95.80  (2ATR below $102.71)
+                    Risk: 6.7% per share  ← LOW RISK
+
+  T1 (2:1 R/R):     $109.61  (+6.7%)    R/R: 2.0:1
+  T2 (3:1 R/R):     $116.51  (+13.4%)   R/R: 3.0:1
+  T3 (4:1 R/R):     $123.41  (+20.2%)   R/R: 4.0:1
+
+  Position Sizing:  Risk 5% of portfolio → $5,000 on $100K
+                    ÷ $6.91 risk/share = ~723 shares
+                    ÷ $101 entry = $73,000 notional (too high)
+                    → Use $10,000 notional for 2% risk per
+                      this single position; scale to 1,500-2,000
+                      shares to stay disciplined
+
+  Trailing Stop:    At T1, raise stop to $100.50 (breakeven).
+                    At T2, raise to $107.
+
+  Invalidation:     Close below $93.02 (20d low) → EXIT.
+                    Also if QQQ breaks below $700.
+
+  TIMING: PAYX is at the top of its 20d range (0.88).
+           The ideal entry is a pullback to the $99.73 area.
+           If market continues risk-off today, this will
+           materialize. Place LIMIT order at $100.00.
+
+  SCORECARD: 6/10 Confidence — BEST RISK/REWARD among the three.
+             Small ATR makes it most executable.
+
+══════════════════════════════════════════════════════════════
+
+## PORTFOLIO WATCH — IF EXISTING POSITIONS HELD
+
+  If you hold any QQQ or broad market long exposure:
+  ► Regime: BULL — HOLD. Do not reduce on -1.5% dip.
+  ► IWM RSI 74 = consider trimming small-cap exposure
+    and rotating into quality tech (AAPL, MSFT, GOOGL).
+  ► VIX 16.69 = no hedge needed. Selling volatility
+    strategies are favored.
+  ► CPI July 14 = reduce all positions to 50% by July 11
+    to avoid overnight gap risk heading into the print.
+
+  Semiconductor exposure already held: The +10-33% runs in
+  KLAC/LRCX/AMAT over 20 days suggest LOCKING IN PARTIAL
+  PROFITS. Take 33% off the table at T1 on any held positions.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## COMPOSITE RISK MATRIX
+
+  Symbol │ Entry Zone   │ Stop     │ T1       │ T2       │ Risk% │ ATR%  │ Score │ Action
+  ───────┼──────────────┼──────────┼──────────┼──────────┼───────┼───────┼───────┼────────────
+  KLAC   │ $243–250    │ $221.93  │ $314.45  │ $354.71  │ 16.6% │ 8.3%  │  14   │ WATCH
+  AMAT   │ $600–620    │ $550.04  │ $751.37  │ $852.83  │ 15.5% │ 7.7%  │  14   │ WATCH
+  PAYX   │ $99.50–101  │ $ 95.80  │ $109.61  │ $116.51  │  6.7% │ 3.4%  │  14   │ WATCH BEST
+  ORLY   │ $90.50–91.50│ $ 88.02  │ $ 98.96  │ $103.35  │  5.0% │ 2.5%  │  14   │ WATCH
+  ADP    │ $228–231    │ $223.45  │ $247.93  │ $260.17  │  5.2% │ 2.6%  │  14   │ WATCH
+  LRCX   │ $360–375    │ $330.22  │ $513.34  │ $574.38  │ 15.6% │ 7.8%  │  14   │ SKIP (duplicate)
+
+  RECOMMENDED ACTION PRIORITY:
+  1. PAYX — Most executable first. Place $100 LIMIT order now.
+  2. KLAC — Wait for 4H candle confirmation tomorrow AM.
+  3. AMAT — Same. Wait for bounce confirmation before $612 entry.
+
+  KEY DATES IN WINDOW:
+  • July 2–11: Favorable — bull regime, no macro events
+  • July 14: CPI release — REDUCE to 50% by July 11
+  • July 15: Q2 Earnings begin — watch for earnings pre-announcements
+  • July 29–30: FOMC — macro risk window
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Scan completed: 2026-07-02 10:05 UTC
+  Data source: yfinance (Yahoo Finance live feed)
+  Regime: BULL (confirmed) | VIX: 16.69 (low vol) | Bias: LONG
+  All stops are 2ATR mechanical; adjust to 20d low for tighter
+  control. Do not exceed 5% risk per trade regardless of setup.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

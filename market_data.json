@@ -1,0 +1,92 @@
+{
+  "QQQ": {
+    "close": 730.43,
+    "prev_close": 736.4,
+    "pct_change": -0.81,
+    "volume": 16406966,
+    "52w_high": 748.65,
+    "52w_low": 546.12,
+    "pe_ratio": 33.536507,
+    "beta": null
+  },
+  "SPY": {
+    "close": 748.51,
+    "prev_close": 746.77,
+    "pct_change": 0.23,
+    "volume": 16899978,
+    "52w_high": 760.4,
+    "52w_low": 616.61,
+    "pe_ratio": 26.806768,
+    "beta": null
+  },
+  "NVDA": {
+    "close": 196.8,
+    "prev_close": 200.09,
+    "pct_change": -1.64,
+    "volume": 53206781,
+    "52w_high": 236.54,
+    "52w_low": 152.97,
+    "pe_ratio": 30.182514,
+    "beta": 2.202
+  },
+  "AMD": {
+    "close": 555.22,
+    "prev_close": 580.91,
+    "pct_change": -4.42,
+    "volume": 11864627,
+    "52w_high": 584.73,
+    "52w_low": 133.5,
+    "pe_ratio": 183.84933,
+    "beta": 2.492
+  },
+  "MSFT": {
+    "close": 384.91,
+    "prev_close": 373.02,
+    "pct_change": 3.19,
+    "volume": 18464225,
+    "52w_high": 555.45,
+    "52w_low": 349.2,
+    "pe_ratio": 22.924953,
+    "beta": 1.103
+  },
+  "AAPL": {
+    "close": 294.98,
+    "prev_close": 289.36,
+    "pct_change": 1.94,
+    "volume": 16197287,
+    "52w_high": 317.4,
+    "52w_low": 201.5,
+    "pe_ratio": 35.755154,
+    "beta": 1.086
+  },
+  "GOOGL": {
+    "close": 360.23,
+    "prev_close": 357.37,
+    "pct_change": 0.8,
+    "volume": 9519705,
+    "52w_high": 408.61,
+    "52w_low": 172.77,
+    "pe_ratio": 27.456556,
+    "beta": 1.237
+  },
+  "AMZN": {
+    "close": 241.95,
+    "prev_close": 238.34,
+    "pct_change": 1.51,
+    "volume": 19467502,
+    "52w_high": 278.56,
+    "52w_low": 196.0,
+    "pe_ratio": 32.13413,
+    "beta": 1.444
+  },
+  "META": {
+    "close": 620.95,
+    "prev_close": 563.29,
+    "pct_change": 10.24,
+    "volume": 25954693,
+    "52w_high": 796.25,
+    "52w_low": 520.26,
+    "pe_ratio": 22.588215,
+    "beta": 1.229
+  }
+}

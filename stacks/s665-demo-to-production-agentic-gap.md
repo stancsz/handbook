@@ -1,0 +1,35 @@
+# S-665 · The Demo-to-Production Gap in Agentic Systems
+
+[Your agent works in the demo. It breaks in production — not because the model changed, but because the demo environment hid everything that actually matters: failure recovery, cost under control, guardrails under adversarial input, and observability across multi-step runs. The 30% that is the model is solved. The 70% that is everything else is where teams discover what they didn't build.]
+
+## Forces
+
+- **Demos hide the 70%.** The technology (the model) represents ~30% of the challenge. Guardrails, observability, cost control, and human-agent collaboration design are the other 70% — and demos show none of them failing.
+- **The failure modes are non-obvious.** Agents in circles, silent data corruption, and tool-call injection don't surface until a real workload runs long enough to trigger them. By then the system is in production.
+- **Cost math breaks for agents.** Traditional API cost calculations (one request = one call = known cost) fail completely. Agents compound tokens at every step — reasoning, retrieving, calling tools, observing results, reasoning again. Cost becomes a function of time, not request count.
+- **Traditional LLM evaluation misses agents entirely.** Outcome-only evaluation treats the agent as a black box. Agentic AI requires assessing tool selection accuracy, reasoning coherence, memory retrieval quality, and inter-agent coordination — dimensions that automated metrics struggle to capture.
+
+## The Move
+
+Build for the gap before you hit it. The patterns that distinguish production agents from demos are not optional polish — they are the work.
+
+- **Constrain the action space first.** The most common production incident is an agent with unrestricted access escalating privileges or deleting data. Define a bounded tool set, validate inputs before execution, and add human-in-the-loop checkpoints for destructive or irreversible actions. An agent that can call any shell command is not a feature.
+- **Implement session-level budget caps with hard termination.** A monitoring dashboard is not sufficient — you need per-agent token budgets and a mechanism to terminate a session before the next API call completes. The Waxell case (four LangChain agents running 11 days, $47,000 bill) happened with a running dashboard; nobody noticed because there was no termination trigger.
+- **Instrument every step, not just outcomes.** Per-span latency, token counts per step, cost per agent, retrieval similarity scores, and tool call success/failure rates. LangSmith, Arize Phoenix, or Langfuse with self-hosted OpenTelemetry — the tooling matters less than the instrumentation being in place before launch.
+- **Plan for graceful degradation, not just failure detection.** When a tool call fails, the agent should have a defined recovery path (retry with backoff, fall back to a simpler tool, escalate to human review). Agents that simply retry the same failed call create loops.
+- **Evaluate the process, not just the output.** HITL (human-in-the-loop) evaluation is critical for multi-agent systems: assess inter-agent communication for coordination failures, validate that task decomposition aligns with agent capabilities, and check that multiple agents contributing to a single decision produce a coherent result. Automated metrics alone miss emergent misbehavior.
+- **Start with a Flow-first architecture.** Wrapping agents in structured, event-driven flows (as CrewAI recommends) provides necessary scaffolding for production: state management, explicit error boundaries, and replay capability. Individual agents without flow scaffolding lack this.
+
+## Evidence
+
+- **Blog post:** "Building a demo agent is easy. Shipping one that handles edge cases, recovers from failures, and earns user trust is hard. The technology (the model) represents only ~30% of the challenge. The remaining 70% is engineering." — Prateek Singh, The AI Vibe, June 2025 — [https://theaivibe.org/blog/building-production-ai-agents-lessons-2025](https://theaivibe.org/blog/building-production-ai-agents-lessons-2025)
+- **Incident report:** "November 2025: Four LangChain agents entered an infinite loop and ran for 11 days. The bill was $47,000. The team had a monitoring dashboard running the entire time — nobody noticed until it was over. Root cause: no per-agent budget caps and no mechanism to terminate a session before the next API call completed." — Logan Kelly, Waxell AI Blog, March 2026 — [https://www.waxell.ai/blog/control-ai-agent-costs](https://www.waxell.ai/blog/control-ai-agent-costs)
+- **AWS/Amazon engineering post:** "In multi-agent systems evaluation, HITL becomes critical because of the increased complexity and potential for unexpected emergent behaviors that automated metrics might fail to capture. These [dimensions] — inter-agent communication, task decomposition alignment, conflict resolution, logical consistency — are difficult to quantify through automated metrics alone but are critical for production deployment success." — AWS Machine Learning Blog, February 2026 — [https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/](https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/)
+- **hjLabs production comparison:** "Every other week a new agent framework trends on GitHub, and every other week a tech lead asks us the same question: 'Which one should we actually build on?' The short answer: it depends on what you're building, who's building it, and how mature your ops practice is." — Hemang Joshi, hjLabs.in AI Engineering Notes — [https://hemangjoshi37a.github.io/hjLabs-AI-Engineering-Notes/04-crewai-vs-langgraph-vs-autogen-production-comparison/](https://hemangjoshi37a.github.io/hjLabs-AI-Engineering-Notes/04-crewai-vs-langgraph-vs-autogen-production-comparison/)
+
+## Gotchas
+
+- **Monitoring without termination is theater.** Dashboards that show what is happening but cannot stop it are not observability — they are post-mortem accelerators. Budget caps must be enforced, not just reported.
+- **The output quality of a demo agent is not predictive of production reliability.** Demos run short, handle friendly inputs, and never encounter adversarial prompts or network failures. The gap between a working demo and a reliable production agent is engineering work, not model work.
+- **CrewAI's sequential process breaks at agent count >5.** Sequential chains have O(n) latency and cascading failure modes. Beyond 3-5 agents, switch to hierarchical process with a manager agent for delegation and retry logic — the ~150ms added latency per delegation is worth the failure isolation.
+- **LangGraph's explicit state reducers are not optional for complex workflows.** Without explicit state management, agents accumulate context silently and produce unpredictable outputs across sessions. Model every node's state contract explicitly from the start.

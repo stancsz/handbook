@@ -1,0 +1,51 @@
+# S-668 · The Trace-Eval Gap: Why Instrumented Teams Still Ship Blind
+
+[You instrumented your agent. LangSmith is tracing every span. You can replay any run, see every tool call, watch the tokens flow. And somehow, the agent still silently degrades in production for three days before anyone notices. The problem isn't that you lack observability. It's that observability without evaluation tells you what happened — not whether it was right.]
+
+## Forces
+- [Tracing is tractable and has good tooling (LangSmith, Phoenix); evaluation requires defining "right" — a domain-specific, ongoing commitment that most teams treat as optional]
+- [89% of agentic teams instrument their systems, but only 52% run offline evals and 37% run online evals — a 52-point gap that explains why quality regressions go undetected until users complain]
+- [Quality is the #1 production blocker for 32% of teams (LangChain State of Agent Engineering 2026), yet the tooling and culture for measuring quality lags far behind the tooling for observing behavior]
+- [Agents fail differently from traditional software: not through exceptions or timeouts but through reasoning drift — the same agent can produce subtly wrong answers for hundreds of runs before the pattern becomes visible in traces alone]
+
+## The move
+Measure what tracing can't tell you — whether outputs are actually correct, not just what happened.
+
+**Add evals as infrastructure, not afterthought:**
+- Run offline eval suites on every PR: synthetic golden datasets, regression tests against known-good outputs, automated scoring (RAGAS, G-eval, custom LLM-as-judge)
+- Run online/production evals continuously: sample production outputs, score them automatically, alert on quality drift above threshold
+- Instrument both levels: connect eval results back to specific traces so a failing eval surfaces the exact span that regressed
+
+**The three-tier eval stack (O'Reilly AI Agents Stack, Layer 5):**
+- **Unit evals** — Does this single-step tool call produce the right structured output? Run on every commit.
+- **Integration evals** — Does this 5-step workflow produce the right end state? Run nightly.
+- **Production evals** — Is quality drifting in production? Sample continuously, alert on delta.
+
+**Choose the right tool for your constraint:**
+| Tool | Ownership | Ecosystem | Best for |
+|------|-----------|-----------|----------|
+| LangSmith | Managed (LangChain) | LangChain/LangGraph | Teams already in LangChain, want managed infra |
+| Arize Phoenix | Self-hosted / managed | Framework-agnostic | Teams wanting data ownership, multi-framework |
+| DeepEval | Self-hosted | pytest-style, open-source | CI/CD-native eval pipelines |
+| TruLens | Self-hosted / managed | Snowflake integration | RAG-heavy systems |
+| RAGAS | Self-hosted | RAG-specific | Grounding/retrieval quality at scale |
+| Custom LLM-as-judge | Diy | Any | Domain-specific correctness criteria |
+
+**Close the loop: connect evals to traces.**
+When an eval fails, the artifact should link directly to the trace ID, agent version, input, and output — so debugging starts at the right span, not by searching logs.
+
+## Evidence
+- **LangChain State of Agent Engineering Report 2026:** 89% of teams have agent observability but only 52.4% run offline evaluations and 37.3% run online production evaluations — a 52-point gap. Quality is the top production blocker for 32% of teams.
+  — [agenticwire.news/article/agent-eval-infrastructure-2026](https://www.agenticwire.news/article/agent-eval-infrastructure-2026)
+- **Towards AI (Divy Yadav, March 2026):** "There is no stack trace when an agent breaks after two minutes and 180 steps. Not a single line failed. Reasoning was what went wrong, and that is an entirely different debugging issue." Corroborates that trace-only observability fails to capture the failure mode.
+  — [pub.towardsai.net/agent-observability-and-evaluation-a-2026-developers-guide-to-building-reliable-ai-agents-f4547e4beb14](https://pub.towardsai.net/agent-observability-and-evaluation-a-2026-developers-guide-to-building-reliable-ai-agents-f4547e4beb14)
+- **O'Reilly AI Agents Stack (Paolo Perrone, June 2026):** Places evaluation and observability together in Layer 5, framing eval as infrastructure: "fast checks on every pull request, nightly regression suites, and continuous production monitoring that alerts when agent quality drifts."
+  — [agenticwire.news/article/agent-eval-infrastructure-2026](https://www.agenticwire.news/article/agent-eval-infrastructure-2026)
+- **Lushbinary (April 2026):** "Naive RAG pipelines fail 40% of the time at retrieval" — surfaces the specific failure mode (wrong chunks retrieved) that observability alone cannot detect without ground-truth eval data.
+  — [lushbinary.com/blog/rag-retrieval-augmented-generation-production-guide](https://lushbinary.com/blog/rag-retrieval-augmented-generation-production-guide)
+
+## Gotchas
+- **Eval quality is only as good as the golden dataset.** Synthetic data generated by the same model you're evaluating creates circular validation. Mix in real production samples and human-labeled examples.
+- **Online evals are harder than offline.** Sampling production outputs, scoring them, and alerting on drift requires a pipeline, not just a tool. Teams that have offline evals often don't have online ones — this is the second gap to close.
+- **Framework lock-in on observability creates eval debt.** If your traces are LangSmith-only, your evals are too. Phoenix (Arize) and Portkey offer framework-agnostic tracing that makes eval integration easier across stack changes.
+- **"Evaluation is done" is a trap.** Evals need to evolve with your agent. A workflow change requires new test cases. A new tool requires new success criteria. Budget eval maintenance as ongoing engineering, not a one-time setup.

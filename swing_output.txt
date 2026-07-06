@@ -1,0 +1,229 @@
+Swing Scan Executed: 2026-07-01 10:10:15
+======================================================================
+
+[STAGE 1a] Core Index Data (3-month daily)
+----------------------------------------------------------------------
+  QQQ   : $   736.40 |  +1.70% | SMA50: $  705.55 | RSI:  58.2 | ATR: $17.74 | Regime: BULL
+  SPY   : $   746.77 |  +0.78% | SMA50: $  734.28 | RSI:  55.8 | ATR: $11.30 | Regime: BULL
+  IWM   : $   300.45 |  +0.50% | SMA50: $  285.16 | RSI:  70.7 | ATR: $ 5.57 | Regime: BULL
+  ^VIX  : $    16.88 |  +2.61% | SMA50: $   17.69 | RSI:  34.6 | ATR: $ 2.06 | Regime: BEAR
+  TLT   : $    86.42 |  -1.18% | SMA50: $   85.41 | RSI:  61.3 | ATR: $ 0.68 | Regime: BULL
+$DXY: possibly delisted; no price data found  (period=3mo)
+  GLD   : $   368.38 |  -0.05% | SMA50: $  408.83 | RSI:  36.7 | ATR: $ 8.93 | Regime: BEAR
+
+[STAGE 1b] Macro Regime Assessment
+----------------------------------------------------------------------
+  QQQ Regime: BULL
+  QQQ Structure: LH/LL (BEAR)
+  SPY Structure: LH/LL (BEAR)
+  VIX Level: 16.88 (LOW VOL (confirming BULL))
+  DXY (USD): $0.00
+
+[STAGE 1c] NASDAQ 100 Component Scan
+----------------------------------------------------------------------
+  Scanned 48 tickers successfully
+
+[STAGE 1d] Top Ranked Swing Candidates
+----------------------------------------------------------------------
+  TSLA   | Score:  16 | $  420.60 | RSI:  58.3 | MACD:  +1.0491 | VolR:  0.9x | RangePos:  0.80 | SMA50: ABOVE
+  MELI   | Score:  16 | $ 1697.39 | RSI:  56.0 | MACD: +11.3477 | VolR:  0.9x | RangePos:  0.76 | SMA50: ABOVE
+  NET    | Score:  16 | $  245.28 | RSI:  55.7 | MACD:  +0.4204 | VolR:  0.7x | RangePos:  0.51 | SMA50: ABOVE
+  HON    | Score:  15 | $  223.90 | RSI:  56.9 | MACD:  +0.2241 | VolR:  1.0x | RangePos:  0.40 | SMA50: ABOVE
+  BKNG   | Score:  15 | $  178.24 | RSI:  63.2 | MACD:  +1.3267 | VolR:  0.7x | RangePos:  0.71 | SMA50: ABOVE
+  KDP    | Score:  15 | $   32.73 | RSI:  61.5 | MACD:  +0.1410 | VolR:  0.8x | RangePos:  0.74 | SMA50: ABOVE
+  ORLY   | Score:  14 | $   92.09 | RSI:  57.7 | MACD:  +0.4005 | VolR:  0.7x | RangePos:  0.95 | SMA50: ABOVE
+  MU     | Score:  14 | $ 1154.29 | RSI:  61.4 | MACD:  -2.0824 | VolR:  0.7x | RangePos:  0.75 | SMA50: ABOVE
+  ADP    | Score:  14 | $  223.95 | RSI:  43.0 | MACD:  -0.4998 | VolR:  1.2x | RangePos:  0.47 | SMA50: ABOVE
+  SNOW   | Score:  14 | $  254.50 | RSI:  61.0 | MACD:  -1.3246 | VolR:  0.6x | RangePos:  0.71 | SMA50: ABOVE
+  DDOG   | Score:  13 | $  260.36 | RSI:  73.5 | MACD:  +0.0842 | VolR:  1.0x | RangePos:  0.77 | SMA50: ABOVE
+  TXN    | Score:  12 | $  298.07 | RSI:  53.0 | MACD:  -2.9362 | VolR:  1.0x | RangePos:  0.40 | SMA50: ABOVE
+  AMAT   | Score:  12 | $  723.00 | RSI:  74.6 | MACD: +11.2624 | VolR:  1.3x | RangePos:  0.94 | SMA50: ABOVE
+  KLAC   | Score:  12 | $  301.71 | RSI:  71.5 | MACD:  +3.6272 | VolR:  1.3x | RangePos:  0.95 | SMA50: ABOVE
+  PYPL   | Score:  12 | $   43.18 | RSI:  58.1 | MACD:  +0.3504 | VolR:  0.8x | RangePos:  0.62 | SMA50: BELOW
+
+[STAGE 1e] Upcoming Earnings / Events (next 14 days)
+----------------------------------------------------------------------
+
+[STAGE 1f] Sector Rotation & Relative Strength
+----------------------------------------------------------------------
+  Technology                (XLK): 1D:  +2.76% | 5D:  +4.08% | 1M:  -3.77%
+  Nasdaq-100                (QQQ): 1D:  +1.70% | 5D:  +3.63% | 1M:  -1.20%
+  Industrials               (XLI): 1D:  +1.35% | 5D:  +2.79% | 1M:  +6.60%
+  Materials                 (XLB): 1D:  +0.34% | 5D:  -0.65% | 1M:  -0.97%
+  Consumer Discretionary    (XLY): 1D:  +0.14% | 5D:  +1.92% | 1M:  -0.06%
+  Financials                (XLF): 1D:  -0.20% | 5D:  -0.20% | 1M:  +4.54%
+  Communication Services    (XLC): 1D:  -0.70% | 5D:  +0.55% | 1M:  -5.43%
+  Energy                    (XLE): 1D:  -0.88% | 5D:  -0.86% | 1M:  -7.71%
+  Healthcare                (XLV): 1D:  -1.29% | 5D:  +3.46% | 1M:  +8.85%
+  Utilities                 (XLU): 1D:  -1.48% | 5D:  -0.44% | 1M:  +3.94%
+  Consumer Staples          (XLP): 1D:  -1.54% | 5D:  -1.62% | 1M:  +2.22%
+  Real Estate               (XLRE): 1D:  -1.98% | 5D:  -1.08% | 1M:  +2.13%
+
+
+======================================================================
+[STAGE 2] TOP 3 SWING TRADE SETUPS - DETAILED ANALYSIS
+======================================================================
+
+======================================================================
+SETUP #1: TSLA
+======================================================================
+  PRICE & VOLUME:
+    Last Close:      $420.60
+    Previous Close:  $411.84
+    Day Change:      +2.13%
+    Daily Volume:    43.1M (Avg20d: 47.9M)
+    Volume Ratio:    0.9x
+
+  TECHNICAL LEVELS:
+    SMA20 (Daily):   $400.59  (ABOVE)
+    SMA50 (Daily):   $405.62  (ABOVE)
+    SMA200 (Daily):  $nan  (N/A)
+    4H EMA9:         $415.70 (ABOVE)
+    Range 20d Hi:    $433.60
+    Range 20d Lo:    $368.60
+    ATR(14):         $17.48 (4.2% of price)
+    ATR-based Stop:  $394.39 to $385.65
+
+  MOMENTUM:
+    RSI(14) Daily:   58.3 (NEUTRAL)
+    RSI(14) 4H:      93.1
+    MACD Hist:      +1.0491 (POS)
+    Momentum Score: 6/8
+    Range Position: 80% (0%=at low, 100%=at high)
+
+  FUNDAMENTALS:
+    Market Cap:     $1.58T
+    P/E (Trailing): 385.87
+    P/E (Forward):  168.10
+    Beta:           1.80
+    Analyst Rec:    buy
+    Target Upside:  +0.1%
+
+  RISK/REWARD PARAMETERS:
+    Entry:           $420.60
+    Stop Loss:       $368.60 (Risk: 12.4%)
+    T1 (2:1 R/R):    $524.60 (R/R: 2.0:1)
+    T2 (3:1 R/R):    $576.60 (R/R: 3.0:1)
+    Max Risk/Share:  $52.00
+
+======================================================================
+SETUP #2: MELI
+======================================================================
+  PRICE & VOLUME:
+    Last Close:      $1697.39
+    Previous Close:  $1683.13
+    Day Change:      +0.85%
+    Daily Volume:    0.4M (Avg20d: 0.5M)
+    Volume Ratio:    0.9x
+
+  TECHNICAL LEVELS:
+    SMA20 (Daily):   $1634.50  (ABOVE)
+    SMA50 (Daily):   $1688.56  (ABOVE)
+    SMA200 (Daily):  $nan  (N/A)
+    4H EMA9:         $1689.10 (ABOVE)
+    Range 20d Hi:    $1744.42
+    Range 20d Lo:    $1546.00
+    ATR(14):         $65.63 (3.9% of price)
+    ATR-based Stop:  $1598.94 to $1566.12
+
+  MOMENTUM:
+    RSI(14) Daily:   56.0 (NEUTRAL)
+    RSI(14) 4H:      57.3
+    MACD Hist:      +11.3477 (POS)
+    Momentum Score: 6/8
+    Range Position: 76% (0%=at low, 100%=at high)
+
+  FUNDAMENTALS:
+    Market Cap:     $86.1B
+    P/E (Trailing): 44.85
+    P/E (Forward):  29.03
+    Beta:           1.35
+    Analyst Rec:    buy
+    Target Upside:  +30.6%
+
+  RISK/REWARD PARAMETERS:
+    Entry:           $1697.39
+    Stop Loss:       $1546.00 (Risk: 8.9%)
+    T1 (2:1 R/R):    $2000.17 (R/R: 2.0:1)
+    T2 (3:1 R/R):    $2151.56 (R/R: 3.0:1)
+    Max Risk/Share:  $151.39
+
+======================================================================
+SETUP #3: NET
+======================================================================
+  PRICE & VOLUME:
+    Last Close:      $245.28
+    Previous Close:  $243.76
+    Day Change:      +0.62%
+    Daily Volume:    2.5M (Avg20d: 3.7M)
+    Volume Ratio:    0.7x
+
+  TECHNICAL LEVELS:
+    SMA20 (Daily):   $237.68  (ABOVE)
+    SMA50 (Daily):   $223.93  (ABOVE)
+    SMA200 (Daily):  $nan  (N/A)
+    4H EMA9:         $245.10 (ABOVE)
+    Range 20d Hi:    $276.82
+    Range 20d Lo:    $212.32
+    ATR(14):         $11.96 (4.9% of price)
+    ATR-based Stop:  $227.34 to $221.36
+
+  MOMENTUM:
+    RSI(14) Daily:   55.7 (NEUTRAL)
+    RSI(14) 4H:      65.1
+    MACD Hist:      +0.4204 (POS)
+    Momentum Score: 6/8
+    Range Position: 51% (0%=at low, 100%=at high)
+
+  FUNDAMENTALS:
+    Market Cap:     $87.1B
+    P/E (Trailing): N/A
+    P/E (Forward):  155.38
+    Beta:           1.67
+    Analyst Rec:    buy
+    Target Upside:  -0.7%
+
+  RISK/REWARD PARAMETERS:
+    Entry:           $245.28
+    Stop Loss:       $212.32 (Risk: 13.4%)
+    T1 (2:1 R/R):    $311.20 (R/R: 2.0:1)
+    T2 (3:1 R/R):    $344.16 (R/R: 3.0:1)
+    Max Risk/Share:  $32.96
+
+
+======================================================================
+[STAGE 3] COGNITIVE CRITIQUE & REGIME ALIGNMENT
+======================================================================
+
+[BULL CASE]
+  TSLA: True, RSI=58, MACD+POS, Score=16
+  MELI: True, RSI=56, MACD+POS, Score=16
+  NET: True, RSI=56, MACD+POS, Score=16
+
+[BEAR CASE / INVALIDATION TRIGGERS]
+  - Broad market fails to hold current support levels → all longs invalid
+  - VIX spikes above 25 → risk-off triggers cascade selling
+  - Any of the top3 breaks below SMA50 on daily close → immediate exit
+  - RSI divergence on daily vs 4H → early profit-taking warranted
+  - Gap-fill of today's/instrument's recent gap → stop triggered
+
+[LIQUIDITY CHECK]
+  TSLA: Vol=43.1M, AvgVol=47.9M, Ratio=0.9x → GOOD
+  MELI: Vol=0.4M, AvgVol=0.5M, Ratio=0.9x → GOOD
+  NET: Vol=2.5M, AvgVol=3.7M, Ratio=0.7x → THIN - WIDE SPREAD RISK
+
+
+======================================================================
+[STAGE 4] FINAL TACTICAL ADVISORY
+======================================================================
+
+TICKER        CLOSE    ENTRY     STOP       T1       T2   R/R T1
+-----------------------------------------------------------------
+TSLA         420.60   420.60   385.65   490.51   525.46     2.0:1
+MELI        1697.39  1697.39  1566.12  1959.93  2091.20     2.0:1
+NET          245.28   245.28   221.36   293.12   317.04     2.0:1
+
+======================================================================
+POSITION SIZING: Risk 1-2% of capital per trade | Max 3 concurrent positions
+HOLDING WINDOW:  2-21 days | Exit on T1 hit OR invalidation, whichever first
+======================================================================
